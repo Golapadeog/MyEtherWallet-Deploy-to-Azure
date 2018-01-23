@@ -8,6 +8,8 @@
 - chrome-extension-vX.X.X.X.zip is the chrome extension package
 - source code is the full source for developers to get started with (although cloning or forking the mercury branch is probably a better choice)
 
+### Deploy to Azure
+[![Deploy to Azure](https://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
 ### MEW Around the Web
 
