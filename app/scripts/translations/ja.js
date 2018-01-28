@@ -5,35 +5,35 @@ ja.code = 'ja';
 ja.data = {
 
 GEN_Help_0                      :  'お財布をお持ちですか？', /*Already have a wallet somewhere?*/
-GEN_Help_MetaMask               :  'とでも簡単です！キーはフィッシングサイトではなく、メタマスク(Metamask)に残っています。すぐ試してください！', /*So easy! Keys stay in MetaMask, not on a phishing site! Try it today.*/
+GEN_Help_MetaMask               :  'とっても簡単です！キーはフィッシングサイトではなく、メタマスク(Metamask)に残っています。すぐ試してください！', /*So easy! Keys stay in MetaMask, not on a phishing site! Try it today.*/
 
-GEN_Warning_1                   :  '**これは絶対に失くさないでください！**　なくした場合には二度と戻ってきません。', /***Do not lose it!** It cannot be recovered if you lose it.*/
-GEN_Warning_2                   :  '**他人と共有しないでください**　悪意のあるサイトでこのファイルを使うと、あなたの資産を盗られてしまいます。', /***Do not share it!** Your funds will be stolen if you use this file on a malicious/phishing site.*/
-GEN_Warning_3                   :  '**バックアップを作成してください！**　いつの日か、億万単位の大金になるものと心得て安全を確保してください。', /***Make a backup!** Secure it like the millions of dollars it may one day be worth.*/
+GEN_Warning_1                   :  '**絶対に忘れないようにしてください！**　失くしてしまうと、回復できません。', /***Do not lose it!** It cannot be recovered if you lose it.*/
+GEN_Warning_2                   :  '**他人と共有しないでください**　悪意のあるサイトでこのファイルを使うと、あなたのお金が盗まれます。', /***Do not share it!** Your funds will be stolen if you use this file on a malicious/phishing site.*/
+GEN_Warning_3                   :  '**バックアップを作成してください！**　ゆくゆくは、数億円の大金になるものと心得て安全性を確保してください。', /***Make a backup!** Secure it like the millions of dollars it may one day be worth.*/
 
 GAS_Price_1                     : '普通',　/*Not So Fast*/
 GAS_Price_2                     : '迅速', /*Fast*/
-GAS_Price_3                     : '超迅速', /*Fast AF*/
+GAS_Price_3                     : '超速', /*Fast AF*/
 
 CONTRACT_Helper_1               :  'マルチシグのアドレスに変えてください', /*Please change the address to your own Multisig Contract Address.*/
-CONTRACT_Warning_1              :  'まもなく契約が送出されます。', /*You are about to **deploy a contract**.*/
+CONTRACT_Warning_1              :  'まもなく契約が展開されます。', /*You are about to **deploy a contract**.*/
 CONTRACT_Warning_2              :  '次のネットワークに展開されます：', /*It will be deployed on the following network:*/
 CONTRACT_Warning_3              :  'まもなく契約上の機能が実行されます。', /*You are about to **execute a function on contract**.*/
 
-SEND_Helper_Contract            :  'ほとんどの場合、0のままにしてください。', /*In most cases you should leave this as 0.*/
+SEND_Helper_Contract            :  'ほとんどの場合、0.のままにしておきます。', /*In most cases you should leave this as 0.*/
 SEND_ViewOnly                   :  '自分のアドレスを指定するだけでは送信できません。お財布を解錠する必要があります。', /*You cannot send with only your address. You must use one of the other options to unlock your wallet in order to send.*/
 SEND_LoadTokens                 :  'トークン読込', /*Load Tokens*/
 SEND_CustomAddrMsg              :  '対応するメッセージ', /*A message regarding*/
 
-SWAP_Warning_1                  :  '警告！交換に必要な資金が足りません。', /*Warning! You do not have enough funds to complete this swap.*/
+SWAP_Warning_1                  :  '警告！交換するためにに必要な金額が不足しています。', /*Warning! You do not have enough funds to complete this swap.*/
 SWAP_Warning_2                  :  '資金を追加するか、別のお財布をお使いください。',　/*Please add more funds to your wallet or access a different wallet.*/
 
-X_Advanced                      :  '熟練者限定。', /*Advanced Users Only.*/
+X_Advanced                      :  '熟練者向け。', /*Advanced Users Only.*/
 X_HelpfulLinks                  :  '役立つリンクとよくある問答集', /*Helpful Links & FAQs*/
 X_HelpfulLinks_1                :  'お財布の操作方法', /*How to Access your Wallet*/
 X_HelpfulLinks_2                :  '秘密鍵を紛失してしまいした', /*I lost my private key*/
 X_HelpfulLinks_3                :  '秘密鍵が別のアドレスを解錠しました', /*My private key opens a different address*/
-X_HelpfulLinks_4                :  'MyEtherWalletから、または宛へ移管中', /*Migrating to/from MyEtherWallet*/
+X_HelpfulLinks_4                :  'MyEtherWalletから、またはそれに向けて移管中', /*Migrating to/from MyEtherWallet*/
 X_Network                       :  'ノード', // aka "node" or "chain" - used in the dropdown in header  /*Network*/
 X_Network_Custom                :  'カスタムネットワークやノードを追加', /*Add Custom Network / Node*/
 
@@ -173,7 +173,7 @@ ONBOARD_secure_1_title          :  'オンライン詐欺から自分自身を�
 ONBOARD_secure_1_content__1     :  'オンライン詐欺師は、MyEtherWallet、EtherDelta、Paypalやあなたの金融機関のリンクが含まれた個人メッセージを送りつけてきますが、これは偽のサイトです。あなたの情報を盗み、そして資産を盗みます。', /*Phishers send you a message with a link to a website that looks just like MyEtherWallet, EtherDelta, Paypal, or your bank, but is not the real website. They steal your information and then steal your money.*/
 ONBOARD_secure_1_content__2     :  '[EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn)または[MetaMask](https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html) or [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige). のクローム拡張を使って、これらの悪意のサイトを遮断してください。', /*Install [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) or [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) or  or the [MyEtherWallet Chrome Extension](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm) to block malicious websites.*/
 ONBOARD_secure_1_content__3     :  'いつも、必ず、ＵＲＬ：「https://www.myetherwallet.com」を確認してください。', /*Always check the URL: `https://www.myetherwallet.com`.*/
-ONBOARD_secure_1_content__4     :  'ＵＲＬバーに、 `MYETHERWALLET LLC [US]`と緑色で表示されていることを必ず確認してください。', /**/
+ONBOARD_secure_1_content__4     :  'ＵＲＬバーに、 `MYETHERWALLET LLC`と緑色で表示されていることを必ず確認してください。', /**/
 ONBOARD_secure_1_content__5     :  'ｅメール、Slack、Reddit、Twitterやその他から送られてくるメッセージやリンクを信用しないでください。', /*Do not trust messages or links sent to you randomly via email, Slack, Reddit, Twitter, etc.*/
 ONBOARD_secure_1_content__6     :  '情報を入力する前に、常に直接サイトを参照してから閲覧してください。ｅメールやメッセージのリンクを押してから情報を入力しないでください。', /*Always navigate directly to a site before you enter information. Do not enter information after clicking a link from a message or email.*/
 ONBOARD_secure_1_content__7     :  '[AdBlockerを導入](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=ja)し、サーチエンジンの広告（例：グーグル）をクリックしないでください。', /*[Install an AdBlocker](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en) and do not click ads on your search engine (e.g. Google).*/

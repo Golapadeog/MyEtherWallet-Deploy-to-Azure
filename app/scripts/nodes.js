@@ -42,8 +42,20 @@ nodes.nodeList = {
         'chainId': 1,
         'tokenList': require('./tokens/ethTokens.json'),
         'abiList': require('./abiDefinitions/ethAbi.json'),
-        'service': 'MyEtherWallet',
+        'service': 'myetherapi.com',
         'lib': new nodes.customNode('https://api.myetherapi.com/eth', '')
+    },
+    'eth_mycrypto': {
+        'name': 'ETH',
+        'blockExplorerTX': 'https://etherscan.io/tx/[[txHash]]',
+        'blockExplorerAddr': 'https://etherscan.io/address/[[address]]',
+        'type': nodes.nodeTypes.ETH,
+        'eip155': true,
+        'chainId': 1,
+        'tokenList': require('./tokens/ethTokens.json'),
+        'abiList': require('./abiDefinitions/ethAbi.json'),
+        'service': 'mycryptoapi.com',
+        'lib': new nodes.customNode('https://api.mycryptoapi.com/eth', '')
     },
     'eth_ethscan': {
         'name': 'ETH',
@@ -54,7 +66,7 @@ nodes.nodeList = {
         'chainId': 1,
         'tokenList': require('./tokens/ethTokens.json'),
         'abiList': require('./abiDefinitions/ethAbi.json'),
-        'service': 'Etherscan.io',
+        'service': 'etherscan.io',
         'lib': require('./nodeHelpers/etherscan')
     },
     'eth_infura': {
@@ -78,7 +90,7 @@ nodes.nodeList = {
         'chainId': 1,
         'tokenList': require('./tokens/ethTokens.json'),
         'abiList': require('./abiDefinitions/ethAbi.json'),
-        'service': 'Giveth.io',
+        'service': 'giveth.io',
         'lib': new nodes.customNode('https://mew.giveth.io', '')
     },
     'etc_epool': {
@@ -90,7 +102,7 @@ nodes.nodeList = {
         'chainId': 61,
         'tokenList': require('./tokens/etcTokens.json'),
         'abiList': require('./abiDefinitions/etcAbi.json'),
-        'service': 'Epool.io',
+        'service': 'epool.io',
         'lib': new nodes.customNode('https://mewapi.epool.io', '')
     },
     'rop_mew': {
@@ -102,7 +114,7 @@ nodes.nodeList = {
         'chainId': 3,
         'tokenList': require('./tokens/ropstenTokens.json'),
         'abiList': require('./abiDefinitions/ropstenAbi.json'),
-        'service': 'MyEtherWallet',
+        'service': 'myetherapi.com',
         'lib': new nodes.customNode('https://api.myetherapi.com/rop', '')
     },
     'rop_infura': {
@@ -126,7 +138,7 @@ nodes.nodeList = {
         'chainId': 42,
         'tokenList': require('./tokens/kovanTokens.json'),
         'abiList': require('./abiDefinitions/kovanAbi.json'),
-        'service': 'Etherscan.io',
+        'service': 'etherscan.io',
         'lib': require('./nodeHelpers/etherscanKov')
     },
     'kov_infura': {
@@ -150,7 +162,7 @@ nodes.nodeList = {
         'chainId': 4,
         'tokenList': require('./tokens/rinkebyTokens.json'),
         'abiList': require('./abiDefinitions/rinkebyAbi.json'),
-        'service': 'Etherscan.io',
+        'service': 'etherscan.io',
         'lib': require('./nodeHelpers/etherscanRin')
     },
     'rin_infura': {
@@ -175,7 +187,7 @@ nodes.nodeList = {
         'tokenList': require('./tokens/expTokens.json'),
         'abiList': require('./abiDefinitions/expAbi.json'),
         'estimateGas': true,
-        'service': 'Expanse.tech',
+        'service': 'expanse.tech',
         'lib': new nodes.customNode('https://node.expanse.tech/', '')
     },
     'ubq': {

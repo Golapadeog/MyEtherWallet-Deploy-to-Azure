@@ -193,12 +193,13 @@ gasLimit:   200000,
 data:       '',
 msg:        'Rebellious Token'
 },{
-  // Ethereum High Token Sale
+// Ethereum High Token Sale
 to:         '0xd5E3036d5CE7eC222379D16f6ffC38C38c55BF7f',
 gasLimit:   200000,
 data:       '',
 msg:        'Ethereum High HIG is a robust and feather-light cryptocurrency designed to hedge the risk of your portfolio'
 },{
+// REAL CHAIN TOKEN!
 to:         '0x2a3Aa9ECA41E720Ed46B5A70D6C37EfA47f768Ac',
 gasLimit:   200000,
 data:       '',
@@ -222,6 +223,12 @@ to:         '0xA671f2914Ba0e73979FFc47cD350801d1714b18f',
 gasLimit:   150000,
 data:       '',
 msg:        'TRV Ongoing Sale.'
+},{
+// TWN Token Sale
+to:         '0xdee3bfae40ac2ae9c69ebf30ecaf67a499a9dd5e',
+gasLimit:   150000,
+data:       '',
+msg:        'The World News Pre-ICO.'
 },{
 // Bitlle Token Sale (BTL)
 to:         '0x92685E93956537c25Bb75D5d47fca4266dd628B8',
