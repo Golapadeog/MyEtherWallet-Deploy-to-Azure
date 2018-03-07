@@ -31,6 +31,12 @@ gasLimit:   200000,
 data:       '',
 msg:        'MNT Token Sale - http://mnt.coinjoker.com'
 },{
+// J8T Token Sale
+to:         '0xa76ea481aebdd5703e476cfcb2315d4e014232c1',
+gasLimit:   200000,
+data:       '',
+msg:        'J8T Token Sale - https://jet8.io/token - JET8 · Democratizing influence'
+},{
 // PUC Token Sale
 to:         '0xEf6B4cE8C9Bc83744fbcdE2657b32eC18790458A',
 gasLimit:   930000,
@@ -259,4 +265,28 @@ to:         '0xF04436B2eDaa1B777045E1EEFc6DBA8bD2aEbAB8',
 gasLimit:   150000,
 data:       '',
 msg:        'COPYTRACK (CPY) Token Sale. Official sale website: https://copytrack.io'
+},{
+// DoBetAcceptBet (DCA) Token Sale
+to:         '0x386Faa4703a34a7Fdb19Bec2e14Fd427C9638416',
+gasLimit:   150000,
+data:       '',
+msg:        'DoBetAcceptBet (DCA) Token Sale. Official sale website: https://dobetacceptbet.com'
+},{
+// LATOKEN (LA) Token Sale
+to:         '0xE50365f5D679CB98a1dd62D6F6e58e59321BcdDf',
+gasLimit:   150000,
+data:       '',
+msg:        'LATOKEN (LA). Official sale website: https://latoken.com'
+},{
+// LALA World (LALA) Token Sale
+to:         '0xfD107B473AB90e8Fbd89872144a3DC92C40Fa8C9',
+gasLimit:   200000,
+data:       '',
+msg:        'LALA World Token (LALA) Token Sale. Official sale website: https://lalaworld.io'
+},{
+// Duty of Care (VDOC) Token sale
+to:         '0xe8DB4ceA1f7ad7Ba22F3DbbAb55A336545701d96',
+gasLimit:   200000,
+data:       '',
+msg:        ' Duty of Care VDOC token sale - https://dutyof.care/token-launch/'
 }]
