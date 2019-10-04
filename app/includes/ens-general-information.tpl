@@ -13,10 +13,10 @@
     </h6>
     <ul ng-show="ensPrep">
       <li translate="ENS_Helper_3">
-        Decide which account you wish to own the name & ensure you have multiple backups of that account.
+        Decide which account you wish to own the name & ensure that you have multiple backups of that account.
       </li>
       <li translate="ENS_Helper_4">
-        Decide the maximum amount of ETH you are willing to pay for the name (your <u>Bid Amount</u>). Ensure that account has enough to cover your bid + 0.01 ETH for gas.
+        Decide the maximum amount of ETH you are willing to pay for the name (your <u>Bid Amount</u>). Ensure that the account has enough to cover your bid + 0.01 ETH for gas.
       </li>
     </ul>
 
@@ -70,7 +70,7 @@
         Once the auction has ended (after 5 days / 120 hours), the winner needs to finalize the auction in order to claim their new name.
       </li>
       <li translate="ENS_Helper_16">
-        The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 ETH.
+        The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will be refunded all but 0.01 ETH.
       </li>
     </ul>
 
@@ -115,7 +115,7 @@
     <hr />
 
     <h6>
-      <a href="https://myetherwallet.github.io/knowledge-base/ens/"
+      <a href="https://kb.myetherwallet.com/ens/"
          target="_blank"
          rel="noopener noreferrer"
          translate="ENS_Helper_22">
@@ -124,7 +124,7 @@
 
       &nbsp;&middot;&nbsp;
 
-      <a href="https://myetherwallet.github.io/knowledge-base/ens/ens-debugging-a-bad-instruction-reveal.html"
+      <a href="https://kb.myetherwallet.com/ens/ens-debugging-a-bad-instruction-reveal.html"
          target="_blank"
          rel="noopener noreferrer"
          translate="ENS_Helper_23">

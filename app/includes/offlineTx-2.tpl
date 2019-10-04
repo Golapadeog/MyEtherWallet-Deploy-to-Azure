@@ -69,7 +69,7 @@
   <article class="clearfix">
     <section class="col-sm-11">
       <a class="account-help-icon"
-         href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+         href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
          target="_blank"
          rel="noopener noreferrer">
         <img src="images/icon-help.svg" class="help-icon" />
@@ -89,7 +89,7 @@
   <article class="clearfix">
     <section class="col-sm-11">
       <a class="account-help-icon"
-         href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+         href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
          target="_blank"
          rel="noopener noreferrer">
         <img src="images/icon-help.svg" class="help-icon" />
@@ -108,7 +108,17 @@
                ng-disabled="checkTxReadOnly"
                ng-class="Validator.isPositiveNumber(gasPriceDec) ? 'is-valid' : 'is-invalid'" />
         <div class="input-group-btn">
-          <button style="min-width: 170px" class="btn btn-default"> WEI </button>
+          <span class="dropdown dropdown-gprice" ng-cloak>
+            <a tabindex="0" style="min-width: 170px"  aria-haspopup="true" aria-expanded="false" aria-label="gas price" class="dropdown-toggle btn btn-default" ng-click="gpDropdown = !gpDropdown">
+              {{ gasPriceDef }}
+              <i class="caret"></i>
+            </a>
+            <ul class="dropdown-menu" ng-show="gpDropdown">
+              <li><a ng-class="{true:'active'}[gasPriceDef=='WEI']" ng-click="changePrice('WEI')"> WEI          </a></li>
+              <li><a ng-class="{true:'active'}[gasPriceDef=='GWEI']" ng-click="changePrice('GWEI')"> GWEI         </a></li>
+            </ul>
+          </span>
+
         </div>
       </div>
     </section>
@@ -119,7 +129,7 @@
   <article class="clearfix">
     <section class="col-sm-11">
       <a class="account-help-icon"
-         href="https://myetherwallet.github.io/knowledge-base/transactions/what-is-nonce.html"
+         href="https://kb.myetherwallet.com/transactions/what-is-nonce.html"
          target="_blank"
          rel="noopener noreferrer">
         <img src="images/icon-help.svg" class="help-icon" />

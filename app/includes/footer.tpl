@@ -24,7 +24,7 @@
       </p>
 
       <p>
-        <a aria-label="knowledge base" href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        <a aria-label="knowledge base" href="https://kb.myetherwallet.com/" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
           Knowledge Base
         </a>
       </p>
@@ -34,13 +34,18 @@
           Disclaimer
         </a>
       </p>
+      <p>
+        <a href="https://vintage.myetherwallet.com/privacy-policy.html" target="_blank">
+          Privacy policy
+        </a>
+      </p>
 
       <p ng-show="showBlocks">
         Latest Block#: {{currentBlockNumber}}
       </p>
 
       <p>
-        &copy; 2018 MyEtherWallet, LLC
+        &copy; 2019 MyEtherWallet, Inc
       </p>
 
     </section>
@@ -50,13 +55,16 @@
         <p>Consider using our affiliate links to...</p>
         <div class="footer__pill-wrap">
           <a class="footer__pill"  aria-label="Swap Ether or Bitcoin via Bity.com" href="https://bity.com/af/jshkb37v" target="_blank" rel="noopener noreferrer">Swap ETH/BTC/EUR/CHF via Bity.com</a>
-        </div>
+          <a class="footer__pill"  aria-label="Buy Ether with credit card via Simplex" href="https://ccswap.myetherwallet.com" target="_blank" rel="noopener noreferrer">Buy ETH with credit card via Simplex</a>
+       </div>
         <p> Buy a... </p>
-        <div class="footer__pill-wrap">
-          <a class="footer__pill" href="https://www.ledgerwallet.com/r/fa4b?path=/products/" target="_blank" rel="noopener">Ledger Wallet</a>
-          <a class="footer__pill" href="https://trezor.io/?a=myetherwallet.com" target="_blank" rel="noopener">TREZOR</a>
-          <a class="footer__pill" href="https://digitalbitbox.com/?ref=mew" target="_blank" rel="noopener">Digital Bitbox</a>
+        <div class="footer__pill-wrap footer__pill-custom-wrap">
+          <a class="footer__pill" href="https://www.ledger.com?r=fa4b" target="_blank" rel="noopener">Ledger Wallet</a>
+          <a class="footer__pill" href="https://shop.trezor.io/?offer_id=10&aff_id=2029" target="_blank" rel="noopener">TREZOR</a>
+          <a class="footer__pill" href="http://shiftcrypto.ositracker.com/91316/7114" target="_blank" rel="noopener">BitBox</a>
           <a class="footer__pill" href="https://ether.cards/?utm_source=mew&utm_medium=cpm&utm_campaign=site" target="_blank" rel="noopener">ether.card</a>
+          <a class="footer__pill" href="https://thehodlwallet.com?aff=15" target="_blank" rel="noopener">HODL Wallet</a>
+          <a class="footer__pill" href="http://billfodl.com?afmc=2j&utm_campaign=2j&utm_source=leaddyno&utm_medium=affiliate" target="_blank" rel="noopener">Billfodl</a>
         </div>
 
         <h5><i aria-hidden="true">💝</i> Donations are always appreciated!</h5>
@@ -96,6 +104,11 @@
 
     <section class="footer--righ">
       <p>
+        <a aria-label="website via my ether wallet dot com" href="https://vintage.myetherwallet.com" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+          Vintage MEW
+        </a>
+      </p>
+      <p>
         <a aria-label="website via my ether wallet dot com" href="https://www.MyEtherWallet.com" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
           MyEtherWallet.com
         </a>
@@ -111,13 +124,13 @@
         </a>
       </p>
       <p>
-        <a href="https://www.myetherwallet.com/helpers.html" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        <a href="https://vintage.myetherwallet.com/helpers.html" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
           Unit Converters &amp; ENS Debugging
         </a>
       </p>
 
       <p>
-        <a href="https://www.myetherwallet.com/signmsg.html" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        <a href="https://vintage.myetherwallet.com/signmsg.html" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
           Sign Message
         </a>
       </p>
@@ -193,8 +206,8 @@
 @@if (site === 'mew' ) { @@include( './footer-disclaimer-modal.tpl',   { "site": "mew" } ) }
 @@if (site === 'cx'  ) { @@include( './footer-disclaimer-modal.tpl',   { "site": "cx"  } ) }
 
-@@if (site === 'mew' ) { @@include( './onboardingModal.tpl',   { "site": "mew" } ) }
-@@if (site === 'cx'  ) { @@include( './onboardingModal.tpl',   { "site": "cx"  } ) }
+@@if (site === 'mew' ) { @@include( './deprecationWarningModal.tpl',   { "site": "mew" } ) }
+@@if (site === 'cx'  ) { @@include( './deprecationWarningModal.tpl',   { "site": "cx"  } ) }
 
 
 </main>

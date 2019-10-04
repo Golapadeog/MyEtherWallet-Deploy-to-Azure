@@ -9,18 +9,18 @@ var addressFieldDrtv = function($compile, darkList) {
             var placeholder = attrs.placeholder == undefined ? 'mewtopia.eth or 0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D' : attrs.placeholder ;
             var labelTranslated = attrs.labeltranslated == undefined ? 'SEND_addr' : attrs.labeltranslated;
             var setValue = function(value) {
-                var temp = scope;
-                for (var i in varArr) {
-                    if (i == varArr.length - 1) temp[varArr[i]] = value;
-                    else {
-                        temp = temp[varArr[i]];
-                    }
+              var temp = scope;
+              for (var i in varArr) {
+                if (i == varArr.length - 1) temp[varArr[i]] = value;
+                else {
+                    temp = temp[varArr[i]];
                 }
+              }
             }
 
             var checkDarkList = function(value) {
               for(let i = 0; i < Darklist.length; i++) {
-                if(value.length > 0 && value === Darklist[i].address) {
+                if(value.length > 0 && value.toLowerCase() === Darklist[i].address.toLowerCase()) {
                   scope.phishing.msg = Darklist[i].comment !== '' ? `${globalFuncs.phishingWarning[0] + Darklist[i].comment}` : `${globalFuncs.phishingWarning[1]}`;
                   scope.phishing.error = true;
                   return;
@@ -88,9 +88,14 @@ var addressFieldDrtv = function($compile, darkList) {
                 });
               } else {
                 setValue('');
-                scope.addressDrtv.showDerivedAddress = false;
-                scope.phishing.msg = '';
-                scope.phishing.error = false;
+                if(scope.addressDrtv.ensAddressField !== '') {
+                  scope.phishing.msg = 'Invalid address or ENS. Please make sure that the address or ENS you put in is valid';
+                  scope.phishing.error = true;
+                } else {
+                  scope.addressDrtv.showDerivedAddress = false;
+                  scope.phishing.msg = '';
+                  scope.phishing.error = false;
+                }
               }
 
             });

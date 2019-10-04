@@ -67,12 +67,12 @@ ENS_WrongAddress_1              :  'The wallet you unlocked does not own the nam
 ENS_WrongAddress_2              :  'Please unlock the wallet with address ',
 
 ENS_Finalize                    :  'Finalize',
-ENS_Finalize_content            :  'Finalizing this name assigns the ENS name to the winning bidder. The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 ETH. Any non-winners will also be refunded.',
+ENS_Finalize_content            :  'Finalizing this name assigns the ENS name to the winning bidder. The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will be refunded all but 0.01 ETH. Any non-winners will also be refunded.',
 ENS_Finalize_content_1          :  'You are about to finalize the auction & claim the name:',
 ENS_Helper_1                    :  'What is the process like?',
 ENS_Helper_2                    :  '1) Preparation',
-ENS_Helper_3                    :  'Decide which account you wish to own the name & ensure you have multiple backups of that account.',
-ENS_Helper_4                    :  'Decide the maximum amount of ETH you are willing to pay for the name (your <u>Bid Amount</u>). Ensure that account has enough to cover your bid + 0.01 ETH for gas.',
+ENS_Helper_3                    :  'Decide which account you wish to own the name & ensure that you have multiple backups of that account.',
+ENS_Helper_4                    :  'Decide the maximum amount of ETH you are willing to pay for the name (your <u>Bid Amount</u>). Ensure that the account has enough to cover your bid + 0.01 ETH for gas.',
 ENS_Helper_5                    :  '2) Start an Auction / Place a Bid',
 ENS_Helper_6                    :  'Bidding period lasts 3 days (72 hours).',
 ENS_Helper_7                    :  'You will enter the <u>name</u>, <u>Actual Bid Amount</u>, <u>Bid Mask</u>, which is protected by a <u>Secret Phrase</u>.',
@@ -84,7 +84,7 @@ ENS_Helper_12                   :  'You will unlock your account, enter the <u>B
 ENS_Helper_13                   :  'In the event that two parties bid exactly the same amount, the first bid revealed will win.',
 ENS_Helper_14                   :  '4) Finalize the Auction',
 ENS_Helper_15                   :  'Once the auction has ended (after 5 days / 120 hours), the winner needs to finalize the auction in order to claim their new name.',
-ENS_Helper_16                   :  'The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 ETH.',
+ENS_Helper_16                   :  'The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will be refunded all but 0.01 ETH.',
 ENS_Helper_17                   :  'More Information',
 ENS_Helper_18                   :  'The auction for this registrar is a blind auction, and is described in',
 ENS_Helper_19                   :  'Basically, no one can see *anything* during the auction.',
@@ -161,14 +161,14 @@ ONBOARD_whymew_content__2       :  '你的资金交易不再依赖银行或者�
 ONBOARD_whymew_content__3       :  '你资金的安全也不再依赖交易所或者银行的安全系统.',
 ONBOARD_whymew_content__4       :  '如果你认为上面的几点不重要, 那你可能需要重新思考下区块链以及加密货币是如何产生价值的. 😉',
 ONBOARD_whymew_content__5       :  '如果你还是觉得用MEW太麻烦, 那你可以考虑用 [Coinbase](https://www.coinbase.com/) 或者 [Blockchain.info](https://blockchain.info/wallet/#/signup). 它们提供类似的使用用户名和密码来登录管理的账户系统.',
-ONBOARD_whymew_content__6       :  '如果你担心 MEW 还不够安全, [那就赶紧买个硬件钱包吧](https://myetherwallet.github.io/knowledge-base/hardware-wallets/hardware-wallet-recommendations.html)! 它们能保证你密钥的安全.',
+ONBOARD_whymew_content__6       :  '如果你担心 MEW 还不够安全, [那就赶紧买个硬件钱包吧](https://kb.myetherwallet.com/hardware-wallets/hardware-wallet-recommendations.html)! 它们能保证你密钥的安全.',
 ONBOARD_why_title__alt          :  '但是为啥呢?',
 ONBOARD_secure_title            :  '如何保护你的隐私和资金安全',
 ONBOARD_secure_1_title          :  '如何防范钓鱼网站',
 ONBOARD_secure_1_content__1     :  '钓鱼网站的常用伎俩是向你发送一条包含网站链接的信息, 并将这个链接伪装成很像MyEtherWallet, EtherDelta, Paypal或者银行的网站.当用户访问这些钓鱼网站并不慎填写自己的账户信息后, 黑客就能窃取这些信息进而窃取你的资金.',
 ONBOARD_secure_1_content__2     :  '可以安装 [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) 或者 [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) 或者 [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige) 或者 [MyEtherWallet Chrome Extension](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm) 这几个可以防范钓鱼网站的插件.',
-ONBOARD_secure_1_content__3     :  '记得每次都要检查 URL 地址: `https://www.myetherwallet.com`.',
-ONBOARD_secure_1_content__4     :  '正常情况下地址栏左侧会始终显示 `MYETHERWALLET LLC` 字样的绿色字体.',
+ONBOARD_secure_1_content__3     :  '记得每次都要检查 URL 地址: `https://vintage.myetherwallet.com`.',
+ONBOARD_secure_1_content__4     :  '正常情况下地址栏左侧会始终显示 `MYETHERWALLET INC` 字样的绿色字体.',
 ONBOARD_secure_1_content__5     :  '不要相信或者点击那些在电子邮件, Slack, Reddit, Twitter等地方看到的网页链接.',
 ONBOARD_secure_1_content__6     :  '养成手动输入地址打开网站的好习惯, 不要通过邮件或者其它途径里链接来打开网站.',
 ONBOARD_secure_1_content__7     :  '[安装AdBlocker(广告拦截器)](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en) 并且不要点击搜索引擎页面里的广告 (比如 百度).',
@@ -186,7 +186,7 @@ ONBOARD_secure_3_content__2     :  '将你的私钥或者密码做好备份, 最
 ONBOARD_secure_3_content__3     :  '将私钥或密码的备份单独保存到安全的离线环境, 如果它们跟你电脑放在一起的话那么一场大火或者洪水就能轻易的将它们一并摧毁.',
 ONBOARD_secure_3_content__4     :  '千万不要将私钥存放到在线网盘, 带云同步的相册等在线环境中.',
 ONBOARD_secure_3_content__5     :  '如果你真正重视你的数字货币, 那你就应该买一个硬件钱包, 你的资产值得用更专业的设备来保护.',
-ONBOARD_secure_3_content__6     :  '[点我查看更多安全技巧!](https://myetherwallet.github.io/knowledge-base/getting-started/protecting-yourself-and-your-funds.html)',
+ONBOARD_secure_3_content__6     :  '[点我查看更多安全技巧!](https://kb.myetherwallet.com/getting-started/protecting-yourself-and-your-funds.html)',
 ONBOARD_secure_2_title__alt_2   :  '防范网络欺诈',
 ONBOARD_final_title__alt        :  '还有一步! 🤘',
 ONBOARD_final_title             :  '教程到此完毕!',
@@ -218,7 +218,7 @@ x_TxHash                    : 'TX Hash',
 NAV_CheckTxStatus           : 'Check TX Status',
 NAV_TxStatus                : 'TX Status',
 tx_Details                  : 'Transaction Details',
-tx_Summary                  : 'During times of high volume (like during ICOs) transactions can be pending for hours, if not days. This tool aims to give you the ability to find and "cancel" / replace these TXs. ** This is not typically something you can do. It should not be relied upon & will only work when the TX Pools are full. [Please, read about this tool here.](https://myetherwallet.github.io/knowledge-base/transactions/check-status-of-ethereum-transaction.html)**',
+tx_Summary                  : 'During times of high volume (like during ICOs) transactions can be pending for hours, if not days. This tool aims to give you the ability to find and "cancel" / replace these TXs. ** This is not typically something you can do. It should not be relied upon & will only work when the TX Pools are full. [Please, read about this tool here.](https://kb.myetherwallet.com/transactions/check-status-of-ethereum-transaction.html)**',
 tx_notFound                 : 'Transaction Not Found',
 tx_notFound_1               : 'This TX cannot be found in the TX Pool of the node you are connected to.',
 tx_notFound_2               : 'If you just sent the transaction, please wait 15 seconds and press the "Check TX Status" button again. ',
@@ -231,7 +231,7 @@ tx_foundInPending_3         : 'There is a chance you can "cancel" or replace thi
 tx_FoundOnChain             : 'Transaction Found',
 tx_FoundOnChain_1           : 'Your transaction was successfully mined and is on the blockchain.',
 tx_FoundOnChain_2           : '**If you see a red `( ! )`, a `BAD INSTRUCTION` or `OUT OF GAS` error message**, it means that the transaction was not successfully *sent*. You cannot cancel or replace this transaction. Instead, send a new transaction. If you received an "Out of Gas" error, you should double the gas limit you specified originally.',
-tx_FoundOnChain_3           : '**If you do not see any errors, your transaction was successfully sent.** Your ETH or Tokens are where you sent them. If you cannot see this ETH or Tokens credited in your other wallet / exchange account, and it has been 24+ hours since you sent, please [contact that service](https://myetherwallet.github.io/knowledge-base/diving-deeper/ethereum-list-of-support-and-communities.html). Send them the *link* to your transaction and ask them, nicely, to look into your situation.',
+tx_FoundOnChain_3           : '**If you do not see any errors, your transaction was successfully sent.** Your ETH or Tokens are where you sent them. If you cannot see this ETH or Tokens credited in your other wallet / exchange account, and it has been 24+ hours since you sent, please [contact that service](https://kb.myetherwallet.com/diving-deeper/ethereum-list-of-support-and-communities.html). Send them the *link* to your transaction and ask them, nicely, to look into your situation.',
 
 /* Gen Wallet Updates */
 GEN_Help_1                  : 'Use your',
@@ -260,7 +260,7 @@ GEN_Unlock                  : 'Unlock your wallet to see your address',
 GAS_PRICE_Desc              : 'Gas Price is the amount you pay per unit of gas. `TX fee = gas price * gas limit` & is paid to miners for including your TX in a block. Higher the gas price = faster transaction, but more expensive. Default is `41 GWEI`.',
 GAS_LIMIT_Desc              : 'Gas limit is the amount of gas to send with your TX. `TX fee` = gas price * gas limit & is paid to miners for including your TX in a block. Increasing this number will not get your TX mined faster. Sending ETH = `21000`. Sending Tokens = ~`200000`.',
 NONCE_Desc                  : 'The nonce is the number of transactions sent from a given address. It ensures transactions are sent in order & not more than once.',
-TXFEE_Desc                  : 'The TX Fee is paid to miners for including your TX in a block. Is is the `gas limit` * `gas price`. [You can convert GWEI -> ETH here](https://www.myetherwallet.com/helpers.html)',
+TXFEE_Desc                  : 'The TX Fee is paid to miners for including your TX in a block. Is is the `gas limit` * `gas price`. [You can convert GWEI -> ETH here](https://vintage.myetherwallet.com/helpers.html)',
 
 
 
@@ -516,7 +516,7 @@ SWAP_rec_add                : "Your Receiving Address ",
 SWAP_start_CTA              : "Start Swap ",
 SWAP_ref_num                : "Your reference number ",
 SWAP_time                   : "Time remaining to send ",
-SWAP_elapsed				        : "Time elapsed since sent ",
+SWAP_elapsed                    : "Time elapsed since sent ",
 SWAP_progress_1             : "Order Initiated ",
 SWAP_progress_2             : "Waiting for your ", // Waiting for your BTC...
 SWAP_progress_3             : "Received! ", // ETH Received!
@@ -595,14 +595,14 @@ ERROR_24                    : 'Please enter a valid port. ', // 24
 ERROR_25                    : 'Please enter a valid chain ID. ', // 25
 ERROR_26                    : 'Please enter a valid ABI. ', // 26
 ERROR_27                    : 'Minimum amount: 0.01. Max amount: ', // 27
-ERROR_28                    : '将来使用钱包时，你需要Keystore文件或者私钥。 请做好保存和备份。 如果你没有保存，没有办法恢复钱包。 请阅读[帮助页面](https://www.myetherwallet.com/#help)，获得更多信息。 ',
+ERROR_28                    : '将来使用钱包时，你需要Keystore文件或者私钥。 请做好保存和备份。 如果你没有保存，没有办法恢复钱包。 请阅读[帮助页面](https://vintage.myetherwallet.com/#help)，获得更多信息。 ',
 ERROR_29                    : 'Please enter a valid user and password. ', // 29
 ERROR_30                    : 'Please enter a valid name (7+ characters, limited punctuation) ', // 30
 ERROR_31                    : 'Please enter a valid secret phrase. ', // 31
 ERROR_32                    : 'Could not connect to the node. Refresh your page, try a different node (upper right corner), check your firewall settings. If custom node, check your configs.', // 32
 ERROR_33                    : 'The wallet you have unlocked does not match the owner\'s address. ', // 33
 ERROR_34                    : 'The name you are attempting to reveal does not match the name you have entered. ', // 34
-ERROR_35                    : 'Input address is not checksummed. <a href="https://myetherwallet.github.io/knowledge-base/addresses/not-checksummed-shows-when-i-enter-an-address.html" target="_blank" rel="noopener noreferrer"> More info</a>', // 35
+ERROR_35                    : 'Input address is not checksummed. <a href="https://kb.myetherwallet.com/addresses/what-does-checksummed-mean.html" target="_blank" rel="noopener noreferrer"> More info</a>', // 35
 ERROR_36                    : 'Enter valid TX hash', // 36
 ERROR_37                    : 'Enter valid hex string (0-9, a-f)', // 37
 
@@ -639,10 +639,10 @@ PARITY_InvalidGasLimit      : "Supplied gas is beyond limit.",
 /* Tranlsation Info */
 translate_version           : '0.3 ',
 Translator_Desc             : '感谢中文译者： ',
-TranslatorName_1            : '[ Shaoping@ethfans.org （少平）]((https://www.myetherwallet.com/?gaslimit=21000&to=0x4dF5698B1B0195FC44Fe1D2d6037CE33F215c740&value=1.0#send-transaction)) ',
+TranslatorName_1            : '[ Shaoping@ethfans.org （少平）]((https://vintage.myetherwallet.com/?gaslimit=21000&to=0x4dF5698B1B0195FC44Fe1D2d6037CE33F215c740&value=1.0#send-transaction)) ',
 TranslatorAddr_1            : '0x4dF5698B1B0195FC44Fe1D2d6037CE33F215c740 ',
 /* Translator 1             : Insert Comments Here */
-TranslatorName_2            : '[ Wenham@coinwallet.shop (文翰) ]((https://www.myetherwallet.com/?gaslimit=21000&to=0x0D2dC3fD9463a7CeBE5f1b946c2D7cF5c3e82127&value=0.1#send-transaction))',
+TranslatorName_2            : '[ Wenham@coinwallet.shop (文翰) ]((https://vintage.myetherwallet.com/?gaslimit=21000&to=0x0D2dC3fD9463a7CeBE5f1b946c2D7cF5c3e82127&value=0.1#send-transaction))',
 TranslatorAddr_2            : '0x0D2dC3fD9463a7CeBE5f1b946c2D7cF5c3e82127',
 /* Translator 2             : Insert Comments Here */
 TranslatorName_3            : '',
@@ -870,7 +870,7 @@ HELP_Sec_Title              : 'Security安全 ',
 HELP_Sec_Desc_1             : 'If one of your first questions is "Why should I trust these people?", that is a good thing. Hopefully the following will help ease your fears. ',
 HELP_Sec_Desc_2             : 'We\'ve been up and running since August 2015. If you search for ["myetherwallet" on reddit](https://www.reddit.com/search?q=myetherwallet), you can see numerous people who use us with great success. ',
 HELP_Sec_Desc_3             : 'We aren\'t going to take your money or steal your private key(s). There is no malicious code on this site. In fact the "GENERATE WALLET" pages are completely client-side. That means that all the code is executed on ** your computer** and it is never saved and transmitted anywhere. ',
-HELP_Sec_Desc_4             : 'Check the URL -- This site is being served through GitHub and you can see the source code here: [https://github.com/kvhnuke/etherwallet/tree/gh-pages](https://github.com/kvhnuke/etherwallet/tree/gh-pages) to [https://www.myetherwallet.com](https://www.myetherwallet.com). ',
+HELP_Sec_Desc_4             : 'Check the URL -- This site is being served through GitHub and you can see the source code here: [https://github.com/kvhnuke/etherwallet/tree/gh-pages](https://github.com/kvhnuke/etherwallet/tree/gh-pages) to [https://vintage.myetherwallet.com](https://vintage.myetherwallet.com). ',
 HELP_Sec_Desc_5             : 'For generating wallets, you can download the [source code and run it locally](https://github.com/kvhnuke/etherwallet/releases/latest). See #5 above. ',
 HELP_Sec_Desc_6             : 'Generate a test wallet and check and see what network activity is happening. The easiest way for you to do this is to right click on the page and click "inspect element". Go to the "Network" tab. Generate a test wallet. You will see there is no network activity. You may see something happening that looks like data:image/gif and data:image/png. Those are the QR codes being generated...on your computer...by your computer. No bytes were transferred. ',
 HELP_Sec_Desc_8             : 'If you do not feel comfortable using this tool, then by all means, do not use it. We created this tool as a helpful way for people to generate wallets and make transactions without needing to dive into command line or run a full node. Again, feel free to reach out if you have concerns and we will respond as quickly as possible. Thanks! ',

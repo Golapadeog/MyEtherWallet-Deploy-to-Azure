@@ -7,9 +7,9 @@
 
         <h2 class="modal-title text-info" translate="NODE_Title"> Set Up Your Custom Node </h2>
 
-        <p class="small"><a href="https://myetherwallet.github.io/knowledge-base/networks/run-your-own-node-with-myetherwallet.html" target="_blank" rel="noopener noreferrer"> Instructions can be found here </a></p>
+        <p class="small"><a href="https://kb.myetherwallet.com/networks/run-your-own-node-with-myetherwallet.html" target="_blank" rel="noopener noreferrer"> Instructions can be found here </a></p>
 
-        <div ng-show="browserProtocol=='https:'" class="alert alert-danger small" translate="NODE_Warning">
+        <div ng-show="browserProtocol!='https:'" class="alert alert-danger small" translate="NODE_Warning">
           Your node must be HTTPS in order to connect to it via MyEtherWallet.com. You can [download the MyEtherWallet repo & run it locally](https://github.com/kvhnuke/etherwallet/releases/latest) to connect to your local node. Or, get free SSL certificate via [LetsEncrypt](https://letsencrypt.org/)</a>.
         </div>
 
@@ -54,7 +54,7 @@
             <label><input name="options" type="radio" ng-model="customNode.options" value="kov"> Kovan </label>
             <label><input name="options" type="radio" ng-model="customNode.options" value="rin"> Rinkeby </label>
             <label><input name="options" type="radio" ng-model="customNode.options" value="cus"> Custom </label>
-            <label><input type="checkbox" ng-model="customNode.eip155" value="true"> Supports EIP-155 </label>
+            <label ng-show="customNode.options == 'cus'"><input type="checkbox" ng-model="customNode.eip155" value="true"> Supports EIP-155 </label>
           </div>
 
           <div class="clearfix col-sm-6 col-sm-offset-6" ng-show="customNode.eip155">

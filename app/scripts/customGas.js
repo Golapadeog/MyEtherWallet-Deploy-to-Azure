@@ -7,17 +7,118 @@
 // http://www.tokensalecalendar.com/
 
 module.exports = [{
+// LondonCoin Token sale
+to:         '0x9efa0e2387e4cba02a6e4e6594b8f4dd209a0b93',
+gasLimit:   200000,
+data:       '',
+msg:        'Thank you for buying LondonCoin Token! LDX is an additional value for goods transactions.' 
+},  
+{
+// LDX Token Sale
+to:         '0x50C1F6d905dd635D905aA37285216073855c6B8E',
+gasLimit:   110000,
+data:       '',
+msg:        'Thank you for buying LDX(LondonCoin) Tokens! - Share LDX(londonCoin) with your friends (https://londoncoin.io).' 
+},
+// ORCA Alliance (ORCA) Token sale                  
+{                  
+to:         '0xEDF19b437d1A67E18B15dd4a859dD52F9cfA012F',
+gasLimit:   110000,
+data:       '',
+msg:        'Thank you for buying ORCA Tokens! - Share ORCA with your friends (https://www.orcaalliance.eu).' 
+},
+{
+// TangguoTao Token sale
+to:         '0xfA0eF5E034CaE1AE752d59bdb8aDcDe37Ed7aB97',
+gasLimit:   200000,
+data:       '',
+msg:        'Thank you for buying TangguoTao Token! TCA is an additional value for goods transactions.' 
+},
+{
+// Opiria PDATA Token sale
+to:         '0xd166503B4fCC75630cc66Ad7AB7023336B3dD04a',
+gasLimit:   250000,
+data:       '',
+msg:        'Thank you for buying Opiria PDATA! The future of personal data brokerage - share it with your friends: https://opiria.io' 
+},
+{
+// Depository Network (DEPO) Token sale
+to:         '0x4ee74a5f841c0aab0090ae21d4f9d8fca2aeea26',
+gasLimit:   300000,
+data:       '0xabacadae',
+msg:        'Depository Network (DEPO) Token sale - Sign Up at https://depository.network and buy your tokens.'
+},{
+// CryptFillCoin (CFC) Token sale
+to:         '0xC510840609575a10e893aF8b87A903865dF6677c',
+gasLimit:   210000,
+data:       '',
+msg:        'CryptFillCoin (CFC) token sale - Sign Up at https://cryptfillcoin.com and buy your tokens.'
+},{
+// MTC Mesh Network (MTC) Token sale
+to:         '0xdfdc0d82d96f8fd40ca0cfb4a288955becec2088',
+gasLimit:   60000,
+data:       '',
+msg:        'MTC Mesh Network (MTC) token sale - Sign Up at https://www.mtc.io/ and buy your tokens.'
+},{
+// Ethernet.Cash (ENC) Token sale
+to:         '0x039f5050de4908f9b5ddf40a4f3aa3f329086387',
+gasLimit:   299686,
+data:       '',
+msg:        'Ethernet.Cash (ENC) token sale - https://ethernet.cash get up to 50% bonus and 50% for your referral.'
+},{
+// Merculet (MVP) Token sale
+to:         '0x8a77e40936bbc27e80e9a3f526368c967869c86d',
+gasLimit:   210000,
+data:       '',
+msg:        'Merculet (MVP) token sale - You must have registered at https://merculet.io and followed the instructions to purchase tokens here.'
+},{
+// GIFcoin (GIF) Token sale
+to:         '0xFcD862985628b254061F7A918035B80340D045d3',
+gasLimit:   200000,
+data:       '',
+msg:        'GIFcoin (GIF) token sale - https://gifcoin.io - save your ETH wallet after purchase on the website to gain access to investors hub.'
+},{
+// AX1 Mining token
+to:         '0x5de9f32b2665bb2cdc23bfb51b03e2a2985ecc87',
+gasLimit:   324741,
+data:       '',
+msg:        'You must have registered at https://ax1.io and followed the instructions to purchase tokens here.'
+},{
 // Accord (ARD) Token sale
 to:         '0x75aa7b0d02532f3833b66c7f0ad35376d373ddf8',
 gasLimit:   300000,
 data:       '',
 msg:        ' Accord (ARD) ERC20 token sale - http://accordtoken.com'
 },{
+// DAV Token Sale
+to:         '0xBE2530028229198D2c383F2D3FB9f40EBf24dEed',
+gasLimit:   300000,
+data:       '',
+msg:        'DAV Token Sale - Must register on https://dav.network/ first to participate'
+},{
+// Primalbase Token (PBT)
+to:         '0xF4c07b1865bC326A3c01339492Ca7538FD038Cc0',
+gasLimit:   100000,
+data:       '',
+msg:        ''
+},{
 // BTQ Token Sale
 to:         '0x16B0E62aC13a2fAeD36D18bce2356d25Ab3CfAD3',
 gasLimit:   200000,
 data:       '',
 msg:        'BTQ ICO ends February 1, 2018. btc btq is your exclusive bitcoin boutique and world\'s premier cryptocurrency lifestyle brand. https://thebtcbtq.com/btq'
+},{
+// EPX Token Sale
+to:         '0x5A8658dE344972fC8b6b6a01Cd87a64bc7420A38',
+gasLimit:   200000,
+data:       '',
+msg:        'ethPoker.io EPX token sale - https://ethPoker.io'
+},{
+// ARXT Token Sale
+to:         '0xb65E16b44A80C9c44aDdD56a5014CbA2814a82D1',
+gasLimit:   200000,
+data:       '',
+msg:        'Assistive Reality ARXT token sale - https://aronline.io'
 },{
 // STC Token Sale
 to:         '0x8d040556214125F3fE7d8B22cF17c364603A6035',
@@ -284,9 +385,94 @@ gasLimit:   200000,
 data:       '',
 msg:        'LALA World Token (LALA) Token Sale. Official sale website: https://lalaworld.io'
 },{
+// Digital Asset Exchange Token (DAXT) Token Sale
+to:         '0x61725f3db4004afe014745b21dab1e1677cc328b',
+gasLimit:   200000,
+data:       '',
+msg:        'Digital Asset Exchange Token (DAXT) Token Sale. Official sale website: https://www.daxt.io'
+},{
 // Duty of Care (VDOC) Token sale
 to:         '0xe8DB4ceA1f7ad7Ba22F3DbbAb55A336545701d96',
 gasLimit:   200000,
 data:       '',
 msg:        ' Duty of Care VDOC token sale - https://dutyof.care/token-launch/'
+},{
+// APIS Token sale
+to:         '0x749e66e12c09E4105381e373c0E6CA0bCe573d36',
+gasLimit:   200000,
+data:       '',
+msg:        ' APIS token sale - https://apisplatform.io'
+},{
+// WhoHas (WHO) Token Sale
+to:         '0xe933c0Cd9784414d5F278C114904F5A84b396919',
+gasLimit:   200000,
+data:       '',
+msg:        'WhoHas-Token Sale. Please register through our official website: https://whohas.io/'
+},{
+// WHEN (￦) Token Sale
+to:         '0xf4fe95603881d0e07954fd7605e0e9a916e42c44',
+gasLimit:   200000,
+data:       '',
+msg:        'WHEN Token Sale. Join the future of person-to-person micro-contracts using the blockchain.: https://interface.whenhub.com/'
+},{
+// AIgatha (ATH) Token Sale
+to:         '0x1543d0F83489e82A1344DF6827B23d541F235A50',
+gasLimit:   200000,
+data:       '',
+msg:        'AIgatha (ATH) Token Sale. Official sale website: https://aigatha.com'
+},{
+// GANA (GANA) Token Sale
+to:         '0xFc543bA94943DA77236D38D1CBE6Bd9C7B945dfC',
+gasLimit:   250000,
+data:       '',
+msg:        'GANA Token Sale. Green And Nature Association. - https://ganacoin.io/'
+},{
+// OS.University (EDU) Token Sale
+to:         '0x94d313feaee495466a23d97c87690ae33c0f0af6',
+gasLimit:   200000,
+data:       '',
+msg:        'EDU Token Sale by OS.University - https://os.university/'
+},{
+  // Brickblock (BBK) Token sale
+  to:         '0x4a6058666cf1057eac3cd3a5a614620547559fc9',
+  gasLimit:   210000,
+  data:       '',
+  msg:        'Brickblock (BBK) Token Sale. Official sale website:https://www.brickblock.io'
+},{
+// Acorn Collective (OAK) Token Sale
+to:         '0x25Beb989d3ef4E6e0fEF8220944bb74E2AA6ff45',
+gasLimit:   150000,
+data:       '',
+msg:        'OAK Token Sale by The Acorn Collective - https://aco.ai/'
+},{
+// Distributed Credit Chain (DCC) Token Sale
+to:         '0x5f95c334f23eeab920ef753b995831a3c7138808',
+gasLimit:   210000,
+data:       '',
+msg:        'DCC Token Sale by The Distributed Credit Chain - https://dcc.finance/'
+},{
+// NEEO (NEEO) Token Sale
+to:         '0x0acbcc45dde258b18c11b16b06bdc64fd91913ac',
+gasLimit:   150000,
+data:       '',
+msg:        'NEEO token sale http://neeoico.com'
+},{
+// Credits (CS) Token Sale
+to:         '0x46b9ad944d1059450da1163511069c718f699d31',
+gasLimit:   200000,
+data:       '',
+msg:        'Credits token sale https://credits.com'
+},
+{
+// ABBC Cash (ABCH) Token Sale
+to:         '0xcc7d26d8ea6281bb363c8448515f2c61f7bc19f0',
+gasLimit:   250000,
+data:       '',
+msg:        'ABCH Token Sale. - https://abbcfoundation.com'
+},{
+// TOK (TOK) Token Sale
+to:         '0x9a49f02e128a8e989b443a8f94843c0918bf45e7',
+gasLimit:   60000,
+data:       '',
+msg:        'TOK token sale https://www.tokok.com/'
 }]

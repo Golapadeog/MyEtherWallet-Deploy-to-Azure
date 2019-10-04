@@ -161,14 +161,14 @@ ONBOARD_whymew_content__2       :  'Anda tidak harus bergantung pada bank, pemer
 ONBOARD_whymew_content__3       :  'Anda tidak harus bergantung pada keamanan bursa atau bank agar dana Anda tetap aman.',
 ONBOARD_whymew_content__4       :  'Jika Anda tidak menganggap hal-hal ini berharga, tanyakan pada diri Anda mengapa Anda menganggap blockchain dan cryptocurrencies sangat berharga. 😉',
 ONBOARD_whymew_content__5       :  'Jika Anda tidak berkenan, Anda bisa menggunakan [Coinbase](https://www.coinbase.com/) atau [Blockchain.info](https://blockchain.info/wallet/#/signup). Mereka memiliki akun yang lebih mirip dengan yang biasa Anda temui yaitu menggunakan username & password.',
-ONBOARD_whymew_content__6       :  'Jika Anda takut tapi ingin menggunakan MEW, [gunakan dompet hardware](https://myetherwallet.github.io/knowledge-base/hardware-wallets/hardware-wallet-recommendations.html)! Perangkat ini akan menjaga kunci Anda tetap aman.',
+ONBOARD_whymew_content__6       :  'Jika Anda takut tapi ingin menggunakan MEW, [gunakan dompet hardware](https://kb.myetherwallet.com/hardware-wallets/hardware-wallet-recommendations.html)! Perangkat ini akan menjaga kunci Anda tetap aman.',
 ONBOARD_why_title__alt          :  'Tapi...kenapa?',
 ONBOARD_secure_title            :  'Cara Melindungi Diri & Dana Anda',
 ONBOARD_secure_1_title          :  'Cara Melindungi Diri Anda dari Phisher',
 ONBOARD_secure_1_content__1     :  'Phisher biasanya mengirim Anda pesan dengan link ke situs web yang sekilas terlihat seperti MyEtherWallet, EtherDelta, Paypal, atau bank Anda, namun bukan situs web yang asli. Mereka mencuri informasi Anda dan kemudian mencuri uang Anda.',
 ONBOARD_secure_1_content__2     :  'Pasang [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) atau [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) atau [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige) atau [MyEtherWallet Chrome Extension](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm) untuk memblokir situs web jahat.',
-ONBOARD_secure_1_content__3     :  'Selalu periksa URLnya: `https://www.myetherwallet.com`.',
-ONBOARD_secure_1_content__4     :  'Pastikan bar URL menunjukkan `MYETHERWALLET LLC` dalam warna hijau.',
+ONBOARD_secure_1_content__3     :  'Selalu periksa URLnya: `https://vintage.myetherwallet.com`.',
+ONBOARD_secure_1_content__4     :  'Pastikan bar URL menunjukkan `MYETHERWALLET INC` dalam warna hijau.',
 ONBOARD_secure_1_content__5     :  'Jangan mempercayai pesan atau tautan yang dikirim kepada Anda secara acak melalui email, Slack, Reddit, Twitter, dll.',
 ONBOARD_secure_1_content__6     :  'Selalu kunjungi situs secara langsung sebelum memasukkan informasi. Jangan memasukkan informasi setelah mengklik link dari pesan atau email.',
 ONBOARD_secure_1_content__7     :  '[Pasang AdBlocker](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en) dan jangan klik iklan dari search engine (misalnya Google).',
@@ -186,7 +186,7 @@ ONBOARD_secure_3_content__2     :  'Buat cadangan Kunci Privat dan password Anda
 ONBOARD_secure_3_content__3     :  'Simpan kertas ini atau USB drive di lokasi fisik yang berbeda. Cadangan tidak berguna jika dihancurkan oleh api atau banjir bersama laptop Anda.',
 ONBOARD_secure_3_content__4     :  'Jangan simpan Kunci Privat Anda di Dropbox, Google Drive, atau penyimpanan awan lainnya. Jika akun itu disusupi, dana Anda akan dicuri.',
 ONBOARD_secure_3_content__5     :  'Jika Anda memiliki kriptocurrency senilai lebih dari gaji 1 minggu Anda, pakailah dompet hardware. Tidak ada alasan untuk tidak memakainya. Biaya yang dikeluarkan sangat sepadan. Percaya saya.',
-ONBOARD_secure_3_content__6     :  '[Lihat lebih banyak lagi tentang Tips Keamanan!](https://myetherwallet.github.io/knowledge-base/getting-started/protecting-yourself-and-your-funds.html)',
+ONBOARD_secure_3_content__6     :  '[Lihat lebih banyak lagi tentang Tips Keamanan!](https://kb.myetherwallet.com/getting-started/protecting-yourself-and-your-funds.html)',
 ONBOARD_secure_2_title__alt_2   :  'Berantas Penipuan',
 ONBOARD_final_title__alt        :  'Tinggal Satu lagi klik sebelum selesai! 🤘',
 ONBOARD_final_title             :  'Baiklah, saya selesai menguliahi Anda!',
@@ -219,7 +219,7 @@ x_TxHash                    : 'Hash TX',
 NAV_CheckTxStatus           : 'Check Status TX',
 NAV_TxStatus                : 'Status TX',
 tx_Details                  : 'Detail Transaksi',
-tx_Summary                  : 'Saat volume sedang tinggi (misalnya saat ICOs) transaksi dapat tertunda selama berjam-jam, bahkan hari. Fitur ini memberikan kemampuan untuk menemukan dan membatalkan / mengganti TX. ** Ini bukanlah hal yang pada umumnya dapat dilakukan. Jangan bergantung pada fitur ini & fitur ini hanya akan bekerja saat TX pool penuh. [Penjelasan tentang firur ini bisa dibaca di sini.](https://myetherwallet.github.io/knowledge-base/transactions/check-status-of-ethereum-transaction.html)**',
+tx_Summary                  : 'Saat volume sedang tinggi (misalnya saat ICOs) transaksi dapat tertunda selama berjam-jam, bahkan hari. Fitur ini memberikan kemampuan untuk menemukan dan membatalkan / mengganti TX. ** Ini bukanlah hal yang pada umumnya dapat dilakukan. Jangan bergantung pada fitur ini & fitur ini hanya akan bekerja saat TX pool penuh. [Penjelasan tentang firur ini bisa dibaca di sini.](https://kb.myetherwallet.com/transactions/check-status-of-ethereum-transaction.html)**',
 tx_notFound                 : 'Transaksi tidak ditemukan',
 tx_notFound_1               : 'TX ini tidak dapat ditemukan di TX Pool dari node yang anda pakai.',
 tx_notFound_2               : 'Jika transaksi baru saja terkirim, tunggu 15 detik dan tekan tombol "Check TX Status" lagi. ',
@@ -232,7 +232,7 @@ tx_foundInPending_3         : 'Ada kemungkinan Anda dapat membatalkan atau mengg
 tx_FoundOnChain             : 'Transaksi ditemukan',
 tx_FoundOnChain_1           : 'Transaksi Anda telah berhasil ditambang (mined) dan sudah masuk di blockchain.',
 tx_FoundOnChain_2           : '**Jika muncul Error `( ! )`, atau `BAD INSTRUCTION` atau `OUT OF GAS` berwarna merah**, artinya transaksi tidak berhasil terkirim. Transaksi ini tidak dapat dibatalkan ataupun diganti. Yang dapat Anda lakukan adalah mengirim transaksi baru. Jika muncul Error "Out of Gas" error, lipat dua-kan jumlah gas limit dari yang dipakai sebelumnya.',
-tx_FoundOnChain_3           : '**Jika tidak ada Error, artinya transaksi Anda berhasil terkirim.** ETH atau Token akan masuk ke alamat yang dituju. Jika ETH atau Token tidak muncul di alamat dompet / exchange account yang dituju, dan sudah lebih dari 24 jam sejak pengiriman, segera [hubungi penerima kiriman](https://myetherwallet.github.io/knowledge-base/diving-deeper/ethereum-list-of-support-and-communities.html). Lampirkan *link* dari transaksi Anda dan mintalah bantuan untuk memeriksa apa yang terjadi.',
+tx_FoundOnChain_3           : '**Jika tidak ada Error, artinya transaksi Anda berhasil terkirim.** ETH atau Token akan masuk ke alamat yang dituju. Jika ETH atau Token tidak muncul di alamat dompet / exchange account yang dituju, dan sudah lebih dari 24 jam sejak pengiriman, segera [hubungi penerima kiriman](https://kb.myetherwallet.com/diving-deeper/ethereum-list-of-support-and-communities.html). Lampirkan *link* dari transaksi Anda dan mintalah bantuan untuk memeriksa apa yang terjadi.',
 
 /* Gen Wallet Updates */
 GEN_Help_1                  : 'Memakai',
@@ -261,7 +261,7 @@ GEN_Unlock                  : 'Buka kunci dompet Anda untuk melihat alamat Anda'
 GAS_PRICE_Desc              : 'Harga Gas Price adalah jumlah yang Anda bayar per unit gas. `Biaya TX = harga gas * gas limit` & dibayarkan kepada miners untuk memasukkan TX Anda ke dalam block. Makin tinggi harga gas = transaksi makin cepat, tapi makin mahal. Default-nya `41 GWEI`.',
 GAS_LIMIT_Desc              : 'Batas Gas (Gas limit) adalah jumlah gas untuk dikirim bersama TX Anda.  `Biaya TX = harga gas * gas limit` & dibayarkan kepada miners untuk memasukkan TX Anda ke dalam block. Menaikkan angka ini tidak mempercepat TX Anda untuk ditambang. Pengiriman ETH = `21000`. Pengiriman Token = ~`200000`.',
 NONCE_Desc                  : 'Nonce adalah nomor transaksi yang dikirimn dari sebuah alamat. Ini untuk menjamin agar pengiriman terlaksana secara runtut dan tidak ada yang dilakukan lebih dari sekali.',
-TXFEE_Desc                  : 'Biaya TX Fee dibayarkan kepada miners untuk memasukkan TX Anda ke dalam block. Jumlahnya =  `gas limit` * `gas price`. [Anda dapat mengkonversi GWEI -> ETH](https://www.myetherwallet.com/helpers.html)',
+TXFEE_Desc                  : 'Biaya TX Fee dibayarkan kepada miners untuk memasukkan TX Anda ke dalam block. Jumlahnya =  `gas limit` * `gas price`. [Anda dapat mengkonversi GWEI -> ETH](https://vintage.myetherwallet.com/helpers.html)',
 
 
 
@@ -592,14 +592,14 @@ ERROR_24                    : 'Masukkan port yang valid. ', // 24
 ERROR_25                    : 'Masukkan chain ID yang valid. ', // 25
 ERROR_26                    : 'Masukkan ABI yang valid. ', // 26
 ERROR_27                    : 'Jumlah Minimum: 0.01. Jumlah Max: ', // 27
-ERROR_28                    : '**DIPERLUKAN File Keystore & password** (atau Kunci Privat) untuk mengakses dompet Anda. Simpan dan backup dengan baik file ini! Tidak ada mekanisme untuk me-recover dompet jika file-nya hilang. Baca instruksi lengkapnya [di sini](https://www.myetherwallet.com/#help). ',
+ERROR_28                    : '**DIPERLUKAN File Keystore & password** (atau Kunci Privat) untuk mengakses dompet Anda. Simpan dan backup dengan baik file ini! Tidak ada mekanisme untuk me-recover dompet jika file-nya hilang. Baca instruksi lengkapnya [di sini](https://vintage.myetherwallet.com/#help). ',
 ERROR_29                    : 'Masukkan user dan password yang valid. ', // 29
 ERROR_30                    : 'Masukkan nama yang vaklid (7+ karakter, tanda baca terbatas) ', // 30
 ERROR_31                    : 'Masukkan frase rahasia yang valid. ', // 31
 ERROR_32                    : 'Tidak dapat tersambung ke node. Coba lakukan "Refresh" dan ganti node (pojok kanan atas), dan check setting firewall. Jika node-nya custom, periksa configs-nya.', // 32
 ERROR_33                    : 'Dompet yang Anda buka tidak sesuai dengan address pemiliknya. ', // 33
 ERROR_34                    : 'Nama yang Anda coba buka tidak sama dengan nama yang dimasukkan. ', // 34
-ERROR_35                    : 'Address yang dimasukkan tidak di checksum. <a href="https://myetherwallet.github.io/knowledge-base/addresses/not-checksummed-shows-when-i-enter-an-address.html" target="_blank" rel="noopener noreferrer"> Informasi lebih lanjut</a>', // 35
+ERROR_35                    : 'Address yang dimasukkan tidak di checksum. <a href="https://kb.myetherwallet.com/addresses/what-does-checksummed-mean.html" target="_blank" rel="noopener noreferrer"> Informasi lebih lanjut</a>', // 35
 ERROR_36                    : 'Masukkan TX hash yang valid', // 36
 ERROR_37                    : 'Masukkan hex string yang valid (0-9, a-f)', // 37
 
@@ -624,19 +624,19 @@ GETH_GasLimit               : 'Melebihi limit blok gas ',
 GETH_NegativeValue          : 'Nilai negatif ',
 
 /* Parity Error Messages */
-PARITY_AlreadyImported      : "(parity-01) Transaksi dengan hash yang sama sudah pernah di-impor sebelumnya. A transaction with the same hash was already imported. It was probably already broadcast. To avoid duplicate transactions, check your address on [etherscan.io](https://etherscan.io) & wait 10 minutes before attempting to send again. [Learn More.](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)",
-PARITY_GasLimitExceeded     : "(parity-02) Biaya transaksi melebihi limit gas yang berlaku. Limit: {}, tersedia: {}. Coba turunkan gas yang disediakan. Transaction cost exceeds current gas limit. Limit: (d+), got: (d+). Please lower the gas limit to 21000 (for sending) or 200000 (for sending tokens or contracts) and try again. [Learn More](https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html)",
-PARITY_InsufficientBalance  : "(parity-03) Dana tidak mencukupi. Akun yang dipakai untuk mengirim tidak memiliki dana yang cukup. Diperlukan {} dan hanya tersedia: {}. Insufficient balance. The account you tried to send transaction from does not have enough funds. If you believe this is in error, try using the 'Send Entire Balance' button, or pressing generate again. Required (d+) and got: (d+). [Learn More.](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)",
-PARITY_InsufficientGasPrice : "(parity-04) Biaya transaksi terlalu rendah. Tidak memenuhi nilai biaya minimal untuk node Anda(minimal: {}, got: {}). Coba naikkan biaya transaksi. There is another transaction with same nonce in the queue, or the transaction fee is too low. Try incrementing the nonce by clicking the Generate button again. [Learn More.](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)",
-PARITY_InvalidGasLimit      : "(parity-05) Gas yang disediakan nilainya diatas limit. Supplied gas limit is beyond limit. Try lowering the gas limit to 21000. [Learn More.](https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html)",
-PARITY_LimitReached         : "(parity-06) Terlalu banyak transaksi dalam antrian. Transaksi Anda gugur karena melampaui batas. Coba naikkan biaya transaksi There are too many transactions in the queue. Your transaction was dropped due to limit. Try increasing the gas price. [Learn More.](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)",
-PARITY_Old                  : "(parity-07) Nonce transaksi terlalu kecil. Coba naikkan nilai Nonce-nya. There is already a transaction with this [nonce](https://myetherwallet.github.io/knowledge-base/transactions/what-is-nonce.html). Try incrementing the nonce by pressing the Generate button again, or [replace the pending transaction](https://myetherwallet.github.io/knowledge-base/transactions/check-status-of-ethereum-transaction.html).",
-PARITY_TooCheapToReplace    : "(parity-08) Biaya transaksi terlalu rendah. Ada transaksi lain dengan nonce yang sama dalam antrian. Coba naikkan biaya transaksi atau naikkan nonce-nya. TX Fee is too low. It does not satisfy your node's minimal fee (minimal: (d+), got: (d+)). Try increasing the gas price and/or gas limit. [Learn More.](https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html)",
+PARITY_AlreadyImported      : "(parity-01) Transaksi dengan hash yang sama sudah pernah di-impor sebelumnya. A transaction with the same hash was already imported. It was probably already broadcast. To avoid duplicate transactions, check your address on [etherscan.io](https://etherscan.io) & wait 10 minutes before attempting to send again. [Learn More.](https://kb.myetherwallet.com/transactions/transactions-not-showing-or-pending.html)",
+PARITY_GasLimitExceeded     : "(parity-02) Biaya transaksi melebihi limit gas yang berlaku. Limit: {}, tersedia: {}. Coba turunkan gas yang disediakan. Transaction cost exceeds current gas limit. Limit: (d+), got: (d+). Please lower the gas limit to 21000 (for sending) or 200000 (for sending tokens or contracts) and try again. [Learn More](https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html)",
+PARITY_InsufficientBalance  : "(parity-03) Dana tidak mencukupi. Akun yang dipakai untuk mengirim tidak memiliki dana yang cukup. Diperlukan {} dan hanya tersedia: {}. Insufficient balance. The account you tried to send transaction from does not have enough funds. If you believe this is in error, try using the 'Send Entire Balance' button, or pressing generate again. Required (d+) and got: (d+). [Learn More.](https://kb.myetherwallet.com/transactions/transactions-not-showing-or-pending.html)",
+PARITY_InsufficientGasPrice : "(parity-04) Biaya transaksi terlalu rendah. Tidak memenuhi nilai biaya minimal untuk node Anda(minimal: {}, got: {}). Coba naikkan biaya transaksi. There is another transaction with same nonce in the queue, or the transaction fee is too low. Try incrementing the nonce by clicking the Generate button again. [Learn More.](https://kb.myetherwallet.com/transactions/transactions-not-showing-or-pending.html)",
+PARITY_InvalidGasLimit      : "(parity-05) Gas yang disediakan nilainya diatas limit. Supplied gas limit is beyond limit. Try lowering the gas limit to 21000. [Learn More.](https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html)",
+PARITY_LimitReached         : "(parity-06) Terlalu banyak transaksi dalam antrian. Transaksi Anda gugur karena melampaui batas. Coba naikkan biaya transaksi There are too many transactions in the queue. Your transaction was dropped due to limit. Try increasing the gas price. [Learn More.](https://kb.myetherwallet.com/transactions/transactions-not-showing-or-pending.html)",
+PARITY_Old                  : "(parity-07) Nonce transaksi terlalu kecil. Coba naikkan nilai Nonce-nya. There is already a transaction with this [nonce](https://kb.myetherwallet.com/transactions/what-is-nonce.html). Try incrementing the nonce by pressing the Generate button again, or [replace the pending transaction](https://kb.myetherwallet.com/transactions/check-status-of-ethereum-transaction.html).",
+PARITY_TooCheapToReplace    : "(parity-08) Biaya transaksi terlalu rendah. Ada transaksi lain dengan nonce yang sama dalam antrian. Coba naikkan biaya transaksi atau naikkan nonce-nya. TX Fee is too low. It does not satisfy your node's minimal fee (minimal: (d+), got: (d+)). Try increasing the gas price and/or gas limit. [Learn More.](https://kb.myetherwallet.com/transactions/transactions-not-showing-or-pending.html)",
 
 /* Tranlsation Info */
 translate_version           : '0.3 ',
 Translator_Desc             : 'Thank you to our translators ',
-TranslatorName_1            : '[Yos Ginting](https://www.myetherwallet.com/?gaslimit=21000&to=0x8F646C5c215be6E0163f02Bd2eB97AFC2DF70e5c&value=1.0#send-transaction) ',
+TranslatorName_1            : '[Yos Ginting](https://vintage.myetherwallet.com/?gaslimit=21000&to=0x8F646C5c215be6E0163f02Bd2eB97AFC2DF70e5c&value=1.0#send-transaction) ',
 TranslatorAddr_1            : '0x8F646C5c215be6E0163f02Bd2eB97AFC2DF70e5c ',
 /* Translator 1             : 05 Sep 2016: Translation completed (except HELP texts); 09 Sep 2016: Revisions; 3 Sep 2017 more translations; 1 Jan 2018 more translations*/
 TranslatorName_2            : '',
@@ -865,7 +865,7 @@ HELP_Sec_Title              : 'Keamanan ',
 HELP_Sec_Desc_1             : 'Jika salah satu pertanyaan pertama Anda adalah "Mengapa saya harus percaya keapda orang-orang ini?", Ini sikap kehati-hatian yang baik. Mudah-mudahan informasi berikut ini akan membantu meringankan kekhawatiran anda. ',
 HELP_Sec_Desc_2             : 'Kami sudah ada sejak 2015. Jika Anda mencari ["myetherwallet" di reddit](https://www.reddit.com/search?q=myetherwallet), Anda bisa melihat banyak orang yang sudah menggunakan layanan kami dan baik-baik saja. ',
 HELP_Sec_Desc_3             : 'Kami tidak akan mengambil uang Anda atau mencuri Kunci Privat Anda. Tidak ada kode berbahaya di situs ini. Bahkan, fungsi "BUAT DOMPET/GENERATE WALLET" sepenihnya dilakukan di sisi klien. Ini berarti bahwa semua kode dieksekusi di **komputer Anda** dan tidak pernah disimpan dan dikirim di luar itu. ',
-HELP_Sec_Desc_4             : 'Periksa URL ini -- Situs ini dijalankan melalui GitHub dan Anda bisa melihat sorce code nya di sini: [https://github.com/kvhnuke/etherwallet/tree/gh-pages](https://github.com/kvhnuke/etherwallet/tree/gh-pages) ke [https://www.myetherwallet.com](https://www.myetherwallet.com). ',
+HELP_Sec_Desc_4             : 'Periksa URL ini -- Situs ini dijalankan melalui GitHub dan Anda bisa melihat sorce code nya di sini: [https://github.com/kvhnuke/etherwallet/tree/gh-pages](https://github.com/kvhnuke/etherwallet/tree/gh-pages) ke [https://vintage.myetherwallet.com](https://vintage.myetherwallet.com). ',
 HELP_Sec_Desc_5             : 'Untuk membuat dompet, Anda dapat mendownload [source code dan menjalankannya secara lokal](https://github.com/kvhnuke/etherwallet/releases/latest). Lihat #5 di atas. ',
 HELP_Sec_Desc_6             : 'Cobalam emmbuat sebuah test dompet. Uji dan periksa serta lihat aktivitas apa saja yang sedang terjadi di jaringan. Cara termudah bagi Anda untuk melakukan hal ini adalah dengan klik kanan pada halamannya dan klik "inspect element". Buka "Network" tab. Buat sebuah Test Dompet. Anda akan buktikan nahwa tidak ada aktivitas jaringan. Anda mungkin melihat sesuatu yang terjadi seperti data:image/gif dan data:image/png. Itu adalah kode QR yang dihasilkan ... di komputer Anda ... oleh komputer Anda. Tidak ada bytes yang ditransfer. ',
 HELP_Sec_Desc_8             : 'Jika Anda merasa tidak nyaman menggunakan fasilitas ini, maka janganlah dipakai. Kami membuat program iniuntuk membantu orang untuk membuat dompet dan melakukan transaksi tanpa perlu mendalami cara memakai command line atau menjalankan full node.. Sekali lagi, silakan menghubungi kami jika Anda memiliki masalah dan kami akan merespon selekasnya. Terima kasih! ',

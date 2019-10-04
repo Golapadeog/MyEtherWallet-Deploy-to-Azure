@@ -8,9 +8,9 @@
 <meta property="og:site_name" content="MyEtherWallet.com: Your Key to Ethereum">
 <meta name="twitter:title" content="MyEtherWallet.com: Your Key to Ethereum">
 <meta name="apple-mobile-web-app-title" content="MyEtherWallet.com: Your Key to Ethereum">
-<link href="https://www.myetherwallet.com" rel="canonical">
-<meta content="https://www.myetherwallet.com" property="og:url">
-<meta content="https://www.myetherwallet.com" name="twitter:url">
+<link href="https://vintage.myetherwallet.com" rel="canonical">
+<meta content="https://vintage.myetherwallet.com" property="og:url">
+<meta content="https://vintage.myetherwallet.com" name="twitter:url">
 <link rel="stylesheet" href="css/etherwallet-master.min.css">
 <script type="text/javascript" src="js/etherwallet-static.min.js"></script>
 <script type="text/javascript" src="js/etherwallet-master.js"></script>
@@ -31,7 +31,7 @@
 <meta name="msapplication-config" content="images/fav/browserconfig.xml">
 <meta name="theme-color" content="#1d6986">
 <meta name="apple-mobile-web-app-status-bar-style" content="#1d6986">
-<meta property="og:url" content="https://www.myetherwallet.com" />
+<meta property="og:url" content="https://vintage.myetherwallet.com" />
 <meta property="og:title" content="MyEtherWallet.com  &middot; Your Key to Ethereum" />
 <meta property="og:type" content="website">
 <meta property="og:image" content="/images/myetherwallet-logo-banner.png" />
@@ -47,23 +47,23 @@
 "@context": "http://schema.org",
 "@type" : "Organization",
 "name" : "MyEtherWallet",
-"legalName" : "MyEtherWallet LLC",
-"url" : "https://www.myetherwallet.com/",
+"legalName" : "MyEtherWallet Inc",
+"url" : "https://vintage.myetherwallet.com/",
 "contactPoint" : [{
   "@type" : "ContactPoint",
   "email" : "support@myetherwallet.com",
   "url"   : "https://myetherwallet.com",
   "contactType" : "customer service"
 }],
-"logo" : "https://www.myetherwallet.com/images/myetherwallet-logo.png",
+"logo" : "https://vintage.myetherwallet.com/images/myetherwallet-logo.png",
 "description": "MyEtherWallet.com is a free, open-source, client-side interface for generating Ethereum wallets &amp; more. Interact with the Ethereum blockchain easily &amp; securely.",
 "sameAs" : [
-  "https://www.myetherwallet.com/",
+  "https://vintage.myetherwallet.com/",
   "https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm",
   "https://www.facebook.com/MyEtherWallet/",
   "https://twitter.com/myetherwallet",
   "https://medium.com/@myetherwallet",
-  "https://myetherwallet.github.io/knowledge-base/",
+  "https://kb.myetherwallet.com/",
   "https://github.com/kvhnuke/etherwallet",
   "https://github.com/MyEtherWallet",
   "https://kvhnuke.github.io/etherwallet/","https://myetherwallet.slack.com/"
@@ -83,15 +83,15 @@
     
       <a class="brand" href="/cx-wallet.html" aria-label="Go to homepage">
         <img src="images/logo-myetherwalletcx.svg" height="64px" width="245px" alt="MyEtherWallet" />
-        <p class="small visible-xs">3.21.03</p>
+        <p class="small visible-xs">3.40.0</p>
       </a>
     
     <div class="tagline">
 
-    <span class="hidden-xs">3.21.03</span>
+    <span class="hidden-xs">3.40.0</span>
 
     <span class="dropdown dropdown-lang" ng-cloak>
-      <a tabindex="0"  aria-haspopup="true" aria-expanded="false" aria-label="change language. current language {{curLang}}" class="dropdown-toggle  btn btn-white" ng-click="dropdown = !dropdown">{{curLang}}<i class="caret"></i></a>
+      <a tabindex="0"  aria-haspopup="true" aria-expanded="false" aria-label="change language. current language {{curLang}}" class="dropdown-toggle" ng-click="dropdown = !dropdown">{{curLang}}<i class="caret"></i></a>
       <ul class="dropdown-menu" ng-show="dropdown">
         <li><a ng-class="{true:'active'}[curLang=='Català']"          ng-click="changeLanguage('ca','Català'         )"> Català          </a></li>
         <li><a ng-class="{true:'active'}[curLang=='Deutsch']"         ng-click="changeLanguage('de','Deutsch'        )"> Deutsch         </a></li>
@@ -146,19 +146,11 @@
           <p class="small" style="white-space:normal;font-weight:300;margin: 2rem 0 0;" translate="GAS_PRICE_Desc"></p>
           <a class="small"
              translate="x_ReadMore"
-             href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+             href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
              target="_blank"
              rel="noopener noreferrer"></a>
         </div>
       </ul>
-      <p class="dropdown-gas__msg"
-         ng-show="gasPriceMsg"
-         ng-hide="ajaxReq.type!='ETH'">
-        The network is really full right now. Check
-        <a href="https://ethgasstation.info/"
-           target="_blank" rel="noopener noreferrer">Eth Gas Station</a>
-        for gas price to use.
-      </p>
     </span>
 
     <!-- Warning: The separators you see on the frontend are in styles/etherwallet-custom.less. If you add / change a node, you have to adjust these. Ping tayvano if you're not a CSS wizard -->
@@ -191,9 +183,17 @@
 
     </div>
   </section>
+  <p class="dropdown-gas__msg"
+     ng-show="gasPriceMsg"
+     ng-hide="ajaxReq.type!='ETH'">
+    The network is really full right now. Check
+    <a href="https://ethgasstation.info/"
+       target="_blank" rel="noopener noreferrer">Eth Gas Station</a>
+    for gas price to use.
+  </p>
 </section>
 
-<nav role="navigation" aria-label="main navigation" class="container nav-container overflowing" >
+<nav role="navigation" aria-label="main navigation" class="container nav-container overflowing">
   <a aria-hidden="true" ng-show="showLeftArrow" class="nav-arrow-left" ng-click="scrollLeft(100);" ng-mouseover="scrollHoverIn(true,2);" ng-mouseleave="scrollHoverOut()">&#171;</a>
   <div class="nav-scroll">
     <ul class="nav-inner">
@@ -208,11 +208,30 @@
       </li>
       
       <li class="nav-item help">
-        <a href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="noopener noreferrer">
+        <a href="https://kb.myetherwallet.com/" target="_blank" rel="noopener noreferrer">
           <span translate="NAV_Help">
             Help
           </span>
         </a>
+      </li>
+      <li class="nav-item" ng-show="MEWconnectActive" ng-cloak>
+        <div style="margin-left: 20px;">
+          <div ng-show="MEWconnectState == 0" style="border-bottom: solid 2px #929292">
+            <h4 ><img src="images/MEWconnectLogo.svg" width="120" height="26"> Not Connected</h4>
+          </div>
+          <div ng-show="MEWconnectState == 1" style="border-bottom: solid 2px #1995be">
+            <h4><img src="images/MEWconnectLogo.svg" width="120" height="26" style="margin-right: 10px">Preparing Connection</h4>
+          </div>
+          <div ng-show="MEWconnectState == 2" style="border-bottom: solid 2px #23aeb2">
+            <h4 ><img src="images/MEWconnectLogo.svg" width="120" height="26"> Connected</h4>
+          </div>
+          <div ng-show="MEWconnectState == 3" style="border-bottom: solid 2px #febe1a">
+            <h4><img src="images/MEWconnectLogo.svg" width="120" height="26"> Timed Out</h4>
+          </div>
+          <div ng-show="MEWconnectState == 4" style="border-bottom: solid 2px #e74d41">
+            <h4><img src="images/MEWconnectLogo.svg" width="120" height="26"> Disconnected</h4>
+          </div>
+        </div>
       </li>
     </ul>
   </div>
@@ -234,9 +253,9 @@
 
         <h2 class="modal-title text-info" translate="NODE_Title"> Set Up Your Custom Node </h2>
 
-        <p class="small"><a href="https://myetherwallet.github.io/knowledge-base/networks/run-your-own-node-with-myetherwallet.html" target="_blank" rel="noopener noreferrer"> Instructions can be found here </a></p>
+        <p class="small"><a href="https://kb.myetherwallet.com/networks/run-your-own-node-with-myetherwallet.html" target="_blank" rel="noopener noreferrer"> Instructions can be found here </a></p>
 
-        <div ng-show="browserProtocol=='https:'" class="alert alert-danger small" translate="NODE_Warning">
+        <div ng-show="browserProtocol!='https:'" class="alert alert-danger small" translate="NODE_Warning">
           Your node must be HTTPS in order to connect to it via MyEtherWallet.com. You can [download the MyEtherWallet repo & run it locally](https://github.com/kvhnuke/etherwallet/releases/latest) to connect to your local node. Or, get free SSL certificate via [LetsEncrypt](https://letsencrypt.org/)</a>.
         </div>
 
@@ -281,7 +300,7 @@
             <label><input name="options" type="radio" ng-model="customNode.options" value="kov"> Kovan </label>
             <label><input name="options" type="radio" ng-model="customNode.options" value="rin"> Rinkeby </label>
             <label><input name="options" type="radio" ng-model="customNode.options" value="cus"> Custom </label>
-            <label><input type="checkbox" ng-model="customNode.eip155" value="true"> Supports EIP-155 </label>
+            <label ng-show="customNode.options == 'cus'"><input type="checkbox" ng-model="customNode.eip155" value="true"> Supports EIP-155 </label>
           </div>
 
           <div class="clearfix col-sm-6 col-sm-offset-6" ng-show="customNode.eip155">
@@ -318,135 +337,161 @@
 
     <!-- My Wallet Page -->
 <main class="tab-pane active myWalletCtrl" ng-if="globalService.currentTab==globalService.tabs.myWallet.id" ng-controller='myWalletsCtrl'  ng-cloak>
+  <div class="mywallet-container">
+    <div class="grid-frame">
+      <div id="walletsContainer">
+        <!-- Loop begins for each wallets =====================================================-->
+        <h1 translate="NAV_YourWallets">Your Wallets</h1>
+        <div class="data" ng-repeat="twallet in allWallets track by $index">
+          <div class="wallet grid-bg">
+            <div class="block-title1" style="display: flex;">
+              <p style="flex: 80;">{{twallet.nick}}</p>
+              <div>
+                <a class="mainWalletEdit" ng-click="editMWallet($index,'wallet')">
+                  <img class="editor-icons" src="images/icon-edit-white.png" title="Edit" />
+                </a>
+                <a class="text-warning mainWalletView" ng-click="viewMWallet($index,'wallet')">
+                  <img class="editor-icons" src="images/icon-view-white.png" title="View" />
+                </a>
+                <a class="mainWalletDelete text-danger" ng-click="deleteWalletMsg($index,'wallet')">
+                  <img class="editor-icons" src="images/icon-remove-red-white.png" title="Remove" />
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <div>
+                <div class="addressIdenticon" blockie-address="{{twallet.addr}}" watch-var="twallet"></div>
+              </div>
+              <div class="balance">
+
+                <div class="balance-block">
+                  <h3 class="block-title">Balance</h3>
+                  <p class="balance-amount" ng-show="!showLongBal" ng-dblclick="showLongBal=!showLongBal" title="{{twallet.balance}} (Double-Click)">
+                    {{twallet.balance|number}} ETH
+                  </p>
+                  <p class="balance-amount"
+                      ng-show="showLongBal"
+                      ng-dblclick="showLongBal=!showLongBal">
+                        {{twallet.balance }} ETH
+                  </p>
+                </div>
+
+                <div class="address-block">
+                  <h3 class="block-title">Address</h3>
+                  <div class="copy-block">
+                    <p>{{twallet.addr}} <button ng-click="copy(twallet.addr)">Copy it</button></p>
+                  </div>
+                </div>
 
 
-  <!-- Your Wallet Table -->
-  <h1 translate="NAV_YourWallets">
-    Your Wallets
-  </h1>
-  <table class="table table-striped" id="tblwalletsmain">
-    <tr ng-repeat="twallet in allWallets track by $index">
+              </div>
+            </div>
+          </div>
+          <div class="tokens grid-bg">
+            <p class="block-title1">Selected tokens</p>
+            <div class="col-title">
+              <p>Name</p>
+              <p>Value</p>
+            </div>
 
-      <td width="10">
-        <div class="addressIdenticon med" title="Address Indenticon" blockie-address="{{twallet.addr}}" watch-var="twallet">
+            <div class="content">
+              <!-- Tokens to be added here -->
+              <div ng-repeat="token in twallet.tokens | orderBy: 'symbol'">
+                <p>{{ token.symbol }}</p>
+                <p ng-if="token.getBalance() !== 'Click to Load'">{{ token.getBalance() }}</p>
+                <p ng-if="token.getBalance() === 'Click to Load'">Loading</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </td>
+        <!-- Loop ends for each wallets =====================================================-->
+        <h1 translate="MYWAL_WatchOnly">Your Watch-Only Accounts</h1>
+        <div class="data" ng-repeat="twallet in allWatchOnly track by $index">
+          <div class="wallet grid-bg">
+            <div class="block-title1" style="display: flex;">
+              <p style="flex: 80;">{{twallet.nick}}</p>
+              <div>
+                <a class="mainWalletDelete text-danger" ng-click="deleteWalletMsg($index,'watchOnly')">
+                  <img class="editor-icons" src="images/icon-remove-red-white.png" title="Remove" />
+                </a>
+              </div>
+            </div>
+            <div class="content">
+              <div>
+                <div class="addressIdenticon" blockie-address="{{twallet.addr}}" watch-var="twallet"></div>
+              </div>
+              <div class="balance">
+                <div class="balance-block">
+                  <h3 class="block-title">Balance</h3>
+                  <p class="balance-amount" ng-show="!showLongBal" ng-dblclick="showLongBal=!showLongBal" title="{{twallet.balance}} (Double-Click)">
+                    {{twallet.balance|number}} ETH
+                  </p>
+                  <p class="balance-amount"
+                      ng-show="showLongBal"
+                      ng-dblclick="showLongBal=!showLongBal">
+                        {{twallet.balance }} ETH
+                  </p>
+                </div>
 
-      <td width="10">
-        <h2>
-          {{twallet.nick}}
-        </h2>
-        <span class="mono small">
-          {{twallet.addr}}
-        </span>
-      </td>
+                <div class="address-block">
+                  <h3 class="block-title">Address</h3>
+                  <div class="copy-block">
+                    <p>{{twallet.addr}} <button ng-click="copy(twallet.addr)">Copy it</button></p>
 
-      <td width="500" class="chrome-tokens">
-        <h3 class="text-success point"
-            ng-show="!showLongBal"
-            ng-dblclick="showLongBal=!showLongBal"
-            title="{{twallet.balance}} (Double-Click)" >
-              {{twallet.balance|number}} ETH
-        </h3>
-        <h3 class="text-success point"
-            ng-show="showLongBal"
-            ng-dblclick="showLongBal=!showLongBal">
-              {{twallet.balance }} ETH
-        </h3>
-        <span class="point"
-              ng-repeat="token in twallet.tokens"
-              ng-show="token.balance!=0 && token.balance!='loading'"
-              ng-dblclick="showLongToken=!showLongToken"
-              title="{{token.getBalance()}} (Double-Click)">
-                <strong ng-show="!showLongToken">
-                  {{token.getBalance()|number}}
-                </strong>
-                <strong ng-show="showLongToken">
-                  {{token.getBalance()}}
-                </strong>
-                {{token.getSymbol()}} &nbsp;&nbsp;
-        </span>
-      </td>
+                  </div>
+                </div>
 
-      <td width="100" class="text-center" style="white-space: nowrap">
-        <a class="mainWalletEdit" ng-click="editMWallet($index,'wallet')">
-          <img src="images/icon-edit.svg" title="Edit" />
-        </a>
-        <a class="text-warning mainWalletView" ng-click="viewMWallet($index,'wallet')">
-          <img src="images/icon-view.svg" title="View" />
-        </a>
-        <a class="mainWalletDelete text-danger" ng-click="deleteWalletMsg($index,'wallet')">
-          <img src="images/icon-remove-red.svg" title="Remove" />
-        </a>
-      </td>
-
-    </tr>
-
-  </table>
-  <!-- / Your Wallet Table -->
+              </div>
+            </div>
+          </div>
+          <div class="tokens grid-bg">
+            <p class="block-title1">Selected tokens</p>
+            <div class="col-title">
+              <p>Name</p>
+              <p>Value</p>
+            </div>
+            <div class="content">
 
 
-  <!-- Watch Only Account Table -->
-  <section id="secWatchOnlyMain">
-    <h1 translate="MYWAL_WatchOnly">
-      Your Watch-Only Accounts
-    </h1>
-    <table class="table table-striped" id="tblWatchOnlyMain">
-      <tr ng-repeat="twallet in allWatchOnly track by $index">
-        <td>
-          <div class="addressIdenticon med" title="Address Indenticon" blockie-address="{{twallet.addr}}" watch-var="twallet">
+              <!-- Tokens to be added here -->
+              <div ng-repeat="token in twallet.tokens | orderBy: 'symbol'">
+                <p>{{ token.symbol }}</p>
+                <p ng-if="token.getBalance() !== 'Click to Load'">{{ token.getBalance() }}</p>
+                <p ng-if="token.getBalance() === 'Click to Load'">Loading</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </td>
-        <td>
-          <h2>
-            {{twallet.nick}}
-          </h2>
-          <span class="mono small">
-            {{twallet.addr}}
-          </span>
+      </div>
 
-        </td>
-        <td class="chrome-tokens">
+      <div class="sidebar grid-bg" ng-show="allWallets.length > 0 || allWatchOnly.length > 0">
+        <div class="title-container block-title2">
+          <p class="title">Tokens</p>
+          <p class="total-of">Total of {{ tokens.length }}</p>
+        </div>
 
-          <h3 class="text-success point"
-              ng-show="!showLongBal"
-              ng-dblclick="showLongBal=!showLongBal"
-              title="{{twallet.balance}} (Double-Click)" >
-                {{twallet.balance|number}} ETH
-          </h3>
+        <div class="col-title">
+          <p>Name</p>
+          <p>Edit</p>
+        </div>
 
-          <h3 class="text-success point"
-              ng-show="showLongBal"
-              ng-dblclick="showLongBal=!showLongBal">
-                {{twallet.balance }} ETH
-          </h3>
-
-          <span class="point"
-                ng-repeat="token in twallet.tokens"
-                ng-show="token.balance!=0 && token.balance!='loading'"
-                ng-dblclick="showLongToken=!showLongToken"
-                title="{{token.getBalance()}} (Double-Click)">
-                  <strong ng-show="!showLongToken">
-                    {{token.getBalance()|number}}
-                  </strong>
-                  <strong ng-show="showLongToken">
-                    {{token.getBalance()}}
-                  </strong>
-                  &nbsp;{{token.getSymbol()}} &nbsp;&nbsp;
-          </span>
-        </td>
-
-        <td class="text-center">
-          <a class="mainWalletDelete text-danger" ng-click="deleteWalletMsg($index,'watchOnly')">
-            <img src="images/icon-remove-red.svg" title="Remove" />
-         </a>
-       </td>
-      </tr>
-    </table>
-
-  </section>
-  <!-- / Watch Only Account Table -->
-
+        <div class="content" id="sideBarTokens">
+          <div ng-repeat="token in tokensShown | orderBy: 'symbol'">
+            <p>{{ token.symbol }}</p>
+            <div class="add-button" ng-show="!!checkIfExists(localTokens) && !checkIfAdded(token)" ng-click="addTokenToLocal(token)">
+              <p>Add</p>
+            </div>
+            <div class="remove-button" ng-show="!!checkIfExists(localTokens) && checkIfAdded(token)" ng-click="removeTokenLocal(token)">
+              <p>Remove</p>
+            </div>
+          </div>
+          <div class="spinner-container" ng-show="loadingTokens">
+            <img class="spinner" src="images/icon-spinner-white.svg" title="spinner"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- View Wallet Section -->
   <section class="row" ng-show="wallet!=null" ng-controller='viewWalletCtrl'>
@@ -736,9 +781,6 @@
 
   </section>
   <!--/ Remove modal-->
-
-
-
 </main>
 <!-- / My Wallet Page -->
 
@@ -1471,7 +1513,7 @@
       </h5>
       <ul>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/getting-started/accessing-your-new-eth-wallet.html"
+          <a href="https://kb.myetherwallet.com/getting-started/accessing-your-new-eth-wallet.html"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_1">
@@ -1479,7 +1521,7 @@
           </a>
         </li>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/lost-eth-private-key.html"
+          <a href="https://kb.myetherwallet.com/private-keys-passwords/lost-eth-private-key.html"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_2">
@@ -1487,7 +1529,7 @@
           </a>
         </li>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/accessing-different-address-same-private-key-ether.html"
+          <a href="https://kb.myetherwallet.com/private-keys-passwords/accessing-different-address-same-private-key-ether.html"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_3">
@@ -1495,7 +1537,7 @@
           </a>
         </li>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/migration/"
+          <a href="https://kb.myetherwallet.com/migration/"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_4">
@@ -1609,7 +1651,7 @@
     <section class="row form-group">
       <div class="col-sm-11 clearfix">
         <a class="account-help-icon"
-           href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+           href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
            target="_blank"
            rel="noopener noreferrer">
           <img src="images/icon-help.svg" class="help-icon" />
@@ -1668,7 +1710,7 @@
         <div class="col-sm-11 clearfix">
 
           <a class="account-help-icon"
-             href="https://myetherwallet.github.io/knowledge-base/transactions/what-is-nonce.html"
+             href="https://kb.myetherwallet.com/transactions/what-is-nonce.html"
              target="_blank"
              rel="noopener noreferrer">
             <img src="images/icon-help.svg" class="help-icon" />
@@ -1693,7 +1735,7 @@
       <section class="row form-group" ng-show="checkTxPage">
         <div class="col-sm-11 clearfix">
           <a class="account-help-icon"
-             href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+             href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
              target="_blank"
              rel="noopener noreferrer">
                 <img src="images/icon-help.svg" class="help-icon" />
@@ -1956,7 +1998,7 @@
       </div>
 
       <p class="small text-center" style="padding: 0px 5px;">
-        <a href="https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html" target="_blank" ref="noopener noreferrer">
+        <a href="https://kb.myetherwallet.com/transactions/transactions-not-showing-or-pending.html" target="_blank" ref="noopener noreferrer">
           The network is a bit overloaded. If you're having issues with TXs, please read me.
         </a>
       </p>
@@ -1974,10 +2016,11 @@
 
 
     <!-- Swap Page -->
-<main class="tab-pane swap-tab active" ng-if="globalService.currentTab==globalService.tabs.swap.id" ng-controller='swapCtrl' ng-cloak>
+<main class="tab-pane swap-tab active" ng-if="globalService.currentTab==globalService.tabs.swap.id"
+      ng-controller="swapCtrl" ng-cloak>
 
-  
-   <!-- Swap Rates Panel -->
+    
+     <!-- Swap Rates Panel -->
 <article class="swap-rates" ng-show="showStage1">
 
   <!-- Title -->
@@ -1988,7 +2031,7 @@
 
   <!-- Colored Columns -->
   <section class="row order-panel">
-    <div class="col-sm-6 order-info">
+    <div class="col-sm-4 order-info">
       <p class="mono">
         <input class="form-control input-sm" ng-model="priceTicker.ETHBTC"/>
         <span>ETH = {{bity.curRate.ETHBTC*priceTicker.ETHBTC | number: 6}} BTC</span>
@@ -1998,7 +2041,18 @@
         <span>ETH = {{bity.curRate.ETHREP*priceTicker.ETHREP | number: 6}} REP</span>
       </p>
     </div>
-    <div class="col-sm-6 order-info">
+    <div class="col-sm-4 order-info">
+        <div class="row">
+            <div class="col-sm-6">
+                <a class="link bity-logo pull-left" href="https://bity.com/af/jshkb37v" target="_blank" rel="noopener noreferrer"><img src="images/logo-bity-white.svg" width="120" height="49" /></a>
+            </div>
+            <div class="col-sm-6">
+                <a class="link bity-logo pull-right" href="https://home.kyber.network/" target="_blank" rel="noopener noreferrer"><img src="images/Kyber-Network-Main-Logo-Inverted.svg" width="200" height="111" /></a>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4 order-info">
       <p class="mono">
         <input class="form-control input-sm" ng-model="priceTicker.BTCETH"/>
         <span>BTC = {{bity.curRate.BTCETH*priceTicker.BTCETH | number: 6}} ETH</span>
@@ -2008,8 +2062,9 @@
         <span>BTC = {{bity.curRate.BTCREP*priceTicker.BTCREP | number: 6}} REP</span>
       </p>
     </div>
-    <a class="link bity-logo" href="https://bity.com/af/jshkb37v" target="_blank" rel="noopener noreferrer"><img src="images/logo-bity-white.svg" width="120" height="49" /></a>
+
   </section>
+
   <!-- / Colored Columns -->
 
 </article>
@@ -2021,7 +2076,6 @@
 <article class="swap-panel block clearfix" ng-show="showStage1">
 
   <h1 translate="SWAP_init_1"> I want to swap my </h1>
-
   <br />
 
   <input class="form-control"
@@ -2029,13 +2083,13 @@
          placeholder="{{ 'SEND_amount_short' | translate }}"
          ng-change ="updateEstimate(true)"
          ng-model="swapOrder.fromVal"
-         ng-click="showedMinMaxError = false"
+         ng-click="resetErrorShownStates()"
          ng-class="Validator.isPositiveNumber(swapOrder.fromVal)  && verifyMinMaxValues() ? 'is-valid' : 'is-invalid'" />
 
   <span class="dropdown">
     <a class="btn btn-default dropdown-toggle" ng-click="dropdownFrom = !dropdownFrom">{{swapOrder.fromCoin}}<i class="caret"></i></a>
     <ul class="dropdown-menu dropdown-menu-right" ng-show="dropdownFrom">
-      <li ng-repeat="coin in availableCoins track by $index" ng-show="coin != 'REP'">
+      <li ng-repeat="coin in availableFromOptions track by $index" ng-show="showInFromList(coin)">
         <a ng-class="{true:'active'}[coin == swapOrder.fromCoin]" ng-click="setOrderCoin(true, coin)"> {{coin}} </a>
       </li>
     </ul>
@@ -2048,30 +2102,40 @@
          placeholder="{{ 'SEND_amount_short' | translate }}"
          ng-change ="updateEstimate(false)"
          ng-model="swapOrder.toVal"
-         ng-click="showedMinMaxError = false"
+         ng-click="resetErrorShownStates()"
          ng-class="Validator.isPositiveNumber(swapOrder.toVal) && verifyMinMaxValues() ? 'is-valid' : 'is-invalid'" />
 
   <div class="dropdown">
     <a class="btn btn-default dropdown-toggle" class="dropdown-toggle" ng-click="dropdownTo = !dropdownTo">{{swapOrder.toCoin}}<i class="caret"></i></a>
     <ul class="dropdown-menu dropdown-menu-right" ng-show="dropdownTo">
-      <li ng-repeat="coin in availableCoins track by $index" ng-show="coin != swapOrder.fromCoin">
+      <li ng-repeat="coin in availableToOptions track by $index" ng-show="showInToList(coin)">
         <a ng-class="{true:'active'}[coin == swapOrder.toCoin]" ng-click="setOrderCoin(false, coin)"> {{coin}} </a>
       </li>
     </ul>
   </div>
-
+    <div class="col-xs-12 clearfix text-center" ng-if="isKyberRateSwap">
+        <span> 1 {{swapOrder.fromCoin}} = {{kyber.kyberRates[swapOrder.fromCoin + "/" + swapOrder.toCoin] | number: 6}} {{swapOrder.toCoin}}</span><!-- todo: restrict the rate shown to token decimal is less than 6 -->
+    </div>
   <div class="col-xs-12 clearfix text-center">
     <a ng-click="setFinalPrices()" class="btn btn-info btn-primary">
       <span translate="SWAP_init_CTA"> Let's do this! </span>
     </a>
+    <section class="row">
+      <div class="col-xs-6 col-xs-offset-3" >
+        <h4 style="margin-top: 40px; border: 5px #0b1929">
+          <a href="https://ccswap.myetherwallet.com" > Buy ETH with <img src="images/visa-master.png" width="60" height="30"></a>
+        </h4>
+      </div>
+    </section>
   </div>
 
 </article>
 <!-- / Swap Init Panel -->
  
 
-  
-   <!-- Swap Start 2 -->
+    <div ng-show="!isKyberSwap">
+        
+         <!-- Swap Start 2 -->
 <article class="swap-start" ng-show="showStage2">
 
 
@@ -2130,102 +2194,113 @@
 
 </article>
 <!-- / Swap Start 2 -->
+
  
 
-  
-   <article class="swap-order" ng-show="showStage3Btc || showStage3Eth">
+        
+         <article ng-if="!isKyberSwap">
+    <article class="swap-order" ng-show="showStage3Btc || showStage3Eth">
 
 
-  <!-- Title -->
-  <section class="row text-center">
-    <div class="col-xs-3 text-left"><a class="btn btn-danger btn-xs" ng-click="newSwap()"> Start New Swap </a></div>
-    <h5 class="col-xs-6" translate="SWAP_information">Your Information</h5>
-    <div class="col-xs-3"><a class="link" href="https://bity.com/af/jshkb37v" target="_blank" rel="noopener noreferrer">
-      <img class="pull-right" src="images/logo-bity.svg" width="100" height="38" />
-    </a></div>
-  </section>
+        <!-- Title -->
+        <section class="row text-center">
+            <div class="col-xs-3 text-left"><a class="btn btn-danger btn-xs" ng-click="newSwap()"> Start New Swap </a>
+            </div>
+            <h5 class="col-xs-6" translate="SWAP_information">Your Information</h5>
+            <div class="col-xs-3"><a class="link" href="https://bity.com/af/jshkb37v" target="_blank"
+                                     rel="noopener noreferrer">
+                <img class="pull-right" src="images/logo-bity.svg" width="100" height="38"/>
+            </a></div>
+        </section>
+
+        <!-- Order Info -->
+        <section class="row order-info-wrap">
+            <div class="col-sm-3 order-info">
+                <h4>{{orderResult.reference}}</h4>
+                <p translate="SWAP_ref_num">Your reference number</p>
+            </div>
+            <div class="col-sm-3 order-info">
+                <h4>{{orderResult.progress.timeRemaining}}</h4>
+                <p ng-show="orderResult.progress.showTimeRem" translate="SWAP_time">Time remaining to send</p>
+                <p translate="SWAP_elapsed" ng-show="!orderResult.progress.showTimeRem">Time elapsed since sent</p>
+            </div>
+            <div class="col-sm-3 order-info">
+                <h4>{{orderResult.output.amount}} {{orderResult.output.currency}}</h4>
+                <p translate="SWAP_rec_amt">Amount to receive</p>
+            </div>
+            <div class="col-sm-3 order-info">
+                <h4>{{swapOrder.swapRate}} {{swapOrder.swapPair}}</h4>
+                <p translate="SWAP_your_rate">Your rate</p>
+            </div>
+        </section>
 
 
-  <!-- Order Info -->
-  <section class="row order-info-wrap">
-    <div class="col-sm-3 order-info">
-      <h4>{{orderResult.reference}}</h4>
-      <p translate="SWAP_ref_num">Your reference number</p>
-    </div>
-    <div class="col-sm-3 order-info">
-      <h4>{{orderResult.progress.timeRemaining}}</h4>
-      <p ng-show="orderResult.progress.showTimeRem" translate="SWAP_time">Time remaining to send</p>
-      <p translate="SWAP_elapsed" ng-show="!orderResult.progress.showTimeRem">Time elapsed since sent</p>
-    </div>
-    <div class="col-sm-3 order-info">
-      <h4>{{orderResult.output.amount}} {{orderResult.output.currency}}</h4>
-      <p translate="SWAP_rec_amt">Amount to receive</p>
-    </div>
-    <div class="col-sm-3 order-info">
-      <h4>{{swapOrder.swapRate}} {{swapOrder.swapPair}}</h4>
-      <p translate="SWAP_your_rate">Your rate</p>
-    </div>
-  </section>
+        <!-- Swap Progress -->
+        <section class="row swap-progress">
+            <div class="sep"></div>
+            <div class="progress-item {{orderResult.progress.bar[0]}}">
+                <div class="progress-circle"><i>1</i></div>
+                <p translate="SWAP_progress_1">Order Initiated</p>
+            </div>
+            <div class="progress-item {{orderResult.progress.bar[1]}}">
+                <div class="progress-circle"><i>2</i></div>
+                <p><span translate="SWAP_progress_2">Waiting for your </span> {{orderResult.input.currency}}...</p>
+            </div>
+            <div class="progress-item {{orderResult.progress.bar[2]}}">
+                <div class="progress-circle"><i>3</i></div>
+                <p>{{orderResult.input.currency}} <span translate="SWAP_progress_3">Received!</span></p>
+            </div>
+            <div class="progress-item {{orderResult.progress.bar[3]}}">
+                <div class="progress-circle"><i>4</i></div>
+                <p>
+                    <span translate="SWAP_progress_4">Sending your </span> {{orderResult.output.currency}} <br/>
+                    <small ng-show="orderResult.input.currency=='ETH'"> Waiting for 10 confirmations...</small>
+                    <small ng-show="orderResult.input.currency=='BTC'"> Waiting for 1 confirmation...</small>
+                </p>
+            </div>
+            <div class="progress-item {{orderResult.progress.bar[4]}}">
+                <div class="progress-circle"><i>5</i></div>
+                <p translate="SWAP_progress_5">Order Complete</p>
+            </div>
+        </section>
 
 
-  <!-- Swap Progress -->
-  <section class="row swap-progress">
-    <div class="sep"></div>
-    <div class="progress-item {{orderResult.progress.bar[0]}}">
-      <div class="progress-circle"><i>1</i></div><p translate="SWAP_progress_1">Order Initiated</p>
-    </div>
-    <div class="progress-item {{orderResult.progress.bar[1]}}">
-      <div class="progress-circle"><i>2</i></div><p><span translate="SWAP_progress_2">Waiting for your </span> {{orderResult.input.currency}}...</p>
-    </div>
-    <div class="progress-item {{orderResult.progress.bar[2]}}">
-      <div class="progress-circle"><i>3</i></div><p>{{orderResult.input.currency}} <span translate="SWAP_progress_3">Received!</span></p>
-    </div>
-    <div class="progress-item {{orderResult.progress.bar[3]}}">
-      <div class="progress-circle"><i>4</i></div>
-      <p>
-        <span translate="SWAP_progress_4">Sending your </span> {{orderResult.output.currency}} <br />
-        <small ng-show="orderResult.input.currency=='ETH'"> Waiting for 10 confirmations... </small>
-        <small ng-show="orderResult.input.currency=='BTC'"> Waiting for 1 confirmation... </small>
-      </p>
-    </div>
-    <div class="progress-item {{orderResult.progress.bar[4]}}">
-      <div class="progress-circle"><i>5</i></div><p translate="SWAP_progress_5">Order Complete</p>
-    </div>
-  </section>
+        <!-- Swap CTA -->
+        <section class="row text-center" ng-show="orderResult.progress.status=='OPEN'">
+            <h1>
+                <span translate="SWAP_order_CTA">      Please send                                                 </span>
+                <strong> {{orderResult.input.amount}} {{orderResult.input.currency}} </strong>
+                <span translate="SENDModal_Content_2"> to address                                                  </span><br/>
+                <strong class="mono text-primary"> {{orderResult.payment_address}} </strong>
+            </h1>
+        </section>
 
 
-  <!-- Swap CTA -->
-  <section class="row text-center" ng-show="orderResult.progress.status=='OPEN'">
-    <h1>
-      <span translate="SWAP_order_CTA">      Please send                                                 </span>
-      <strong>                               {{orderResult.input.amount}} {{orderResult.input.currency}} </strong>
-      <span translate="SENDModal_Content_2"> to address                                                  </span><br />
-      <strong class="mono text-primary">     {{orderResult.payment_address}}                             </strong>
-    </h1>
-  </section>
+        <!-- Swap CTA ETH -->
+        <article class="row" ng-show="showStage3Eth && orderResult.progress.status=='OPEN'">
 
+            <section class="clearfix collapse-container">
+                <div class="text-center" ng-click="wd = !wd">
+                    <a class="collapse-button"><span ng-show="wd">+</span><span ng-show="!wd">-</span></a>
+                    <h5 traslate="SWAP_unlock">Unlock your wallet to send ETH or Tokens directly from this page.</h5>
+                </div>
+                <div ng-show="!wd">
+                    
+                    
+                    <cx-wallet-decrypt-drtv></cx-wallet-decrypt-drtv>
+                    
+                </div>
+            </section>
 
-  <!-- Swap CTA ETH -->
-  <article class="row" ng-show="showStage3Eth && orderResult.progress.status=='OPEN'">
-    <section class="clearfix collapse-container">
-      <div class="text-center" ng-click="wd = !wd">
-        <a class="collapse-button"><span ng-show="wd">+</span><span ng-show="!wd">-</span></a>
-        <h5 traslate="SWAP_unlock">Unlock your wallet to send ETH or Tokens directly from this page.</h5>
-      </div>
-      <div ng-show="!wd">
-          
-            <cx-wallet-decrypt-drtv></cx-wallet-decrypt-drtv>   
-      </div>
-    </section>
+            <div class="alert alert-danger" ng-show="ajaxReq.type!=='ETH'">
+                <strong>Warning! You are not connected to an ETH node.</strong> <br/>
+                Please use the node switcher in the top-right corner to switch to an ETH node. We <strong>do
+                not</strong> support swapping ETC or Testnet ETH.
+            </div>
 
-    <div class="alert alert-danger" ng-show="ajaxReq.type!=='ETH'">
-      <strong>Warning! You are not connected to an ETH node.</strong> <br />
-      Please use the node switcher in the top-right corner to switch to an ETH node. We <strong>do not</strong> support swapping ETC or Testnet ETH.
-    </div>
-
-    <section class="row" ng-show="wallet!=null" ng-controller='sendTxCtrl'>
-      
-       <!-- Content -->
+            <section class="row" ng-show="wallet!=null " ng-controller='sendTxCtrl'>
+                
+                 <!-- Content -->
 <div class="col-sm-8">
 
 
@@ -2240,7 +2315,7 @@
       </h5>
       <ul>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/getting-started/accessing-your-new-eth-wallet.html"
+          <a href="https://kb.myetherwallet.com/getting-started/accessing-your-new-eth-wallet.html"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_1">
@@ -2248,7 +2323,7 @@
           </a>
         </li>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/lost-eth-private-key.html"
+          <a href="https://kb.myetherwallet.com/private-keys-passwords/lost-eth-private-key.html"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_2">
@@ -2256,7 +2331,7 @@
           </a>
         </li>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/accessing-different-address-same-private-key-ether.html"
+          <a href="https://kb.myetherwallet.com/private-keys-passwords/accessing-different-address-same-private-key-ether.html"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_3">
@@ -2264,7 +2339,7 @@
           </a>
         </li>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/migration/"
+          <a href="https://kb.myetherwallet.com/migration/"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_4">
@@ -2378,7 +2453,7 @@
     <section class="row form-group">
       <div class="col-sm-11 clearfix">
         <a class="account-help-icon"
-           href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+           href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
            target="_blank"
            rel="noopener noreferrer">
           <img src="images/icon-help.svg" class="help-icon" />
@@ -2437,7 +2512,7 @@
         <div class="col-sm-11 clearfix">
 
           <a class="account-help-icon"
-             href="https://myetherwallet.github.io/knowledge-base/transactions/what-is-nonce.html"
+             href="https://kb.myetherwallet.com/transactions/what-is-nonce.html"
              target="_blank"
              rel="noopener noreferrer">
             <img src="images/icon-help.svg" class="help-icon" />
@@ -2462,7 +2537,7 @@
       <section class="row form-group" ng-show="checkTxPage">
         <div class="col-sm-11 clearfix">
           <a class="account-help-icon"
-             href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+             href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
              target="_blank"
              rel="noopener noreferrer">
                 <img src="images/icon-help.svg" class="help-icon" />
@@ -2584,8 +2659,8 @@
 <!-- / Sidebar -->
  
 
-      
-       <article class="modal fade" id="sendTransaction" tabindex="-1">
+                
+                 <article class="modal fade" id="sendTransaction" tabindex="-1">
   <section class="modal-dialog">
     <section class="modal-content">
 
@@ -2725,7 +2800,7 @@
       </div>
 
       <p class="small text-center" style="padding: 0px 5px;">
-        <a href="https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html" target="_blank" ref="noopener noreferrer">
+        <a href="https://kb.myetherwallet.com/transactions/transactions-not-showing-or-pending.html" target="_blank" ref="noopener noreferrer">
           The network is a bit overloaded. If you're having issues with TXs, please read me.
         </a>
       </p>
@@ -2736,49 +2811,956 @@
   </section>
 </article>
  
-    </section>
-  </article>
-  <!-- / Swap CTA ETH -->
+            </section>
+        </article>
+        <!-- / Swap CTA ETH -->
 
 
-  <!-- Swap CTA BTC -->
-  <section class="row block swap-address text-center" ng-show="showStage3Btc && orderResult.progress.status=='OPEN'">
-    <label translate="x_Address"> Your Address </label>
-    <div class="qr-code" qr-code="{{'bitcoin:'+orderResult.payment_address+'?amount='+orderResult.input.amount}}" watch-var="orderResult" ></div>
-    <br />
-    <p class="text-danger">
-       Orders that take too long will have to be processed manually &amp; and may delay the amount of time it takes to receive your coins.
-        <br />
-       <a href="https://shapeshift.io/#/btcfee" target="_blank" rel="noopener noreferrer">Please use the recommended TX fees seen here.</a>
-    </p>
+        <!-- Swap CTA BTC -->
+        <section class="row block swap-address text-center"
+                 ng-show="showStage3Btc && orderResult.progress.status=='OPEN'">
+            <label translate="x_Address"> Your Address </label>
+            <div class="qr-code"
+                 qr-code="{{'bitcoin:'+orderResult.payment_address+'?amount='+orderResult.input.amount}}"
+                 watch-var="orderResult"></div>
+            <br/>
+            <p class="text-danger">
+                Orders that take too long will have to be processed manually &amp; and may delay the amount of time it
+                takes to receive your coins.
+                <br/>
+                <a href="https://shapeshift.io/#/btcfee" target="_blank" rel="noopener noreferrer">Please use the
+                    recommended TX fees seen here.</a>
+            </p>
 
-  </section>
+        </section>
 
+
+    </article>
 
 </article>
  
+    </div>
+
+    <div ng-if="isKyberSwap">
+        
+         <!-- Swap Start Kyber 2 -->
+<article ng-if="isKyberSwap">
+
+    <!-- Swap Kyber 2 -->
+    <article class="swap-start" ng-show="showStage2Kyber">
 
 
-  <section class="bity-contact text-center">
-    <p><a class="btn-warning btn-sm" href="mailto:mew@bity.com,support@myetherwallet.com?Subject={{orderResult.reference}}%20Issue%20regarding%20my%20Swap%20via%20MEW%20&Body=%0APlease%20include%20the%20below%20if%20this%20issue%20is%20regarding%20your%20order.%20%0A%0AREF%20ID%23%3A%20{{orderResult.reference}}%0A%0AAmount%20to%20send%3A%20{{orderResult.input.amount}}%20{{orderResult.input.currency}}%0A%0AAmount%20to%20receive%3A%20{{orderResult.output.amount}}%20{{orderResult.output.currency}}%0A%0APayment%20Address%3A%20{{orderResult.payment_address}}%0A%0ARate%3A%20{{swapOrder.swapRate}}%20{{swapOrder.swapPair}}%0A%0A" target="_blank" rel="noopener noreferrer"> Issue with your Swap? Contact support</a></p>
-    <p ng-click="swapIssue = !swapIssue"><small>Click here if link doesn't work</small></p>
-    <textarea class="form-control input-sm" rows="9" ng-show="swapIssue" style="max-width: 35rem;margin: auto;">To: mew@bity.com, support@myetherwallet.com
-Subject: {{orderResult.reference}} - Issue regarding my Swap via MEW
-Message:
-REF ID#: {{orderResult.reference}}
-Amount to send: {{orderResult.input.amount}} {{orderResult.input.currency}}
-Amount to receive: {{orderResult.output.amount}} {{orderResult.output.currency}}
-Payment Address: {{orderResult.payment_address}}
-Receiving Address: {{swapOrder.toAddress}}
-Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
-  </section>
+        <!-- Title -->
+        <section class="row">
+            <h5 class="col-xs-6 col-xs-offset-3" translate="SWAP_information">Your Information</h5>
+
+        </section>
+        <!-- Title -->
+
+
+        <!-- Info Row -->
+        <section class="order-info-wrap row">
+            <div class="col-sm-4 order-info">
+                <h4> {{kyberSwapOrder.fromVal}} {{kyberSwapOrder.fromCoin}} </h4>
+                <p translate="SWAP_send_amt"> Amount to send </p>
+            </div>
+            <div class="col-sm-4 order-info">
+
+                <h4> <!--{{kyberSwapOrder.toVal | number: receiveDecimals}}--> {{kyberSwapOrder.fromVal * kyberSwapOrder.swapRate | number: receiveDecimals}} {{kyberSwapOrder.toCoin}} </h4>
+                <p translate="SWAP_rec_amt"> Amount to receive </p>
+            </div>
+            <div class="col-sm-4 order-info">
+                <h4> {{kyberSwapOrder.swapRate | number: 6}} {{kyberSwapOrder.swapPair}} </h4>
+                <p translate="SWAP_your_rate"> Your rate </p>
+            </div>
+        </section>
+        <!-- / Info Row -->
+
+        <!-- Your Address -->
+        <section class="swap-address block">
+            <section class="row">
+                <div class="col-sm-2 text-center">
+                    <em>
+                        <small>Powered By</small>
+                    </em>
+                    <a class="link" href="https://home.kyber.network/" target="_blank"
+                       rel="noopener noreferrer">
+                        <img class="pull-right" src="images/Kyber-Network-Main-Logo.svg" width="200" height="111"/>
+                    </a>
+                </div>
+
+
+                <div class="col-sm-8 col-xs-12">
+                    <label><span translate="SWAP_rec_add">Your Receiving Address </span>
+                        <strong>({{kyberSwapOrder.toCoin}})</strong></label>
+                    <!-- todo should I just wait for the wallet unlock and not ask for an address first.  then if wallet uplock calculation proves false at send tx.  present option to return to start???-->
+                    <address-field placeholder="0xDECAF9CD2367cdbb726E904cD6397eDFcAe6068D"
+                                   var-name="kyberSwapOrder.toAddress"></address-field>
+                </div>
+            </section>
+            <!-- /Your Address -->
+            <!-- CTA -->
+            <section class="row text-center" ng-if="kyberSwapOrder.toAddress">
+
+                <a ng-click="startKyber()" class="btn btn-primary btn-lg"><span
+                        translate="SWAP_start_CTA"> Start Swap </span></a>
+            </section>
+<!--            <section class="row text-center" ng-if="!kyberReturnToStart">
+
+                <a ng-click="startKyber()" class="btn btn-primary btn-lg"><span
+                        translate="SWAP_start_CTA"> Start Swap </span></a>
+            </section>-->
+
+            <!-- / CTA -->
+        </section>
+
+
+    </article>
+    <!-- / Swap Kyber 2 -->
+
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- Swap Kyber 3-->
+    <article class="swap-order" ng-show="showStage3Kyber">
+
+        <!-- Title -->
+        <section class="row text-center">
+            <div class="col-xs-3 text-left"><a class="btn btn-danger btn-xs" ng-click="newSwap()"> Start New Swap </a>
+                <!-- todo: fix issues where new BigNumber() is not a number in sendTxCtrl: $scope.hasEnoughBalance function-->
+            </div>
+            <h5 class="col-xs-6" translate="SWAP_information">Your Information</h5>
+        </section>
+
+        <!-- Order Info -->
+        <section class="row order-info-wrap">
+            <div class="col-sm-6 order-info">
+                <h4><!--{{kyberOrderResult.output.amount | number: receiveDecimals}}--> {{kyberSwapOrder.fromVal * kyberSwapOrder.swapRate | number: receiveDecimals}} {{kyberOrderResult.output.currency}}</h4>
+                <p translate="SWAP_rec_amt">Amount to receive</p>
+            </div>
+            <div class="col-sm-6 order-info">
+                <h4>{{kyberSwapOrder.swapRate | number: 6}} {{kyberSwapOrder.swapPair}}</h4>
+                <p translate="SWAP_your_rate">Your rate</p>
+            </div>
+        </section>
+
+        <!-- Swap Progress -->
+        <section class="row swap-progress">
+            <div class="sep"></div>
+            <div class="progress-item {{kyberOrderResult.progress.bar[0]}}">
+                <div class="progress-circle"><i>1</i></div>
+                <p translate="SWAP_progress_1">Order Initiated</p>
+            </div>
+            <div class="progress-item {{kyberOrderResult.progress.bar[1]}}" ng-if="!kyberEthToToken">
+                <div class="progress-circle"><i>2</i></div>
+                <p><span translate="SWAP_progress_2">Waiting for your </span>
+                    {{kyberOrderResult.input.currency}}...</p>
+            </div>
+            <div class="progress-item {{kyberOrderResult.progress.bar[2]}}" ng-if="!kyberEthToToken">
+                <div class="progress-circle"><i>3</i></div>
+                <p>{{kyberOrderResult.input.currency}} <span translate="SWAP_progress_3">Received!</span></p>
+            </div>
+            <!--<div class="progress-item {{kyberOrderResult.progress.bar[3]}}">-->
+                <!--<div class="progress-circle"><i>4</i></div>-->
+                <!--<p>-->
+                    <!--<span translate="SWAP_progress_4">Sending your </span> {{kyberOrderResult.output.currency}}-->
+                    <!--<br/>-->
+                <!--</p>-->
+            <!--</div>-->
+            <div class="progress-item {{kyberOrderResult.progress.bar[3]}}">
+                <div class="progress-circle"><i>4</i></div>
+                <p>
+                    <!--<span translate="SWAP_progress_4">Sending your </span> {{kyberOrderResult.output.currency}} <br/>-->
+                    <span >Broadcasting your </span> {{kyberOrderResult.output.currency}} <span> order</span><br/>
+                </p>
+            </div>
+            <div class="progress-item {{kyberOrderResult.progress.bar[4]}}">
+                <div class="progress-circle"><i>5</i></div>
+                <!--<p translate="SWAP_progress_5">Order Complete</p>-->
+                <p>Order Broadcast to Blockchain</p>
+            </div>
+        </section>
+
+
+        <div class="row">
+            <div class="col-sm-1 text-center">
+                <div class="row">
+                    <em>
+                        <small>Powered By</small>
+                    </em>
+                    <a class="link clearfix" href="https://home.kyber.network/" target="_blank"
+                       rel="noopener noreferrer">
+                        <img class="pull-right" src="images/Kyber-Network-Main-Logo.svg" width="200" height="111"/>
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-sm-11">
+                <!-- Swap CTA -->
+                <section class="row text-center" ng-show="kyberOrderResult.progress.status=='OPEN_ETH'">
+                    <h1>
+                <span
+                        translate="SWAP_order_CTA">      Please send                                                 </span>
+                        <strong> {{kyberOrderResult.input.amount}} {{kyberOrderResult.input.currency}} </strong>
+                    </h1>
+
+                </section>
+
+                <section class="row text-center"
+                         ng-show="kyberOrderResult.progress.status=='GENERATE_SWAP_TRANSACTION'">
+                    <h1>
+                        <span>      You are about to Swap                                           </span>
+                        <!-- todo: add translate -->
+                        <strong> {{kyberOrderResult.input.amount}} {{kyberOrderResult.input.currency}} </strong>
+                    </h1>
+                </section>
+            </div>
+        </div>
+        <!-- Swap CTA ETH -->
+        <article class="row">
+
+            <section class="clearfix collapse-container">
+                <div class="text-center" ng-click="wd = !wd">
+                    <a class="collapse-button"><span ng-show="wd">+</span><span ng-show="!wd">-</span></a>
+                    <h5>Unlock your wallet to proceed.</h5>  <!-- todo: add translate -->
+                </div>
+                <div ng-show="!wd">
+                    
+                    
+                    <cx-wallet-decrypt-drtv></cx-wallet-decrypt-drtv>
+                    
+                </div>
+            </section>
+            <div class="alert alert-danger" ng-show="ajaxReq.type!=='ETH' && ajaxReq.type!=='ROPSTEN ETH'">
+                <strong>Warning! You are not connected to an ETH node.</strong> <br/>
+                Please use the node switcher in the top-right corner to switch to an ETH node. We <strong>do
+                                                                                                          not</strong>
+                support swapping ETC or Testnet ETH.
+            </div>
+
+            <section class="row" ng-show="wallet!=null " ng-controller="sendTxCtrl">
+                <h5 class="row text-center">
+                    Wallet Unlocked!
+                </h5>  <!-- todo: add translate -->
+
+                <section class="row text-center" ng-if="kyberReturnToStart">
+                    <h5 class="text-warning">The swap value of {{kyberSwapOrder.fromVal}} {{kyberSwapOrder.fromCoin}} is Greater
+                                             than your current {{kyberSwapOrder.fromCoin}} Balance of
+                                             {{userTokenBalanceChecked}} {{kyberSwapOrder.fromCoin}}</h5>
+                    <a ng-click="returnToStart()" class="btn btn-primary btn-lg"><span> Return to Swap Selector </span></a>
+                    <!-- todo: add translate -->
+                </section>
+                <section class="row text-center" ng-show="wallet!=null && !balanceOk">
+                    <br/>
+                    <h6 ng-show="!kyberReturnToStart"> Processing</h6>
+                <span ng-show="!kyberReturnToStart"> <span ng-repeat="tick in indicatorhacked track by $index">{{tick}}</span></span>
+                </section>
+                <section class="row text-center" ng-show="wallet!=null && balanceOk">
+                    <a ng-click="openKyberOrder(wallet)" class="btn btn-primary btn-lg"><span
+                            translate="SWAP_start_CTA"> Start Swap </span></a>
+
+<!--{{kyberSwapOrder.toAddress}}-->
+                    <!--{{wallet.getAddressString()}}-->
+                    <div ng-if="kyberSwapOrder.toAddress.toLowerCase() != wallet.getAddressString().toLowerCase() ">
+                        <h4 style="color: red">WAIT! The Address you are sending to is not the wallet address you unlocked. <br> If this is not what you intended please review your receiving address.</h4>
+                        <a ng-click="returnToSetDestinationAddress()" class="btn btn-primary btn-lg"><span> Return to Set Receiving Address </span></a>
+                    </div>
+                </section>
+
+
+
+                       <!-- Included Because sendTxCtrl.js looks for it via querySelector and throws if it is not present (and destroys the layout in the process)-->
+                <div id="sendTransaction"></div>
+
+                       
+                       <!--todo implement (custom swap modal) with content comming from swapCtrl -->
+                        <article class="modal fade" id="kyberTransaction" tabindex="-1">
+    <section class="modal-dialog">
+        <section class="modal-content">
+
+            <div class="modal-body">
+
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close Dialog">&times;</button>
+
+                <h2 class="modal-title text-center">
+                    <!--<span translate="SENDModal_Content_1">You are about to authorize</span>...-->
+                    <span>You are about to send</span>... <!-- todo: add translate -->
+                </h2>
+
+                <table class="table text-center">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="addressIdenticon med"
+                                 title="Address Indenticon"
+                                 blockie-address="{{wallet.getAddressString()}}"
+                                 watch-var="wallet.getAddressString()">
+                            </div>
+                            <p>
+                                <strong class="send-modal__addr">
+                                    {{wallet.getChecksumAddressString()}}
+                                </strong>
+                            </p>
+                        </td>
+                        <td ng-show="!kyberEthToToken" class="mono">
+                            ->
+                            <br/>
+                            <h4 class="text-danger">
+                                {{kyberSwapOrder.fromVal}} {{kyberSwapOrder.fromCoin}}
+                            </h4>
+                        </td>
+                        <td ng-show="kyberEthToToken" class="mono">
+                            ->
+                            <br/>
+                            <h4 class="text-primary">
+                                {{parsedKyberTx.value}} {{unitReadable}}
+                            </h4>
+                        </td>
+
+                        <td ng-show="!kyberEthToToken">
+                            <div class="addressIdenticon med" title="Address Indenticon"
+                                 blockie-address="{{parsedKyberTx.to}}" watch-var="parsedKyberTx.to"></div>
+                            <p>
+                                <strong class="send-modal__addr">
+                                    {{parsedKyberTx.to}}<br/> (Kyber Network)
+                                </strong>
+                            </p>
+                        </td>
+                        <td ng-show="kyberEthToToken">
+                            <div class="addressIdenticon med" title="Address Indenticon"
+                                 blockie-address="{{parsedKyberTx.to}}" watch-var="parsedKyberTx.to"></div>
+                            <p>
+                                <strong class="send-modal__addr">
+                                    {{parsedKyberTx.to}}<br/> (Kyber Network)
+                                </strong>
+                            </p>
+
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <br/>
+                <!-- KYBER TOKEN TRANSACTION -->
+                <table class="table small table-condensed table-hover transaction-modal" ng-if="!kyberEthToToken">
+                    <!--  SUMMARY -->
+                    <tbody>
+                    <tr>
+                        <td></td>
+                        <td class="text-justifyr">Token Swap Transaction</td>
+                    </tr>
+                    <tr>
+                        <td>Summary:</td>
+                    </tr>
+                    <tr>
+                    <td class="small text-right">To Address:</td>
+                    <td class="small text-left mono">{{parsedKyberTx.to}}
+                    <br />
+                    <em><small>Kyber Network.</small></em>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td class="small text-right">{{kyberSwapOrder.toCoin}} Deposit Address:</td>
+                        <td class="small text-left mono">{{kyberSwapOrder.toAddress}}</td>
+                    </tr>
+                    <tr>
+                        <td class="small text-right">Swapping:</td>
+                        <td class="small text-left mono">{{kyberSwapOrder.fromVal}}  {{kyberSwapOrder.fromCoin}}</td>
+                    </tr>
+                    <tr>
+                        <td class="small text-right">For:</td>
+                        <td class="small text-left mono"><!--{{kyberSwapOrder.toVal}}--> {{kyberSwapOrder.fromVal * kyberSwapOrder.swapRate}} {{kyberSwapOrder.toCoin}}</td>
+                    </tr>
+                    <tr>
+                        <td class="small text-right">Network:</td>
+                        <td class="small text-left mono">{{ajaxReq.type}} by {{ajaxReq.service}}</td>
+                    </tr>
+                    <tr ng-if="!kyberTransaction.bypassTokenApprove">
+                        <td class="small text-right">Combined Gas Limit:</td>
+                        <td class="small text-left mono" >{{parsedTx.totalGasLimit}}</td>
+                    </tr>
+                    <tr ng-if="!kyberTransaction.bypassTokenApprove">
+                        <td class="small text-right">Avg. Gas Price:</td>
+                        <td class="small text-left mono" >{{parsedTx.avgGasPrice.gwei}} GWEI
+                            <small>({{parsedTx.avgGasPrice.eth}} ETH)</small>
+                                                          <!-- todo: get eth value to display as a decimal not as an exponent-->
+                        </td>
+                    </tr>
+                    <tr ng-if="!kyberTransaction.bypassTokenApprove">
+                        <td class="small text-right">Max Combined TX Fee:</td>
+                        <td class="small text-left mono"> {{parsedTx.totalTxFee.eth}} ETH
+                            <small>({{parsedTx.totalTxFee.gwei}} GWEI)</small>
+                        </td>
+                    </tr>
+                    <tr ng-if="!kyberTransaction.bypassTokenApprove">
+                        <td class="small text-right">Final Nonce:</td>
+                        <td class="small text-left mono">{{parsedKyberTx.nonce}}</td>
+                    </tr>
+                    <tr ng-if="kyberTransaction.bypassTokenApprove">
+                        <td class="small text-right">Gas Limit:</td>
+                        <td class="small text-left mono" >{{parsedKyberTx.gasLimit}}</td>
+                    </tr>
+                    <tr ng-if="kyberTransaction.bypassTokenApprove">
+                        <td class="small text-right">Gas Price:</td>
+                        <td class="small text-left mono" >{{parsedKyberTx.gasPrice.gwei}} GWEI
+                            <small>({{parsedKyberTx.avgGasPrice.eth}} ETH)</small>
+                                                                                                      <!-- todo: get eth value to display as a decimal not as an exponent-->
+                        </td>
+                    </tr>
+                    <tr ng-if="kyberTransaction.bypassTokenApprove">
+                        <td class="small text-right">Max TX Fee:</td>
+                        <td class="small text-left mono"> {{parsedKyberTx.txFee.eth}} ETH
+                            <small>({{parsedKyberTx.txFee.gwei}} GWEI)</small>
+                        </td>
+                    </tr>
+                    <tr ng-if="kyberTransaction.bypassTokenApprove">
+                        <td class="small text-right">Nonce:</td>
+                        <td class="small text-left mono">{{parsedKyberTx.nonce}}</td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <section class="clearfix collapse-container" ng-if="!kyberEthToToken && !kyberTransaction.bypassTokenApprove">
+                    <div class="text-center" ng-click="adv = !adv">
+                        <a class="collapse-button"><span ng-show="!adv">+</span><span ng-show="adv">-</span></a>
+                        <h5>Advanced</h5>
+                    </div>
+                    <table class="table small table-condensed table-hover transaction-modal" ng-show="adv">
+                        <tbody >
+
+                        <!---------------------- ADVANCED --------------------------------->
+                        <!-- TOKEN SWAP TRANSACTION DETAILS -->
+                        <tr>
+                            <td class="text-left">Token Swap Transaction <br>
+                                <small>via Kyber Network</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">To Address:</td>
+                            <td class="small text-left mono">{{parsedKyberTx.to}}
+                                <br/>
+                                <em>
+                                    <small>Kyber Network Address.</small>
+                                </em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">From Address:</td>
+                            <td class="small text-left mono">{{parsedKyberTx.from}}</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Amount to Send:</td>
+                            <td class="small text-left mono">{{parsedKyberTx.value}} ETH</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Account Balance:</td>
+                            <td class="small text-left mono">{{parsedKyberTx.balance}}</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Token:</td>
+                            <td class="small text-left mono">{{kyberSwapOrder.fromCoin}}</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Token Qty:</td>
+                            <td class="small text-left mono">{{kyberSwapOrder.fromVal}} {{kyberSwapOrder.fromCoin}}</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Network:</td>
+                            <td class="small text-left mono">{{ajaxReq.type}} by {{ajaxReq.service}}</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Gas Limit:</td>
+                            <td class="small text-left mono">{{parsedKyberTx.gasLimit}}</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Gas Price:</td>
+                            <td class="small text-left mono">{{parsedKyberTx.gasPrice.gwei}} GWEI
+                                <small>({{parsedKyberTx.gasPrice.eth}} ETH) <span ng-if="kyberTransaction.kyberMaxGas">| Note: Kyber Network Gas Price Max is 50 GWEI</span></small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Max TX Fee:</td>
+                            <td class="small text-left mono"> {{parsedKyberTx.txFee.eth}} ETH
+                                <small>({{parsedKyberTx.txFee.gwei}} GWEI)</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Nonce:</td>
+                            <td class="small text-left mono">{{parsedKyberTx.nonce}}</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Data:</td>
+                            <td class="small text-left mono text-width-limit"><p>{{parsedKyberTx.data}}</p></td>
+                        </tr>
+                        <!-- TOKEN APPROVAL TRANSACTION DETAILS -->
+                        <tr>
+                            <td> Token Approval Transaction</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">To Address:</td>
+                            <td class="small text-left mono">{{parsedKyberTokenTx.to}}
+                                <br/>
+                                <em><small>The token ({{kyberSwapOrder.fromCoin}}) contract address.</small></em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">From Address:</td>
+                            <td class="small text-left mono">{{parsedKyberTokenTx.from}}</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Amount to Send:</td>
+                            <td class="small text-left mono">{{parsedKyberTokenTx.value}} ETH</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Account Balance:</td>
+                            <td class="small text-left mono">{{parsedKyberTokenTx.balance}}</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Network:</td>
+                            <td class="small text-left mono">{{ajaxReq.type}} by {{ajaxReq.service}}</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Gas Limit:</td>
+                            <td class="small text-left mono">{{parsedKyberTokenTx.gasLimit}}</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Gas Price:</td>
+                            <td class="small text-left mono">{{parsedKyberTokenTx.gasPrice.gwei}} GWEI
+                                <small>({{parsedKyberTokenTx.gasPrice.eth}} ETH)</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Max TX Fee:</td>
+                            <td class="small text-left mono"> {{parsedKyberTokenTx.txFee.eth}} ETH
+                                <small>({{parsedKyberTokenTx.txFee.gwei}} GWEI)</small>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Nonce:</td>
+                            <td class="small text-left mono">{{parsedKyberTokenTx.nonce}}</td>
+                        </tr>
+                        <tr>
+                            <td class="small text-right">Data:</td>
+                            <td class="small text-left mono text-width-limit"><p>{{parsedKyberTokenTx.data}}</p></td>
+                        </tr>
+                        <!-- TOKEN RESET APPROVAL VALUE TRANSACTION DETAILS -->
+                        <tr ng-show="kyberTransaction.tokenNeedsReset">
+                            <td> Token Approval Reset Transaction<br>
+                            <em><small>Why? The swap will fail to execute <wbr> if token approval is not reset to 0.</small></em></td>
+                        </tr>
+                        <tr ng-show="kyberTransaction.tokenNeedsReset">
+                            <td class="small text-right">To Address:</td>
+                            <td class="small text-left mono">{{parsedKyberResetTokenTx.to}}
+                                <br/>
+                                <em><small>The token ({{kyberSwapOrder.fromCoin}}) contract address.</small></em>
+                            </td>
+                        </tr>
+                        <tr ng-show="kyberTransaction.tokenNeedsReset">
+                            <td class="small text-right">From Address:</td>
+                            <td class="small text-left mono">{{parsedKyberResetTokenTx.from}}</td>
+                        </tr>
+                        <tr ng-show="kyberTransaction.tokenNeedsReset">
+                            <td class="small text-right">Amount to Send:</td>
+                            <td class="small text-left mono">0 ETH</td>
+                        </tr>
+                        <tr ng-show="kyberTransaction.tokenNeedsReset">
+                            <td class="small text-right">Current Approve Value:</td>
+                            <td class="small text-left mono">{{kyberTransaction.currentTokenApprovalValue}} {{kyberSwapOrder.fromCoin}}</td>
+                        </tr>
+                        <tr ng-show="kyberTransaction.tokenNeedsReset">
+                            <td class="small text-right">Account Balance:</td>
+                            <td class="small text-left mono">{{parsedKyberResetTokenTx.balance}}</td>
+                        </tr>
+                        <tr ng-show="kyberTransaction.tokenNeedsReset">
+                            <td class="small text-right">Network:</td>
+                            <td class="small text-left mono">{{ajaxReq.type}} by {{ajaxReq.service}}</td>
+                        </tr>
+                        <tr ng-show="kyberTransaction.tokenNeedsReset">
+                            <td class="small text-right">Gas Limit:</td>
+                            <td class="small text-left mono">{{parsedKyberResetTokenTx.gasLimit}}</td>
+                        </tr>
+                        <tr ng-show="kyberTransaction.tokenNeedsReset">
+                            <td class="small text-right">Gas Price:</td>
+                            <td class="small text-left mono">{{parsedKyberResetTokenTx.gasPrice.gwei}} GWEI
+                                <small>({{parsedKyberResetTokenTx.gasPrice.eth}} ETH)</small>
+                            </td>
+                        </tr>
+                        <tr ng-show="kyberTransaction.tokenNeedsReset">
+                            <td class="small text-right">Max TX Fee:</td>
+                            <td class="small text-left mono"> {{parsedKyberTokenTx.txFee.eth}} ETH
+                                <small>({{parsedKyberResetTokenTx.txFee.gwei}} GWEI)</small>
+                            </td>
+                        </tr>
+                        <tr ng-show="kyberTransaction.tokenNeedsReset">
+                            <td class="small text-right">Nonce:</td>
+                            <td class="small text-left mono">{{parsedKyberResetTokenTx.nonce}}</td>
+                        </tr>
+                        <tr ng-show="kyberTransaction.tokenNeedsReset">
+                            <td class="small text-right">Data:</td>
+                            <td class="small text-left mono text-width-limit"><p>{{parsedKyberResetTokenTx.data}}</p></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <!-- / KYBER TOKEN TRANSACTION -->
+                <!-- KYBER ETH TRANSACTION -->
+                <table class="table small table-condensed table-hover transaction-modal" ng-if="kyberEthToToken">
+                    <tbody>
+                    <tr>
+                        <td class="small text-right">To Address:</td>
+                        <td class="small text-left mono">{{parsedKyberTx.to}}
+                            <br/>
+                            <em>
+
+                                <small>Kyber Network Address.</small>
+                            </em>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="small text-right">From Address:</td>
+                        <td class="small text-left mono">{{parsedKyberTx.from}}</td>
+                    </tr>
+                    <tr>
+                        <td class="small text-right">Amount to Send:</td>
+                        <td class="small text-left mono">{{parsedKyberTx.value}} ETH</td>
+                    </tr>
+                    <tr>
+                        <td class="small text-right">Account Balance:</td>
+                        <td class="small text-left mono">{{parsedKyberTx.balance}}</td>
+                    </tr>
+<!--                    <tr>
+                        <td class="small text-right">Coin:</td>
+                        <td class="small text-left mono">{{unitReadable}}</td>
+                    </tr>-->
+                    <tr>
+                        <td class="small text-right">Swapping:</td>
+                        <td class="small text-left mono">{{kyberSwapOrder.fromVal}} {{kyberSwapOrder.fromCoin}}</td>
+                    </tr>
+                    <tr>
+                        <td class="small text-right">For:</td>
+                        <td class="small text-left mono"><!--{{kyberSwapOrder.toVal}}--> {{kyberSwapOrder.fromVal * kyberSwapOrder.swapRate}} {{kyberSwapOrder.toCoin}}</td>
+                    </tr>
+                    <tr>
+                        <td class="small text-right">Network:</td>
+                        <td class="small text-left mono">{{ajaxReq.type}} by {{ajaxReq.service}}</td>
+                    </tr>
+                    <tr>
+                        <td class="small text-right">Gas Limit:</td>
+                        <td class="small text-left mono">{{parsedKyberTx.gasLimit}}</td>
+                    </tr>
+                    <tr>
+                        <td class="small text-right">Gas Price:</td>
+                        <td class="small text-left mono">{{parsedKyberTx.gasPrice.gwei}} GWEI
+                            <small>({{parsedKyberTx.gasPrice.eth}} ETH) <span ng-if="kyberTransaction.kyberMaxGas">| Note: Kyber Network Gas Price Max is 50 GWEI</span></small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="small text-right">Max TX Fee:</td>
+                        <td class="small text-left mono"> {{parsedKyberTx.txFee.eth}} ETH
+                            <small>({{parsedKyberTx.txFee.gwei}} GWEI)</small>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="small text-right">Nonce:</td>
+                        <td class="small text-left mono">{{parsedKyberTx.nonce}}</td>
+                    </tr>
+                    <tr>
+                        <td class="small text-right">Data:</td>
+                        <td class="small text-left mono text-width-limit"><p>{{parsedKyberTx.data}}</p></td>
+                    </tr>
+
+                    </tbody>
+                </table>
+                <!-- / KYBER ETH TRANSACTION -->
+            </div>
+
+            <div class="modal-footer" ng-if="kyberEthToToken">
+                <h4 class="text-center">
+                    <span translate="SENDModal_Content_1">You are about to send</span>
+                    <strong class="mono">{{parsedKyberTx.value}} {{unitReadable}}</strong>
+                    <span translate="SENDModal_Content_2">to address</span>
+                    <strong class="mono">{{parsedKyberTx.to}}.</strong>
+                </h4>
+                <p translate="SENDModal_Content_3">
+                    Are you sure you want to do this?
+                </p>
+                <br/>
+                <button class="btn btn-default" data-dismiss="modal" translate="SENDModal_No">
+                    No, get me out of here!
+                </button>
+                <button class="btn btn-primary" ng-click="sendKyberTransaction()" translate="SENDModal_Yes">
+                    Yes, I am sure! Make transaction.
+                </button>
+            </div>
+
+            <div class="modal-footer" ng-if="!kyberEthToToken">
+                <h4 class="text-center">
+                    <span translate="SENDModal_Content_1">You are about to send</span>
+                    <strong class="mono">{{kyberSwapOrder.fromVal}} {{kyberSwapOrder.fromCoin}}</strong>
+                    <span translate="SENDModal_Content_2">to address</span>
+                    <strong  class="mono">{{parsedKyberTx.to}}.</strong>
+                </h4>
+                <p translate="SENDModal_Content_3">
+                    Are you sure you want to do this?
+                </p>
+                <br/>
+
+                <button class="btn btn-default" data-dismiss="modal" translate="SENDModal_No">
+                    No, get me out of here!
+                </button>
+                <button class="btn btn-primary" ng-click="sendKyberTransaction()" translate="SENDModal_Yes">
+                    Yes, I am sure! Make transaction.
+                </button>
+            </div>
+
+            <p class="small text-center" style="padding: 0px 5px;">
+                <a href="https://kb.myetherwallet.com/transactions/transactions-not-showing-or-pending.html"
+                   target="_blank" ref="noopener noreferrer">
+                    The network is a bit overloaded. If you're having issues with TXs, please read me.
+                </a>
+            </p>
+
+
+        </section>
+    </section>
+</article>
+ 
+
+            </section>
+            <!--</div>-->
+        </article>
+        <!-- / Swap CTA ETH -->
+
+
+    </article>
+
+    <!-- / Swap Kyber 3-->
+
+    <!----------------------------------------------------------------------------------------------------------------->
+    <!-- Swap Kyber 4-->
+    <article class="swap-order" ng-show="showStage4Kyber">
+
+        <!-- Title -->
+        <section class="row text-center">
+            <div class="col-xs-3 text-left"><a class="btn btn-danger btn-xs" ng-click="newSwap()"> Start New Swap </a>
+                <!-- todo: fix issues where new BigNumber() is not a number in sendTxCtrl: $scope.hasEnoughBalance function-->
+            </div>
+            <h5 class="col-xs-6" translate="SWAP_information">Your Information</h5>
+
+        </section>
+
+        <!-- Order Info -->
+        <section class="row order-info-wrap">
+            <div class="col-sm-6 order-info">
+                <h4><!--{{kyberOrderResult.output.amount | number: receiveDecimals}}--> {{kyberSwapOrder.fromVal * kyberSwapOrder.swapRate | number: receiveDecimals}} {{kyberOrderResult.output.currency}}</h4>
+                <p translate="SWAP_rec_amt">Amount to receive</p>
+            </div>
+            <div class="col-sm-6 order-info">
+                <h4>{{kyberSwapOrder.swapRate | number: 6}} {{kyberSwapOrder.swapPair}}</h4>
+                <p translate="SWAP_your_rate">Your rate</p>
+            </div>
+        </section>
+
+
+        <!-- Swap Progress -->
+        <section class="row swap-progress">
+            <div class="sep"></div>
+            <div class="progress-item {{kyberOrderResult.progress.bar[0]}}">
+                <div class="progress-circle"><i>1</i></div>
+                <p translate="SWAP_progress_1">Order Initiated</p>
+            </div>
+            <div class="progress-item {{kyberOrderResult.progress.bar[1]}}" ng-if="!kyberEthToToken">
+                <div class="progress-circle"><i>2</i></div>
+                <p><span translate="SWAP_progress_2">Waiting for your </span> {{kyberOrderResult.input.currency}}...</p>
+            </div>
+            <div class="progress-item {{kyberOrderResult.progress.bar[2]}}" ng-if="!kyberEthToToken">
+                <div class="progress-circle"><i>3</i></div>
+                <p>{{kyberOrderResult.input.currency}} <span translate="SWAP_progress_3">Received!</span></p>
+            </div>
+            <div class="progress-item {{kyberOrderResult.progress.bar[3]}}">
+                <div class="progress-circle"><i>4</i></div>
+                <p>
+                    <!--<span translate="SWAP_progress_4">Sending your </span> {{kyberOrderResult.output.currency}} <br/>-->
+                    <span >Broadcasting your </span> {{kyberOrderResult.output.currency}} <span> order</span><br/>
+                </p>
+            </div>
+            <div class="progress-item {{kyberOrderResult.progress.bar[4]}}">
+                <div class="progress-circle"><i>5</i></div>
+                <!--<p translate="SWAP_progress_5">Order Complete</p>-->
+                <p>Order Broadcast to Blockchain</p>
+            </div>
+        </section>
+
+        <article class="row">
+            <div class="col-sm-2 text-center">
+                <em>
+                    <small>Powered By</small>
+                </em>
+                <a class="link" href="https://home.kyber.network/" target="_blank"
+                   rel="noopener noreferrer">
+                    <img class="pull-right" src="images/Kyber-Network-Main-Logo.svg" width="400" height="222"/>
+                </a>
+            </div>
+            <div class="col-sm-10 text-justify">
+                <div class="row">
+                    <section class="col-sm-6">
+                        <div class="col-sm-12">
+                            <h3>Transaction Summary:</h3>
+                        </div>
+                        <div class="col-sm-12">
+                            <h4>{{kyberOrderResult.input.amount}} {{kyberOrderResult.input.currency}}</h4>
+                            <p>Amount sent</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <h4><!--{{kyberOrderResult.output.amount | number: receiveDecimals}}--> {{kyberSwapOrder.fromVal * kyberSwapOrder.swapRate | number: receiveDecimals}} {{kyberOrderResult.output.currency}}</h4>
+                            <p translate="SWAP_rec_amt">Amount to receive</p>
+                        </div>
+                        <div class="col-sm-12">
+                            <h4>{{kyberSwapOrder.swapRate | number: 6}} {{kyberSwapOrder.swapPair}}</h4>
+                            <p translate="SWAP_your_rate">Your rate</p>
+                        </div>
+                        <hr>
+                        <div class="col-sm-12">
+                            <h5>Transaction Hash(es):</h5>
+                        </div>
+
+                        <!-- Token to ETH -->
+                        <div class="col-sm-12" ng-if="!kyberEthToToken && !kyberTransaction.bypassTokenApprove">
+                            <span>
+                                Track your swap transaction:
+                            </span>
+                            <div ng-if="!kyberTransaction.tokenTxHash">
+                                <br>
+                                <span  class="text-info"><em><small>Your Swap Waiting for token authorization</small></em> <span ng-repeat="tick in indicatorhacked track by $index">{{tick}}</span></span><br>
+                                <span class="text-danger"><br> Do Not Navigate Away or Close Your Browser</span>
+
+                            </div>
+                            <a class="strong" ng-href="{{kyberTransaction.tokenTxLink}}" target="_blank" rel="noopener">
+                                <h5>{{kyberTransaction.tokenTxHash}}</h5>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-12" ng-if="!kyberEthToToken && !kyberTransaction.bypassTokenApprove">
+                            <span>
+                                Track your token authorization transaction:
+                         </span>
+                            <!--{{kyberTransaction.tokenNeedsReset}}-->
+                            <div ng-if="!kyberTransaction.tokenResetTxHash && kyberTransaction.tokenResetTx">
+                                <br>
+                                <span  class="text-info"><em><small>Preparing Token State for Token Authorization</small></em> <span ng-repeat="tick in indicatorTokenReset track by $index">{{tick}}</span></span><br>
+                            </div>
+                            <br ng-if="!kyberTransaction.tokenApproveTxLink">
+                            <a class="strong" ng-href="{{kyberTransaction.tokenApproveTxLink}}" target="_blank"
+                               rel="noopener">
+
+                                <h5>{{kyberTransaction.tokenApproveTxHash}}</h5>
+                            </a>
+                        </div>
+                        <!-- / Token to ETH -->
+
+                        <!-- Token to ETH ( with reset token allowance) -->
+                        <div class="col-sm-12" ng-if="kyberTransaction.tokenResetTx">
+                            <span>
+                                Track your token approval reset transaction:
+                            </span>
+                            <a class="strong" ng-href="{{kyberTransaction.tokenResetTxLink}}" target="_blank" rel="noopener">
+                                <h5>{{kyberTransaction.tokenResetTxHash}}</h5>
+                            </a>
+                        </div>
+                        <!-- / Token to ETH ( with reset token allowance) -->
+
+                        <!-- ETH to Token-->
+                        <div class="col-sm-12" ng-if="kyberEthToToken">
+                          <span>
+                              Track your swap transaction:
+                          </span>
+                            <a class="strong" ng-href="{{kyberTransaction.ethTxLink}}" target="_blank" rel="noopener">
+
+                                <h5>{{kyberTransaction.ethTxHash}}</h5>
+                            </a>
+                        </div>
+                        <!-- / ETH to Token-->
+
+                        <!-- Token to ETH (no approval needed)-->
+                        <div class="col-sm-12" ng-if="!kyberEthToToken && kyberTransaction.bypassTokenApprove">
+                                                        <span>
+                                Track your swap transaction:
+                            </span>
+                            <div ng-if="!kyberTransaction.tokenTxHash">
+                                <br>
+                                <!--<span  class="text-info"><em><small>Your Swap Waiting for token authorization</small></em> <span ng-repeat="tick in indicatorhacked track by $index">{{tick}}</span></span><br>-->
+                                <span class="text-danger"><br> Do Not Navigate Away or Close Your Browser</span>
+
+                            </div>
+                            <a class="strong" ng-href="{{kyberTransaction.tokenTxLink}}" target="_blank" rel="noopener">
+                                <h5>{{kyberTransaction.tokenTxHash}}</h5>
+                            </a>
+                        </div>
+                        <!-- / Token to ETH (no approval needed)-->
+
+                    </section>
+                </div>
+                <!--<div ng-repeat="(key, entry) in kyberTransaction track by key">
+                    {{key}}:  {{entry}}
+                </div>-->
+
+
+            </div>
+        </article>
+<!--        <div class="row text-center">
+            <span> Common Questions: </span><br/>
+            <a href="https://kb.myetherwallet.com/faq/eth-or-tokens-not-showing-on-exchange.html" target="_blank"
+               rel="noopener noreferrer"> ETH or Tokens haven't shown up </a><br/>
+            <a href="https://kb.myetherwallet.com/transactions/transactions-not-showing-or-pending.html" target="_blank"
+               rel="noopener noreferrer"> Transactions are Not Showing Up or Pending Forever </a><br/>
+            <span> Still need help: </span>
+        </div>-->
+
+    </article>
+
+    <!-- / Swap Kyber 4-->
+</article> 
+    </div>
+
+    <section class="bity-contact text-center" ng-if="!isKyberRateSwap">
+        <p><a class="btn-warning btn-sm"
+              href="mailto:mew@bity.com,support@myetherwallet.com?Subject={{orderResult.reference}}%20Issue%20regarding%20my%20Swap%20via%20MEW%20&Body=%0APlease%20include%20the%20below%20if%20this%20issue%20is%20regarding%20your%20order.%20%0A%0AREF%20ID%23%3A%20{{orderResult.reference}}%0A%0AAmount%20to%20send%3A%20{{orderResult.input.amount}}%20{{orderResult.input.currency}}%0A%0AAmount%20to%20receive%3A%20{{orderResult.output.amount}}%20{{orderResult.output.currency}}%0A%0APayment%20Address%3A%20{{orderResult.payment_address}}%0A%0ARate%3A%20{{swapOrder.swapRate}}%20{{swapOrder.swapPair}}%0A%0A"
+              target="_blank" rel="noopener noreferrer"> Issue with your Swap? Contact support</a></p>
+        <p ng-click="swapIssue = !swapIssue">
+            <small>Click here if link doesn't work</small>
+        </p>
+        <textarea class="form-control input-sm" rows="9" ng-show="swapIssue" style="max-width: 35rem;margin: auto;">
+            To: mew@bity.com, support@myetherwallet.com
+            Subject: {{orderResult.reference}} - Issue regarding my Swap via MEW
+            Message:
+            REF ID#: {{orderResult.reference}}
+            Amount to send: {{orderResult.input.amount}} {{orderResult.input.currency}}
+            Amount to receive: {{orderResult.output.amount}} {{orderResult.output.currency}}
+            Payment Address: {{orderResult.payment_address}}
+            Receiving Address: {{swapOrder.toAddress}}
+            Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}
+        </textarea>
+    </section>
+
+    <section class="bity-contact text-center" ng-if="isKyberRateSwap">
+        <p><a class="btn-warning btn-sm"
+              href="mailto:support@myetherwallet.com,support@kyber.network?Subject={{kyberTransaction.ethTxHash ? kyberTransaction.ethTxHash : kyberTransaction.tokenTxHash}}%20Issue%20regarding%20my%20Kyber%20Swap%20via%20MEW%20&Body=%0APlease%20include%20the%20below%20if%20this%20issue%20is%20regarding%20your%20order.%20%0A%0AREF%20ID%23%3A%20{{kyberTransaction.ethTxHash ? kyberTransaction.ethTxHash : kyberTransaction.tokenTxHash + '%20%20ApproveTxHash%3A%20' + kyberTransaction.tokenApproveTxHash}}%0A%0AAmount%20to%20send%3A%20{{orderResult.input.amount}}%20{{orderResult.input.currency}}%0A%0AAmount%20to%20receive%3A%20{{orderResult.output.amount}}%20{{orderResult.output.currency}}%0A%0ARate%3A%20{{swapOrder.swapRate}}%20{{swapOrder.swapPair}}%0A%0A"
+              target="_blank" rel="noopener noreferrer"> Issue with your Swap? Contact support</a></p>
+        <p ng-click="swapIssue = !swapIssue">
+            <small>Click here if link doesn't work</small>
+        </p>
+        <textarea class="form-control input-sm" rows="9" ng-show="swapIssue" style="max-width: 35rem;margin: auto;">
+            To: support@myetherwallet.com, support@kyber.network
+            Subject: Issue regarding my Kyber Swap via MEW - {{kyberTransaction.ethTxHash ? kyberTransaction.ethTxHash : kyberTransaction.tokenTxHash}}
+            Message:
+            TxHash(s): {{kyberTransaction.ethTxHash ? kyberTransaction.ethTxHash : kyberTransaction.tokenTxHash + " ApproveTxHash: " + kyberTransaction.tokenApproveTxHash}}
+            Amount to send: {{swapOrder.fromVal}} {{swapOrder.fromCoin}}
+            Amount to receive: {{swapOrder.toVal}} {{swapOrder.toCoin}}
+            Receiving Address: {{swapOrder.toAddress}}
+            Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}
+        </textarea>
+    </section>
 
 </main>
 <!-- / Swap Page -->
-
-
-
-
 
 
     <main class="tab-pane active"
@@ -2928,7 +3910,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   <article class="clearfix">
     <section class="col-sm-11">
       <a class="account-help-icon"
-         href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+         href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
          target="_blank"
          rel="noopener noreferrer">
         <img src="images/icon-help.svg" class="help-icon" />
@@ -2948,7 +3930,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   <article class="clearfix">
     <section class="col-sm-11">
       <a class="account-help-icon"
-         href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+         href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
          target="_blank"
          rel="noopener noreferrer">
         <img src="images/icon-help.svg" class="help-icon" />
@@ -2967,7 +3949,17 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
                ng-disabled="checkTxReadOnly"
                ng-class="Validator.isPositiveNumber(gasPriceDec) ? 'is-valid' : 'is-invalid'" />
         <div class="input-group-btn">
-          <button style="min-width: 170px" class="btn btn-default"> WEI </button>
+          <span class="dropdown dropdown-gprice" ng-cloak>
+            <a tabindex="0" style="min-width: 170px"  aria-haspopup="true" aria-expanded="false" aria-label="gas price" class="dropdown-toggle btn btn-default" ng-click="gpDropdown = !gpDropdown">
+              {{ gasPriceDef }}
+              <i class="caret"></i>
+            </a>
+            <ul class="dropdown-menu" ng-show="gpDropdown">
+              <li><a ng-class="{true:'active'}[gasPriceDef=='WEI']" ng-click="changePrice('WEI')"> WEI          </a></li>
+              <li><a ng-class="{true:'active'}[gasPriceDef=='GWEI']" ng-click="changePrice('GWEI')"> GWEI         </a></li>
+            </ul>
+          </span>
+
         </div>
       </div>
     </section>
@@ -2978,7 +3970,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   <article class="clearfix">
     <section class="col-sm-11">
       <a class="account-help-icon"
-         href="https://myetherwallet.github.io/knowledge-base/transactions/what-is-nonce.html"
+         href="https://kb.myetherwallet.com/transactions/what-is-nonce.html"
          target="_blank"
          rel="noopener noreferrer">
         <img src="images/icon-help.svg" class="help-icon" />
@@ -3826,10 +4818,10 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     </h6>
     <ul ng-show="ensPrep">
       <li translate="ENS_Helper_3">
-        Decide which account you wish to own the name & ensure you have multiple backups of that account.
+        Decide which account you wish to own the name & ensure that you have multiple backups of that account.
       </li>
       <li translate="ENS_Helper_4">
-        Decide the maximum amount of ETH you are willing to pay for the name (your <u>Bid Amount</u>). Ensure that account has enough to cover your bid + 0.01 ETH for gas.
+        Decide the maximum amount of ETH you are willing to pay for the name (your <u>Bid Amount</u>). Ensure that the account has enough to cover your bid + 0.01 ETH for gas.
       </li>
     </ul>
 
@@ -3883,7 +4875,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
         Once the auction has ended (after 5 days / 120 hours), the winner needs to finalize the auction in order to claim their new name.
       </li>
       <li translate="ENS_Helper_16">
-        The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 ETH.
+        The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will be refunded all but 0.01 ETH.
       </li>
     </ul>
 
@@ -3928,7 +4920,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     <hr />
 
     <h6>
-      <a href="https://myetherwallet.github.io/knowledge-base/ens/"
+      <a href="https://kb.myetherwallet.com/ens/"
          target="_blank"
          rel="noopener noreferrer"
          translate="ENS_Helper_22">
@@ -3937,7 +4929,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
       &nbsp;&middot;&nbsp;
 
-      <a href="https://myetherwallet.github.io/knowledge-base/ens/ens-debugging-a-bad-instruction-reveal.html"
+      <a href="https://kb.myetherwallet.com/ens/ens-debugging-a-bad-instruction-reveal.html"
          target="_blank"
          rel="noopener noreferrer"
          translate="ENS_Helper_23">
@@ -4401,7 +5393,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
   </button>
   <br /><br />
   <p translate="ENS_Finalize_content">
-    Finalizing this name assigns the ENS name to the winning bidder. The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will refunded all but 0.01 ETH. Any non-winners will also be refunded.
+    Finalizing this name assigns the ENS name to the winning bidder. The winner will be refunded the difference between their bid and the next-highest bid. If you are the only bidder, you will be refunded all but 0.01 ETH. Any non-winners will also be refunded.
   </p>
   <br />
 
@@ -4911,7 +5903,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
       </h5>
       <ul>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/getting-started/accessing-your-new-eth-wallet.html"
+          <a href="https://kb.myetherwallet.com/getting-started/accessing-your-new-eth-wallet.html"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_1">
@@ -4919,7 +5911,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
           </a>
         </li>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/lost-eth-private-key.html"
+          <a href="https://kb.myetherwallet.com/private-keys-passwords/lost-eth-private-key.html"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_2">
@@ -4927,7 +5919,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
           </a>
         </li>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/accessing-different-address-same-private-key-ether.html"
+          <a href="https://kb.myetherwallet.com/private-keys-passwords/accessing-different-address-same-private-key-ether.html"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_3">
@@ -4935,7 +5927,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
           </a>
         </li>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/migration/"
+          <a href="https://kb.myetherwallet.com/migration/"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_4">
@@ -5049,7 +6041,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     <section class="row form-group">
       <div class="col-sm-11 clearfix">
         <a class="account-help-icon"
-           href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+           href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
            target="_blank"
            rel="noopener noreferrer">
           <img src="images/icon-help.svg" class="help-icon" />
@@ -5108,7 +6100,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
         <div class="col-sm-11 clearfix">
 
           <a class="account-help-icon"
-             href="https://myetherwallet.github.io/knowledge-base/transactions/what-is-nonce.html"
+             href="https://kb.myetherwallet.com/transactions/what-is-nonce.html"
              target="_blank"
              rel="noopener noreferrer">
             <img src="images/icon-help.svg" class="help-icon" />
@@ -5133,7 +6125,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
       <section class="row form-group" ng-show="checkTxPage">
         <div class="col-sm-11 clearfix">
           <a class="account-help-icon"
-             href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+             href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
              target="_blank"
              rel="noopener noreferrer">
                 <img src="images/icon-help.svg" class="help-icon" />
@@ -5396,7 +6388,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
       </div>
 
       <p class="small text-center" style="padding: 0px 5px;">
-        <a href="https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html" target="_blank" ref="noopener noreferrer">
+        <a href="https://kb.myetherwallet.com/transactions/transactions-not-showing-or-pending.html" target="_blank" ref="noopener noreferrer">
           The network is a bit overloaded. If you're having issues with TXs, please read me.
         </a>
       </p>
@@ -6381,7 +7373,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
               TX Hash
             </td>
             <td>
-              <a href="https://etherscan.io/tx/{{ txInfo.hash }}" target="_blank" rel="noopener noreferrer">
+              <a href="{{ txInfo.txExplorerUrl }}" target="_blank" rel="noopener noreferrer">
                 {{ txInfo.hash }}
               </a>
             </td>
@@ -6391,7 +7383,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
               From Address
             </td>
             <td>
-              <a href="https://etherscan.io/address/{{ txInfo.from }}" target="_blank" rel="noopener noreferrer">
+              <a href="{{ txInfo.fromExplorerUrl }}" target="_blank" rel="noopener noreferrer">
                 {{ txInfo.from }}
               </a>
             </td>
@@ -6401,7 +7393,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
               To Address
             </td>
             <td>
-              <a href="https://etherscan.io/address/{{ txInfo.to }}" target="_blank" rel="noopener noreferrer">
+              <a href="{{ txInfo.toExplorerUrl }}" target="_blank" rel="noopener noreferrer">
                 {{ txInfo.to }}
               </a>
             </td>
@@ -6417,7 +7409,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
           <tr>
             <td>
               <a class="account-help-icon"
-                 href="https://myetherwallet.github.io/knowledge-base/transactions/what-is-nonce.html"
+                 href="https://kb.myetherwallet.com/transactions/what-is-nonce.html"
                  target="_blank"
                  rel="noopener noreferrer">
                    <img src="images/icon-help.svg" class="help-icon" />
@@ -6434,7 +7426,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
           <tr>
             <td>
               <a class="account-help-icon"
-                 href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+                 href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
                  target="_blank"
                  rel="noopener noreferrer">
                     <img src="images/icon-help.svg" class="help-icon" />
@@ -6451,7 +7443,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
           <tr>
             <td>
               <a class="account-help-icon"
-                 href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+                 href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
                  target="_blank"
                  rel="noopener noreferrer">
                    <img src="images/icon-help.svg" class="help-icon" />
@@ -6472,7 +7464,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
           <tr>
             <td>
               <a class="account-help-icon"
-                 href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+                 href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
                  target="_blank"
                  rel="noopener noreferrer">
                    <img src="images/icon-help.svg" class="help-icon" />
@@ -6546,7 +7538,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
       </h5>
       <ul>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/getting-started/accessing-your-new-eth-wallet.html"
+          <a href="https://kb.myetherwallet.com/getting-started/accessing-your-new-eth-wallet.html"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_1">
@@ -6554,7 +7546,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
           </a>
         </li>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/lost-eth-private-key.html"
+          <a href="https://kb.myetherwallet.com/private-keys-passwords/lost-eth-private-key.html"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_2">
@@ -6562,7 +7554,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
           </a>
         </li>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/accessing-different-address-same-private-key-ether.html"
+          <a href="https://kb.myetherwallet.com/private-keys-passwords/accessing-different-address-same-private-key-ether.html"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_3">
@@ -6570,7 +7562,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
           </a>
         </li>
         <li class="u__protip">
-          <a href="https://myetherwallet.github.io/knowledge-base/migration/"
+          <a href="https://kb.myetherwallet.com/migration/"
              target="_blank"
              rel="noopener noreferrer"
              translate="X_HelpfulLinks_4">
@@ -6684,7 +7676,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
     <section class="row form-group">
       <div class="col-sm-11 clearfix">
         <a class="account-help-icon"
-           href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+           href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
            target="_blank"
            rel="noopener noreferrer">
           <img src="images/icon-help.svg" class="help-icon" />
@@ -6743,7 +7735,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
         <div class="col-sm-11 clearfix">
 
           <a class="account-help-icon"
-             href="https://myetherwallet.github.io/knowledge-base/transactions/what-is-nonce.html"
+             href="https://kb.myetherwallet.com/transactions/what-is-nonce.html"
              target="_blank"
              rel="noopener noreferrer">
             <img src="images/icon-help.svg" class="help-icon" />
@@ -6768,7 +7760,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
       <section class="row form-group" ng-show="checkTxPage">
         <div class="col-sm-11 clearfix">
           <a class="account-help-icon"
-             href="https://myetherwallet.github.io/knowledge-base/gas/what-is-gas-ethereum.html"
+             href="https://kb.myetherwallet.com/gas/what-is-gas-ethereum.html"
              target="_blank"
              rel="noopener noreferrer">
                 <img src="images/icon-help.svg" class="help-icon" />
@@ -7031,7 +8023,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
       </div>
 
       <p class="small text-center" style="padding: 0px 5px;">
-        <a href="https://myetherwallet.github.io/knowledge-base/transactions/transactions-not-showing-or-pending.html" target="_blank" ref="noopener noreferrer">
+        <a href="https://kb.myetherwallet.com/transactions/transactions-not-showing-or-pending.html" target="_blank" ref="noopener noreferrer">
           The network is a bit overloaded. If you're having issues with TXs, please read me.
         </a>
       </p>
@@ -7130,7 +8122,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
       </p>
 
       <p>
-        <a aria-label="knowledge base" href="https://myetherwallet.github.io/knowledge-base/" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        <a aria-label="knowledge base" href="https://kb.myetherwallet.com/" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
           Knowledge Base
         </a>
       </p>
@@ -7140,13 +8132,18 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
           Disclaimer
         </a>
       </p>
+      <p>
+        <a href="https://vintage.myetherwallet.com/privacy-policy.html" target="_blank">
+          Privacy policy
+        </a>
+      </p>
 
       <p ng-show="showBlocks">
         Latest Block#: {{currentBlockNumber}}
       </p>
 
       <p>
-        &copy; 2018 MyEtherWallet, LLC
+        &copy; 2019 MyEtherWallet, Inc
       </p>
 
     </section>
@@ -7156,13 +8153,16 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
         <p>Consider using our affiliate links to...</p>
         <div class="footer__pill-wrap">
           <a class="footer__pill"  aria-label="Swap Ether or Bitcoin via Bity.com" href="https://bity.com/af/jshkb37v" target="_blank" rel="noopener noreferrer">Swap ETH/BTC/EUR/CHF via Bity.com</a>
-        </div>
+          <a class="footer__pill"  aria-label="Buy Ether with credit card via Simplex" href="https://ccswap.myetherwallet.com" target="_blank" rel="noopener noreferrer">Buy ETH with credit card via Simplex</a>
+       </div>
         <p> Buy a... </p>
-        <div class="footer__pill-wrap">
-          <a class="footer__pill" href="https://www.ledgerwallet.com/r/fa4b?path=/products/" target="_blank" rel="noopener">Ledger Wallet</a>
-          <a class="footer__pill" href="https://trezor.io/?a=myetherwallet.com" target="_blank" rel="noopener">TREZOR</a>
-          <a class="footer__pill" href="https://digitalbitbox.com/?ref=mew" target="_blank" rel="noopener">Digital Bitbox</a>
+        <div class="footer__pill-wrap footer__pill-custom-wrap">
+          <a class="footer__pill" href="https://www.ledger.com?r=fa4b" target="_blank" rel="noopener">Ledger Wallet</a>
+          <a class="footer__pill" href="https://shop.trezor.io/?offer_id=10&aff_id=2029" target="_blank" rel="noopener">TREZOR</a>
+          <a class="footer__pill" href="http://shiftcrypto.ositracker.com/91316/7114" target="_blank" rel="noopener">BitBox</a>
           <a class="footer__pill" href="https://ether.cards/?utm_source=mew&utm_medium=cpm&utm_campaign=site" target="_blank" rel="noopener">ether.card</a>
+          <a class="footer__pill" href="https://thehodlwallet.com?aff=15" target="_blank" rel="noopener">HODL Wallet</a>
+          <a class="footer__pill" href="http://billfodl.com?afmc=2j&utm_campaign=2j&utm_source=leaddyno&utm_medium=affiliate" target="_blank" rel="noopener">Billfodl</a>
         </div>
 
         <h5><i aria-hidden="true">💝</i> Donations are always appreciated!</h5>
@@ -7202,6 +8202,11 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
     <section class="footer--righ">
       <p>
+        <a aria-label="website via my ether wallet dot com" href="https://vintage.myetherwallet.com" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+          Vintage MEW
+        </a>
+      </p>
+      <p>
         <a aria-label="website via my ether wallet dot com" href="https://www.MyEtherWallet.com" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
           MyEtherWallet.com
         </a>
@@ -7217,13 +8222,13 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
         </a>
       </p>
       <p>
-        <a href="https://www.myetherwallet.com/helpers.html" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        <a href="https://vintage.myetherwallet.com/helpers.html" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
           Unit Converters &amp; ENS Debugging
         </a>
       </p>
 
       <p>
-        <a href="https://www.myetherwallet.com/signmsg.html" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
+        <a href="https://vintage.myetherwallet.com/signmsg.html" target="_blank" rel="noopener noreferrer" role="link" tabindex="0">
           Sign Message
         </a>
       </p>
@@ -7306,7 +8311,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
         <h2 class="modal-title text-info" translate="FOOTER_4">Disclaimer</h2>
 
-        <p class="small"><strong>Be safe &amp; secure:</strong> <a href="https://myetherwallet.github.io/knowledge-base/security/securing-your-ethereum.html" target="_blank" rel="noopener noreferrer"> We highly recommend that you read our guide on How to Prevent Loss &amp; Theft for some recommendations on how to be proactive about your security.</a></p>
+        <p class="small"><strong>Be safe &amp; secure:</strong> <a href="https://kb.myetherwallet.com/getting-started/protecting-yourself-and-your-funds.html" target="_blank" rel="noopener noreferrer"> We highly recommend that you read our guide on How to Prevent Loss &amp; Theft for some recommendations on how to be proactive about your security.</a></p>
 
         <p class="small"><strong>Always backup your keys: </strong> MyEtherWallet.com &amp; MyEtherWallet CX are not "web wallets". You do not create an account or give us your funds to hold onto. No data leaves your computer / your browser. We make it easy for you to create, save, and access your information and interact with the blockchain.</p>
 
@@ -7314,7 +8319,7 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
 
         <p class="small"><strong> Translations of MyEtherWallet: </strong> The community has done an amazing job translating MyEtherWallet into a variety of languages. However, MyEtherWallet can only verify the validity and accuracy of the information provided in English and, because of this, the English version of our website is the official text. </p>
 
-        <p class="small"><strong>MIT License</strong> Copyright &copy; 2015-2017 MyEtherWallet LLC</p>
+        <p class="small"><strong>MIT License</strong> Copyright &copy; 2015-2017 MyEtherWallet INC</p>
 
         <p class="small">Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:</p>
 
@@ -7333,538 +8338,29 @@ Rate: {{swapOrder.swapRate}} {{swapOrder.swapPair}}</textarea>
  
 
 
- <article class="modal fade" id="onboardingModal" tabindex="-1" ng-controller='onboardingCtrl'>
+ <article class="modal depreciation-modal fade" id="deprecationWarning" tabindex="-1" ng-controller='deprecationCtrl'>
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">
-
-        <article class="onboarding__msg" ng-show="onboardMsg" translate="ONBOARD_resume">
-          It looks like you didn't finish reading through these slides last time. ProTip: Finish reading through the slides 😉
-        </article>
-
-        <article class="onboarding__modal" ng-show="showOnboardSlide==1">
-          <h3 class="onboarding__title">
-            <span translate="ONBOARD_welcome_title">
-              Welcome to MyEtherWallet.com
-            </span>
-            <br />
-            <small translate="ONBOARD_welcome_content__3">
-              We know this click-through shit is annoying. We are sorry.
-            </small>
-          </h3>
-          <section class="row row--flex">
-            <div class="col-xs-12 col-sm-7 onboarding__content">
-              <p class="alert-danger--outline">
-                <span translate="ONBOARD_welcome_content__1">
-                  Please take some time to understand this for your own safety. 🙏
-                </span>
-                <span translate="ONBOARD_welcome_content__2">
-                  Your funds will be stolen if you do not head these warnings.
-                </span>
-              </p>
-              <p class="alert-danger--outline" translate="ONBOARD_welcome_content__8">
-                We cannot recover your funds or freeze your account if you visit a phishing site or lose your private key.
-              </p>
-              <h5 translate="ONBOARD_welcome_content__4">
-                What is MEW?
-              </h5>
-              <ul>
-                <li translate="ONBOARD_welcome_content__5">
-                  MyEtherWallet is a free, open-source, client-side interface.
-                </li>
-                <li translate="ONBOARD_welcome_content__6">
-                  We allow you to interact directly with the blockchain while remaining in full control of your keys &amp; your funds.
-                </li>
-                <li translate="ONBOARD_welcome_content__7">
-                  **You** and **only you** are responsible for your security.
-                </li>
-
-              </ul>
-            </div>
-            <div class="col-xs-12 col-sm-5 onboarding__image">
-              <img src="./images/onboarding_icon-01.svg" width="100%" height="auto" />
-            </div>
-          </section>
-          <div class="onboarding__buttons text-center">
-            <a ng-click="setOnboardStatus(2)" class="btn btn-primary">
-              <span translate="ONBOARD_bank_title">
-                MyEtherWallet is not a Bank
-              </span>
-            </a>
-          </div>
-        </article>
-
-
-        <article class="onboarding__modal" ng-show="showOnboardSlide==2">
-          <h3 class="onboarding__title" translate="ONBOARD_bank_title">
-            MyEtherWallet is not a Bank
-          </h3>
-          <section class="row row--flex">
-            <div class="col-xs-12 col-sm-4 onboarding__image">
-              <img src="./images/onboarding_icon-02.svg" width="100%" height="auto" />
-            </div>
-            <div class="col-xs-12 col-sm-8 onboarding__content">
-              <ul>
-                <li translate="ONBOARD_bank_content__1">
-                  When you open an account with a bank or exchange, they create an account for you in their system.
-                </li>
-                <li translate="ONBOARD_bank_content__2">
-                  They keep track of your personal information, account passwords, balances, transactions and ultimately your money.
-                </li>
-                <li translate="ONBOARD_bank_content__3">
-                  They charge fees to manage your account and provide services, like refunding transactions when your card gets stolen.
-                </li>
-                <li translate="ONBOARD_bank_content__4">
-                  You can write a check or charge your debit card to send money, go online to check your balance, reset your password, and get a new debit card if you lose it.
-                </li>
-                <li translate="ONBOARD_bank_content__5">
-                  You have an account *with the bank* and they decide how much money you can send, where you can send it, and how long to hold on a suspicious deposit. All for a fee.
-                </li>
-              </ul>
-            </div>
-          </section>
-          <div class="onboarding__buttons">
-            <a ng-click="setOnboardStatus(1)" class="btn btn-default">
-              <span translate="ONBOARD_welcome_title__alt">
-                Introduction
-              </span>
-            </a>
-            <a ng-click="setOnboardStatus(3)" class="btn btn-primary">
-              <span translate="ONBOARD_interface_title">
-                MyEtherWallet is an Interface
-              </span>
-            </a>
-          </div>
-        </article>
-
-
-        <article class="onboarding__modal" ng-show="showOnboardSlide==3">
-          <h3 class="onboarding__title" translate="ONBOARD_interface_title">
-            MyEtherWallet is an Interface
-          </h3>
-          <section class="row row--flex">
-            <div class="col-xs-12 col-sm-4 onboarding__image">
-              <img src="./images/onboarding_icon-03.svg" width="100%" height="auto" />
-            </div>
-            <div class="col-xs-12 col-sm-8 onboarding__content">
-              <ul>
-                <li translate="ONBOARD_interface_content__1">
-                  When you create an account here, you are generating an cryptographic set of numbers: your private key and your public key (address).
-                </li>
-                <li translate="ONBOARD_interface_content__2">
-                  The handling of your keys happens entirely on your computer, inside your browser.
-                </li>
-                <li translate="ONBOARD_interface_content__3">
-                  We never transmit, receive or store your private key, password, or other account information.
-                </li>
-                <li translate="ONBOARD_interface_content__4">
-                  We do not charge a transaction fee.
-                </li>
-                <li translate="ONBOARD_interface_content__5">
-                  You are just using our **interface** to interact **directly with the blockchain**.
-                </li>
-                <li translate="ONBOARD_interface_content__6">
-                  If you send your *public key (address)* to someone, they can send you ETH or tokens. 👍
-                </li>
-                <li translate="ONBOARD_interface_content__7">
-                  If you send your *private key* to someone, they now have full control of your account. 👎
-                </li>
-              </ul>
-            </div>
-          </section>
-          <div class="onboarding__buttons">
-            <a ng-click="setOnboardStatus(2)" class="btn btn-default">
-              <span translate="ONBOARD_bank_title__alt">
-                MEW isn't a Bank
-              </span>
-            </a>
-            <a ng-click="setOnboardStatus(4)" class="btn btn-primary">
-              <span translate="ONBOARD_blockchain_title__alt">
-                WTF is a Blockchain?
-              </span>
-            </a>
-          </div>
-          <p ng-click="setOnboardStatus(5)" class="text-right small" style="cursor:pointer">
-            <span translate="ONBOARD_blockchain_skip">
-              I already know what a blockchain is...
-            </span>
+        <div class="depriciation-head">
+          <button type="button" class="close" ng-click="closeModal()" aria-label="Close Dialog">&times;</button>
+        </div>
+        </div>
+        <div class="depriciation-body">
+          <h3>Notice of Vintage MEW Removal</h3>
+          <br /> 
+          <p>
+            After October 20th, 2019, Vintage MEW will no longer be available. <br />
+            As we look towards the future, we are dedicating all our resources to MEW5 and beyond. <br />
+            Thank you for being with us on this journey. <br />
+            Vintage MEW will still be accessible via <a href="https://www.github.com/kvhnuke/etherwallet/" rel="noopener noreferrer"> Github</a> for offline use.
           </p>
-        </article>
-
-
-        <article class="onboarding__modal" ng-show="showOnboardSlide==4">
-          <h3 class="onboarding__title" translate="ONBOARD_blockchain_title">
-            Wait, WTF is a Blockchain?
-          </h3>
-          <section class="row row--flex">
-            <div class="col-xs-12 col-sm-8 onboarding__content">
-              <ul>
-                <li translate="ONBOARD_blockchain_content__1">
-                  The blockchain is like a huge, global, decentralized spreadsheet.
-                </li>
-                <li translate="ONBOARD_blockchain_content__2">
-                  It keeps track of who sent how many coins to whom, and what the balance of every account is.
-                </li>
-                <li translate="ONBOARD_blockchain_content__3">
-                  It is stored and maintained by thousands of people (miners) across the globe who have special computers.
-                </li>
-                <li translate="ONBOARD_blockchain_content__4">
-                  It is made up of all the individual transactions sent from MyEtherWallet, MetaMask, Exodus, Mist, Geth, Parity, and everywhere else.
-                </li>
-                <li translate="ONBOARD_blockchain_content__5">
-                  When you see your balance on MyEtherWallet.com or view your transactions on [etherscan.io](https://etherscan.io), you are seeing data on the blockchain, not in our personal systems.
-                </li>
-                <li translate="ONBOARD_blockchain_content__6">
-                   Again: <strong>we are not a bank</strong>.
-                </li>
-              </ul>
-            </div>
-            <div class="col-xs-12 col-sm-4 onboarding__image">
-              <img src="./images/onboarding_icon-04.svg" width="100%" height="auto" />
-            </div>
-          </section>
-          <div class="onboarding__buttons">
-            <a ng-click="setOnboardStatus(3)" class="btn btn-default">
-              <span translate="ONBOARD_interface_title__alt">
-                MEW is an Interface
-              </span>
-            </a>
-            <a ng-click="setOnboardStatus(5)" class="btn btn-primary">
-              <span translate="ONBOARD_why_title__alt">
-                But...why does this matter?
-              </span>
-            </a>
-          </div>
-        </article>
-
-
-        <article class="onboarding__modal" ng-show="showOnboardSlide==5">
-          <h3 class="onboarding__title" translate="ONBOARD_why_title">
-            Why are you making me read all this?
-          </h3>
-          <section class="row row--flex">
-            <div class="col-xs-12 col-sm-4 onboarding__image">
-              <img src="./images/onboarding_icon-05.svg" width="100%" height="auto" />
-            </div>
-            <div class="col-xs-12 col-sm-8 onboarding__content">
-              <h5 translate="ONBOARD_why_content__1">
-                Because we need you to understand that we **cannot**...
-              </h5>
-              <ul>
-                <li class="text-danger" translate="ONBOARD_why_content__2">
-                  Access your account or send your funds for you.
-                </li>
-                <li class="text-danger" translate="ONBOARD_why_content__3">
-                  Recover or change your private key.
-                </li>
-                <li class="text-danger" translate="ONBOARD_why_content__4">
-                  Recover or reset your password.
-                </li>
-                <li class="text-danger" translate="ONBOARD_why_content__5">
-                  Reverse, cancel, or refund transactions.
-                </li>
-                <li class="text-danger" translate="ONBOARD_why_content__6">
-                  Freeze accounts.
-                </li>
-              </ul>
-              <h5 translate="ONBOARD_why_content__7">
-                **You** and **only you** are responsible for your security.
-              </h5>
-              <ul>
-                <li translate="ONBOARD_why_content__8">
-                   Be diligent to keep your private key and password safe. Your private key is sometimes called your mnemonic phrase, keystore file, UTC file, JSON file,  wallet file.
-                </li>
-                <li translate="ONBOARD_why_content__9">
-                  If lose your private key or password, no one can recover it.
-                </li>
-                <li translate="ONBOARD_why_content__10">
-                  If you enter your private key on a phishing website, you will have **all your funds taken**.
-                </li>
-              </ul>
-            </div>
-          </section>
-          <div class="onboarding__buttons">
-            <a ng-click="setOnboardStatus(4)" class="btn btn-default">
-              <span translate="ONBOARD_blockchain_title__alt">
-                WTF is a Blockchain?
-              </span>
-            </a>
-            <a ng-click="setOnboardStatus(6)" class="btn btn-primary">
-              <span translate="ONBOARD_point_title__alt">
-                What's the Point of MEW then?
-              </span>
-            </a>
-          </div>
-        </article>
-
-
-        <article class="onboarding__modal" ng-show="showOnboardSlide==6">
-          <h3 class="onboarding__title" translate="ONBOARD_whymew_title">
-            If MyEtherWallet can't do those things, what's the point?
-          </h3>
-          <section class="row row--flex">
-            <div class="col-xs-12 col-sm-4 onboarding__image">
-              <img src="./images/onboarding_icon-06.svg" width="100%" height="auto" />
-            </div>
-            <div class="col-xs-12 col-sm-8 onboarding__content">
-              <ul>
-                <li translate="ONBOARD_whymew_content__1">
-                  Because that is the point of decentralization and the blockchain.
-                </li>
-                <li translate="ONBOARD_whymew_content__2">
-                  You don't have to rely on your bank, government, or anyone else when you want to move your funds.
-                </li>
-                <li translate="ONBOARD_whymew_content__3">
-                  You don't have to rely on the security of an exchange or bank to keep your funds safe.
-                </li>
-                <li translate="ONBOARD_whymew_content__4">
-                  If you don't find these things valuable, ask yourself why you think the blockchain and cryptocurrencies are valuable. 😉
-                </li>
-                <li translate="ONBOARD_whymew_content__5">
-                  If you don't like the sound of this, consider using [Coinbase](https://www.coinbase.com/) or [Blockchain.info](https://blockchain.info/wallet/#/signup). They have more familiar accounts with usernames &amp; passwords.
-                </li>
-                <li translate="ONBOARD_whymew_content__6">
-                  If you are scared but want to use MEW, [get a hardware wallet](https://myetherwallet.github.io/knowledge-base/hardware-wallets/hardware-wallet-recommendations.html)! These keep your keys secure.
-                </li>
-              </ul>
-            </div>
-          </section>
-          <div class="onboarding__buttons">
-            <a ng-click="setOnboardStatus(5)" class="btn btn-default">
-              <span translate="ONBOARD_why_title__alt">
-                But...why?
-              </span>
-            </a>
-            <a ng-click="setOnboardStatus(7)" class="btn btn-primary">
-              <span translate="ONBOARD_secure_title">
-                How To Protect Yourself &amp; Your Funds
-              </span>
-            </a>
-          </div>
-        </article>
-
-
-        <article class="onboarding__modal" ng-show="showOnboardSlide==7">
-          <h3 class="onboarding__title" translate="ONBOARD_secure_1_title">
-            How To Protect Yourself from Phishers
-          </h3>
-          <p translate="ONBOARD_secure_1_content__1">
-            Phishers send you a message with a link to a website that looks just like MyEtherWallet, EtherDelta, Paypal, or your bank, but is not the real website. They steal your information and then steal your money.
-          </p>
-          <section class="row row--flex">
-            <div class="col-xs-12 col-sm-8 onboarding__content">
-              <ul>
-                <li translate="ONBOARD_secure_1_content__2">
-                  Install [EAL](https://chrome.google.com/webstore/detail/etheraddresslookup/pdknmigbbbhmllnmgdfalmedcmcefdfn) or [MetaMask](https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn) or [Cryptonite by Metacert](https://chrome.google.com/webstore/detail/cryptonite-by-metacert/keghdcpemohlojlglbiegihkljkgnige) or the [MyEtherWallet Chrome Extension](https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm) to block malicious websites.
-                </li>
-                <li translate="ONBOARD_secure_1_content__3">
-                  Always check the URL: `https://www.myetherwallet.com`.
-                </li>
-                <li translate="ONBOARD_secure_1_content__4">
-                  Always make sure the URL bar has `MYETHERWALLET LLC` in green.
-                </li>
-                <li translate="ONBOARD_secure_1_content__5">
-                  Do not trust messages or links sent to you randomly via email, Slack, Reddit, Twitter, etc.
-                </li>
-                <li translate="ONBOARD_secure_1_content__6">
-                 Always navigate directly to a site before you enter information. Do not enter information after clicking a link from a message or email.
-                </li>
-                <li translate="ONBOARD_secure_1_content__7">
-                  [Install an AdBlocker](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm?hl=en) and do not click ads on your search engine (e.g. Google).
-                </li>
-              </ul>
-            </div>
-            <div class="col-xs-12 col-sm-4 onboarding__image">
-              <img src="./images/onboarding_icon-07.svg" width="100%" height="auto" />
-            </div>
-          </section>
-          <div class="onboarding__buttons">
-            <a ng-click="setOnboardStatus(6)" class="btn btn-default">
-              <span translate="ONBOARD_point_title__alt_2">
-                What's the point?
-              </span>
-            </a>
-            <a ng-click="setOnboardStatus(8)" class="btn btn-primary">
-              <span translate="ONBOARD_secure_2_title">
-                How To Protect Yourself from Scams
-              </span>
-            </a>
-          </div>
-        </article>
-
-
-        <article class="onboarding__modal" ng-show="showOnboardSlide==8">
-          <h3 class="onboarding__title" translate="ONBOARD_secure_2_title">
-            How To Protect Yourself from Scams
-          </h3>
-          <p class="text-center" translate="ONBOARD_secure_2_content__1">
-            People will try to get you to give them money in return for nothing.
-          </p>
-          <br />
-          <section class="row row--flex">
-            <div class="col-xs-12 col-sm-8 onboarding__content">
-              <ul>
-                <li translate="ONBOARD_secure_2_content__2">
-                  If it is too good to be true, it probably is.
-                </li>
-                <li translate="ONBOARD_secure_2_content__3">
-                  Research before sending money to someone or some project. Look for information on a variety of websites and forums. Be wary.
-                </li>
-                <li translate="ONBOARD_secure_2_content__4">
-                  Ask questions when you don't understand something or it doesn't seem right.
-                </li>
-                <li translate="ONBOARD_secure_2_content__5">
-                  Don't let fear, FUD, or FOMO win over common sense. If something is very urgent, ask yourself 'why?'. It may be to create FOMO or prevent you from doing research.
-                </li>
-              </ul>
-            </div>
-            <div class="col-xs-12 col-sm-4 onboarding__image">
-              <img src="./images/onboarding_icon-08.svg" width="100%" height="auto" />
-            </div>
-          </section>
-          <div class="onboarding__buttons">
-            <a ng-click="setOnboardStatus(7)" class="btn btn-default">
-              <span translate="ONBOARD_secure_3_title__alt">
-                Phuck Phishers
-              </span>
-            </a>
-            <a ng-click="setOnboardStatus(9)" class="btn btn-primary">
-              <span translate="ONBOARD_secure_3_title">
-                How To Protect Yourself from Loss
-              </span>
-            </a>
-          </div>
-        </article>
-
-
-        <article class="onboarding__modal" ng-show="showOnboardSlide==9">
-          <h3 class="onboarding__title" translate="ONBOARD_secure_3_title">
-            How To Protect Yourself from Loss
-          </h3>
-          <p class="text-center" translate="ONBOARD_secure_3_content__1">
-            If you lose your private key or password, it is gone forever. Don't lose it.
-          </p>
-          <section class="row row--flex">
-            <div class="col-xs-12 col-sm-7">
-              <ul>
-                <li translate="ONBOARD_secure_3_content__2">
-                  Make a backup of your private key and password. Do NOT just store it on your computer. Print it out on a piece of paper or save it to a USB drive.
-                </li>
-                <li translate="ONBOARD_secure_3_content__3">
-                  Store this paper or USB drive in a different physical location. A backup is not useful if it is destroyed by a fire or flood along with your laptop.
-                </li>
-                <li translate="ONBOARD_secure_3_content__4">
-                  Do not store your private key in Dropbox, Google Drive, or other cloud storage. If that account is compromised, your funds will be stolen.
-                </li>
-                <li translate="ONBOARD_secure_3_content__5">
-                  If you have more than 1-week's worth of pay worth of cryptocurrency, get a hardware wallet. No excuses. It's worth it. I promise.
-                </li>
-                
-                  <li translate="CX_Warning_1">
-                    Make sure you have **external backups**. Chrome Extensions are not 100% reliable. Many things could happen that would cause loss, including uninstalling the extension. This is an easy way to access your wallets, **not** a way to back them up.
-                  </li>
-                
-              </ul>
-            </div>
-            <div class="col-xs-12 col-sm-4 onboarding__image">
-              <img src="./images/onboarding_icon-09.svg" width="100%" height="auto" />
-            </div>
-          </section>
-          <h5 class="text-center" translate="ONBOARD_secure_3_content__6">
-            [Even more Security Tips!](https://myetherwallet.github.io/knowledge-base/getting-started/protecting-yourself-and-your-funds.html)
-          </h5>
-          <div class="onboarding__buttons">
-            <a ng-click="setOnboardStatus(8)" class="btn btn-default">
-              <span translate="ONBOARD_secure_2_title__alt_2">
-                Screw Scams
-              </span>
-            </a>
-            <a ng-click="setOnboardStatus(10)" class="btn btn-primary">
-              <span translate="ONBOARD_final_title__alt">
-                One more click &amp; you're done! 🤘
-              </span>
-            </a>
-          </div>
-        </article>
-
-
-        <article class="onboarding__modal" ng-show="showOnboardSlide==10">
-          <h3 class="onboarding__title" translate="ONBOARD_final_title">
-            Alright, I'm done lecturing you!
-          </h3>
-          <p class="text-center" translate="ONBOARD_final_subtitle">
-            Sorry for being like this. Onwards!
-          </p>
-          <br />
-          <section class="row row--flex">
-            <div class="col-xs-12 col-sm-4 col-xs-12 col-sm-offset-1">
-              <img src="./images/onboarding_icon-10.svg" width="100%" height="auto" />
-            </div>
-            <div class="col-xs-12 col-sm-7">
-              <ul>
-                <li>
-                  <a href="https://myetherwallet.github.io/knowledge-base/hardware-wallets/hardware-wallet-recommendations.html"
-                     target="_blank" rel="noopener noreferrer" class="strong" translate="ONBOARD_final_content__2">
-                      Get a hardware wallet
-                  </a>
-                </li>
-                <li>
-                  <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html"
-                     target="_blank" rel="noopener noreferrer" class="strong" translate="ONBOARD_final_content__3">
-                    How to Set up MEW + MetaMask
-                  </a>
-                </li>
-                <li>
-                  <a href="https://myetherwallet.github.io/knowledge-base/offline/running-myetherwallet-locally.html"
-                     target="_blank" rel="noopener noreferrer" class="strong" translate="ONBOARD_final_content__4">
-                    How to Run MEW Offline / Locally
-                  </a>
-                </li>
-                <li>
-                  <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-ledger-hardware-wallet.html"
-                     target="_blank" rel="noopener noreferrer" class="strong" translate="ONBOARD_final_content__5">
-                    How to Send via Ledger hardware wallet
-                  </a>
-                </li>
-                <li>
-                  <a href="https://myetherwallet.github.io/knowledge-base/hardware-wallets/trezor-sending-to-trezor-device.html"
-                     target="_blank" rel="noopener noreferrer" class="strong" translate="ONBOARD_final_content__6">
-                    How to Send via TREZOR hardware wallet
-                  </a>
-                </li>
-                <li>
-                  <a href="https://myetherwallet.github.io/knowledge-base/migration/moving-from-private-key-to-metamask.html"
-                     target="_blank" rel="noopener noreferrer" class="strong" translate="ONBOARD_final_content__7">
-                       How to Send via MetaMask
-                  </a>
-                </li>
-                <li>
-                  <a href="https://myetherwallet.github.io/knowledge-base/"
-                     target="_blank" rel="noopener noreferrer" class="strong" translate="ONBOARD_final_content__8">
-                       Learn More or Contact Us
-                  </a>
-                </li>
-                <li>
-                  <a ng-click="onboardModal.close();globalService.currentTab=globalService.tabs.sendTransaction.id"
-                     class="strong">
-                     <span translate="ONBOARD_final_content__9">
-                       OMG, please just let me send FFS.
-                     </span>
-                  </a>
-                </li>
-              </ul>
-
-              <div class="onboarding__buttons">
-                <a ng-click="onboardModal.close()" class="btn btn-primary col-sm-5 col-sm-offset-7">
-                  <span>
-                    Done &nbsp;
-                  </span>
-                </a>
-              </div>
-            </div>
-          </section>
-        </article>
-
+          <br /> 
+          <br /> 
+          <a href="https://www.myetherwallet.com/" rel="noopener noreferrer"> Click here to be taken to our current interface, MEW V5.</a>
+          <br /> 
+          <br /> 
+        </div>
       </div>
     </div>
   </div>
